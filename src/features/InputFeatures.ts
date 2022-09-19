@@ -1,0 +1,6 @@
+
+
+const PreventTextInput = () => {
+    
+}
+export {PreventTextInput}
