@@ -16,12 +16,12 @@ const SubjectInput = ({ title, id }: type) => {
     }
   return (
     <div className="mt-3">
-      <p className="text-black">{title}</p>
+      <p className="text-text_primary">{title}</p>
       <input
         value={state}
         onChange={e => patternCheck(e)}
         id={id}
-        className="bg-white focus:outline-none rounded-lg border-2 "
+        className="bg-white text-text_secondary focus:outline-none rounded-lg border-2 "
         maxLength={6}
       />
     </div>

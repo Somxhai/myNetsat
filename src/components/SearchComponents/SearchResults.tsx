@@ -1,20 +1,23 @@
 import { useEffect, useMemo, useState } from "react";
-import FacultySearchList from "../SearchList";
+import SearchList from "../SearchList";
 import { getApi } from "../../features/GetAPI";
 
 const SearchResults = ({ receiveSearch }: any) => {
   const [result, setResult] = useState("");
-
-  let output:any = 
-    getApi().filter((val) => {
-      if (result == "") {
-        return val;
-      } else if (val.faculty.includes(result) || val.syllabus.includes(result)) {
-        return val;
-      }
-    }).map((val) => {
-      return <FacultySearchList key={val.syllabus} value={val} />;
-    });
+  var output: any = useMemo(()=> getApi()
+      .filter((val) => {
+        if (result == "") {
+          return val;
+        } else if (
+          val.faculty.includes(result) ||
+          val.syllabus.includes(result)
+        ) {
+          return val;
+        }
+      })
+      .map((val) => {
+        return <SearchList key={val.syllabus} value={val} />;
+      }), [result])
 
   useEffect(() => {
     setResult(receiveSearch);

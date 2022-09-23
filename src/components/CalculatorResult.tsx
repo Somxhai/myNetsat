@@ -15,7 +15,7 @@ const CalculatorResult = ({ trigger }: type) => {
 
   useEffect(() => {}, [selected]);
   return (
-    <div className="bg-white rounded-lg min-h-fit overflow-x-hidden border-2 shadow-sm">
+    <div className="bg-white rounded-lg min-h-min overflow-x-hidden border-2 shadow-sm">
       <p className="text-black text-center h-fit text-3xl pb-3 border-b-2">
         ดูคะแนนของคุณกัน🥳
       </p>
@@ -23,7 +23,7 @@ const CalculatorResult = ({ trigger }: type) => {
         {scoresView.length > 0 ? (
           <div className="space-y-2">{scoresView}</div>
         ) : (
-          <p className="text-secondary text-center px-3 my-9">
+          <p className="text-text_secondary text-center px-3 my-9">
             คุณยังไม่เลือกคณะหรือยังไม่กดคำนวณ (T_T)
           </p>
         )}
