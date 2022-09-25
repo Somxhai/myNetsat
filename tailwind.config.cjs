@@ -9,12 +9,13 @@ module.exports = {
         secondary: '#757685'
       },
       fontFamily: {
-        'mitr': ['Mitr', 'sans-serif'],
-        'inter': ['Inter', 'sans-serif']
+        'kanit': ['Kanit', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
       }
     },
   },
   plugins: [
     require('@tailwindcss/forms'),
+    require('@tailwindcss/line-clamp'),
   ],
 }
