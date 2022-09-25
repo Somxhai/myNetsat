@@ -6,16 +6,16 @@ interface type {
   trigger: boolean;
 }
 
-const CalculatorResult = ({ trigger }: type) => {
+const CalculateResult = ({ trigger }: type) => {
   const { selected } = useContext(DataContext);
 
   let scoresView = selected.map((value) => {
-    return <ScoresView startCal={trigger}  key={value} syllabus={value}/>;
+    return <ScoresView startCal={trigger} key={value} syllabus={value} />;
   });
 
   useEffect(() => {}, [selected]);
   return (
-    <div className="bg-white rounded-lg min-h-min overflow-x-hidden border-2 shadow-sm">
+    <div className="bg-white rounded-lg min-h-min border-2 shadow-sm">
       <p className="text-black text-center h-fit text-3xl pb-3 border-b-2">
         ดูคะแนนของคุณกัน🥳
       </p>
@@ -31,4 +31,4 @@ const CalculatorResult = ({ trigger }: type) => {
     </div>
   );
 };
-export default CalculatorResult;
+export default CalculateResult;
