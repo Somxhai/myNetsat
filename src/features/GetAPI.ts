@@ -10,6 +10,14 @@ const getFacultyBySyllabus = (syllabus: string): string => {
   });
   return result ?? "";
 };
+const hasCapability = (syllabus:string) => {
+  for (const i of getApi()) {
+    if (i.syllabus == syllabus) {
+      return i.has_specific_capability
+    }
+  }
+  return false
+}
 
 type weightType = {
   [subject:string]: number
@@ -24,4 +32,4 @@ const getWeightBySyllabus = (syllabus: string): weightType => {
   return weight;
 };
 
-export { getApi, getFacultyBySyllabus, getWeightBySyllabus };
+export { getApi, getFacultyBySyllabus, getWeightBySyllabus, hasCapability };
