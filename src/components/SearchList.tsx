@@ -15,24 +15,19 @@ const SearchList = ({ value }: type) => {
   const [check, setCheck] = useState(selected.includes(syllabus));
   const handleChange = () => setCheck(!check);
   useEffect(() => {
-    if (selected.includes(syllabus)) {
-      setCheck(true);
-    } else {
-      setCheck(false);
-    }
+    selected.includes(syllabus) ? setCheck(true) : setCheck(false)
   }, [selected]);
   useEffect(() => {
     if (check) setSelected([...selected, syllabus]);
     else setSelected(selected.filter((k) => k != syllabus));
   }, [check]);
   return (
-    <button
+      <button
       onClick={handleChange}
-      className="text-left w-full flex justify-between items-center bg-gray-50"
-    >
+      className="text-left p-3 w-full flex justify-between items-center bg-gray-50">
       <div>
         <div className="text-black">{syllabus}</div>
-        <div className="text-xs">{faculty}</div>
+        <div className="text-xs text-text_secondary">{faculty}</div>
       </div>
       <input
         checked={check}

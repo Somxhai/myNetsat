@@ -1,4 +1,5 @@
-import { blurScreen } from "../../features/SearchFacultyFeatures";
+import { containerHandler } from "../../features/EssentialFeatures";
+import { CloseIcon } from "../Template/Buttons";
 
 const SearchBar = ({ returnSearch }: any) => {
     return (
@@ -30,11 +31,10 @@ const SearchBar = ({ returnSearch }: any) => {
           }}
         />
         <button
-          onClick={blurScreen}
-          className="text-xs bg-white border-b-2 border-gray-300 p-1 rounded-lg z-20 hover:border-red-400"
+          onClick={()=>containerHandler('searchContainer')}
           id="escapeKey"
         >
-          ESC
+          <CloseIcon />
         </button>
       </div>
     );
