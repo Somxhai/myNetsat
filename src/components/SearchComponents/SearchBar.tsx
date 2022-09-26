@@ -1,7 +1,10 @@
-import { containerHandler } from "../../features/EssentialFeatures";
+import { useResetRecoilState } from "recoil";
+import { blurScreen } from "../../features/EssentialFeatures";
+import { capabilityState } from "../States/CapabilityState";
 import { CloseIcon } from "../Template/Buttons";
 
 const SearchBar = ({ returnSearch }: any) => {
+  const resetState = useResetRecoilState(capabilityState)
     return (
       <div className="flex text-secondary pb-2">
         <div className="mr-3">
@@ -31,7 +34,10 @@ const SearchBar = ({ returnSearch }: any) => {
           }}
         />
         <button
-          onClick={()=>containerHandler('searchContainer')}
+          onClick={()=> {
+            blurScreen();
+            resetState()}
+          }
           id="escapeKey"
         >
           <CloseIcon />

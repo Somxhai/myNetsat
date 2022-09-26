@@ -1,16 +1,10 @@
 
-
-::-webkit-scrollbar {
+#searchResult::-webkit-scrollbar {
     background-color: white;
     width: 0.5rem;
     margin-left: 0.2rem
 }
-::-webkit-scrollbar-thumb {
-    background-color: #757685;
+#searchResult::-webkit-scrollbar-thumb {
+    background-color: #6c6d7a;
     border-radius: 0.75rem;
-}
-@media screen and (max-width: 768px) {
-    ::-webkit-scrollbar {
-        display:none
-    }
 }

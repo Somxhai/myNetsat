@@ -1,5 +1,6 @@
-import { useContext, useEffect, useState } from "react";
-import { DataContext } from "../features/DataContext";
+import { useEffect, useState } from "react";
+import { useRecoilState } from "recoil";
+import { selectedSyllabusState } from "./States/CapabilityState";
 
 interface type {
   value: {
@@ -11,20 +12,24 @@ interface type {
 const SearchList = ({ value }: type) => {
   const syllabus: string = value.syllabus;
   const faculty: string = value.faculty;
-  const { selected, setSelected } = useContext(DataContext);
+  const [selected, setSelected] = useRecoilState(selectedSyllabusState);
   const [check, setCheck] = useState(selected.includes(syllabus));
   const handleChange = () => setCheck(!check);
+
   useEffect(() => {
-    selected.includes(syllabus) ? setCheck(true) : setCheck(false)
-  }, [selected]);
-  useEffect(() => {
-    if (check) setSelected([...selected, syllabus]);
-    else setSelected(selected.filter((k) => k != syllabus));
+    if (check) {
+      if (!selected.includes(syllabus)) {
+        setSelected([...selected, syllabus]);
+      }
+    } else {
+      setSelected(selected.filter((k) => k != syllabus));
+    }
   }, [check]);
   return (
-      <button
+    <button
       onClick={handleChange}
-      className="text-left p-3 w-full flex justify-between items-center bg-gray-50">
+      className="text-left p-3 w-full flex justify-between items-center bg-gray-50"
+    >
       <div>
         <div className="text-black">{syllabus}</div>
         <div className="text-xs text-text_secondary">{faculty}</div>

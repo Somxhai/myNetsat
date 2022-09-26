@@ -1,23 +1,21 @@
-import { useContext, useEffect } from "react";
-import { DataContext } from "../features/DataContext";
+import { useEffect } from "react";
+import { useRecoilValue } from "recoil";
 import ScoresView from "./ScoresView";
+import { selectedSyllabusState } from "./States/CapabilityState";
+import { v4 as uuidv4 } from 'uuid';
 
-interface type {
-  trigger: boolean;
-}
 
-const CalculateResult = ({ trigger }: type) => {
-  const { selected } = useContext(DataContext);
-
-  let scoresView = selected.map((value) => {
-    return <ScoresView startCal={trigger} key={value} syllabus={value} />;
+const CalculateResult = () => {
+  const selected = useRecoilValue(selectedSyllabusState);
+  
+  const scoresView = selected.map((value) => {
+    return <ScoresView key={uuidv4()} syllabus={value} />;
   });
 
-  useEffect(() => {}, [selected]);
   return (
     <div className="bg-white rounded-lg min-h-min border-2 shadow-sm">
-      <p className="text-black text-center h-fit text-3xl pb-3 border-b-2">
-        ดูคะแนนของคุณกัน🥳
+      <p className="text-black text-center h-fit text-3xl py-3 border-b-2">
+        หน้าต่างคะแนน
       </p>
       <div className="h-fit min-h-full py-4">
         {scoresView.length > 0 ? (

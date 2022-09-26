@@ -10,7 +10,8 @@
             "chem": 10,
             "bio": 10,
             "phy": 10
-        }
+        },
+        "has_specific_capability": false
     },
     {
         "syllabus": "เคมี",
@@ -23,7 +24,8 @@
             "chem": 25,
             "bio": 10,
             "phy": 15
-        }
+        },
+        "has_specific_capability": false
     },
     {
         "syllabus": "จุลชีววิทยา",
@@ -36,7 +38,8 @@
             "chem": 15,
             "bio": 20,
             "phy": 10
-        }
+        },
+        "has_specific_capability": false
     },
     {
         "syllabus": "ชีวเคมี",
@@ -49,7 +52,8 @@
             "chem": 20,
             "bio": 20,
             "phy": 10
-        }
+        },
+        "has_specific_capability": false
     },
     {
         "syllabus": "ชีววิทยา",
@@ -62,7 +66,8 @@
             "chem": 15,
             "bio": 20,
             "phy": 10
-        }
+        },
+        "has_specific_capability": false
     },
     {
         "syllabus": "ฟิสิกส์",
@@ -88,7 +93,8 @@
             "chem": 15,
             "bio": 10,
             "phy": 20
-        }
+        },
+        "has_specific_capability": false
     },
     {
         "syllabus": "วิทยาศาสตร์สิ่งแวดล้อม",
@@ -101,7 +107,8 @@
             "chem": 20,
             "bio": 20,
             "phy": 10
-        }
+        },
+        "has_specific_capability": false
     },
     {
         "syllabus": "สถิติและวิทยาการข้อมูล สาขาเอกสถิติศาสตร์",
@@ -114,7 +121,8 @@
             "chem": 0,
             "bio": 0,
             "phy": 0
-        }
+        },
+        "has_specific_capability": false
     },
     {
         "syllabus": "สถิติและวิทยาการข้อมูล สาขาวิชาเอกสารสนเทศสถิติและวิทยาการข้อมูล",
@@ -127,7 +135,8 @@
             "chem": 0,
             "bio": 0,
             "phy": 0
-        }
+        },
+        "has_specific_capability": false
     },
     {
         "syllabus": "การประมง",
@@ -140,7 +149,8 @@
             "chem": 15,
             "bio": 20,
             "phy": 10
-        }
+        },
+        "has_specific_capability": false
     },
     {
         "syllabus": "เกษตรนวัตกรรม",
@@ -153,7 +163,8 @@
             "chem": 15,
             "bio": 15,
             "phy": 10
-        }
+        },
+        "has_specific_capability": false
     },
     {
         "syllabus": "เกษตรศาสตร์ วิชาเอกการส่งเสริมและพัฒนาการเกษตร",
@@ -166,7 +177,8 @@
             "chem": 15,
             "bio": 20,
             "phy": 10
-        }
+        },
+        "has_specific_capability": false
     },
     {
         "syllabus": "เกษตรศาสตร์ วิชาเอกกีฏวิทยา",
@@ -179,7 +191,8 @@
             "chem": 15,
             "bio": 20,
             "phy": 10
-        }
+        },
+        "has_specific_capability": false
     },
     {
         "syllabus": "เกษตรศาสตร์ วิชาเอกปฐพีศาสตร์และสิ่งแวดล้อม",
@@ -192,7 +205,8 @@
             "chem": 15,
             "bio": 20,
             "phy": 10
-        }
+        },
+        "has_specific_capability": false
     },
     {
         "syllabus": "เกษตรศาสตร์ วิชาเอกพืชไร่",
@@ -205,7 +219,8 @@
             "chem": 15,
             "bio": 20,
             "phy": 10
-        }
+        },
+        "has_specific_capability": false
     },
     {
         "syllabus": "เกษตรศาสตร์ วิชาเอกพืชสวน",
@@ -218,7 +233,8 @@
             "chem": 15,
             "bio": 20,
             "phy": 10
-        }
+        },
+        "has_specific_capability": false
     },
     {
         "syllabus": "เกษตรศาสตร์ วิชาเอกโรคพืชวิทยา",
@@ -231,7 +247,8 @@
             "chem": 15,
             "bio": 20,
             "phy": 10
-        }
+        },
+        "has_specific_capability": false
     },
     {
         "syllabus": "เกษตรศาสตร์ วิชาเอกสัตวศาสตร์",
@@ -244,7 +261,8 @@
             "chem": 15,
             "bio": 20,
             "phy": 10
-        }
+        },
+        "has_specific_capability": false
     },
     {
         "syllabus": "เศรษฐศาสตร์เกษตร",
@@ -257,9 +275,11 @@
             "chem": 10,
             "bio": 15,
             "phy": 10
-        }
+        },
+        "has_specific_capability": false
+        
     },
-
+    
     {
         "syllabus": "วิศวกรรมเกษตร",
         "faculty": "คณะวิศวกรรมศาสตร์",
@@ -271,6 +291,4014 @@
             "chem": 0,
             "bio": 0,
             "phy": 30
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 20,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
         }
+    },
+    {
+        "syllabus": "วิศวกรรมคอมพิวเตอร์",
+        "faculty": "คณะวิศวกรรมศาสตร์",
+        "weight": {
+            "thai": 5,
+            "eng": 15,
+            "math": 30,
+            "sci": 10,
+            "chem": 0,
+            "bio": 0,
+            "phy": 20
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 20,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิศวกรรมเคมี",
+        "faculty": "คณะวิศวกรรมศาสตร์",
+        "weight": {
+            "thai": 5,
+            "eng": 10,
+            "math": 25,
+            "sci": 0,
+            "chem": 15,
+            "bio": 0,
+            "phy": 25
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 20,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิศวกรรมเคมี หลักสูตรนานาชาติ",
+        "faculty": "คณะวิศวกรรมศาสตร์",
+        "weight": {
+            "thai": 0,
+            "eng": 16,
+            "math": 16,
+            "sci": 16,
+            "chem": 16,
+            "bio": 0,
+            "phy": 16
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 20,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิศวกรรมเครื่องกล",
+        "faculty": "คณะวิศวกรรมศาสตร์",
+        "weight": {
+            "thai": 0,
+            "eng": 10,
+            "math": 25,
+            "sci": 0,
+            "chem": 10,
+            "bio": 0,
+            "phy": 25
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 30,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิศวกรรมโทรคมนาคม หลักสูตรนานาชาติ",
+        "faculty": "คณะวิศวกรรมศาสตร์",
+        "weight": {
+            "thai": 0,
+            "eng": 30,
+            "math": 30,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 30
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 10,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิศวกรรมไฟฟ้า",
+        "faculty": "คณะวิศวกรรมศาสตร์",
+        "weight": {
+            "thai": 0,
+            "eng": 20,
+            "math": 30,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 30
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 20,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิศวกรรมโยธา",
+        "faculty": "คณะวิศวกรรมศาสตร์",
+        "weight": {
+            "thai": 0,
+            "eng": 20,
+            "math": 30,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 30
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 20,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิศวกรรมระบบอัตโนมัติ หุ่นยนต์ และปัญญาประดิษฐ์",
+        "faculty": "คณะวิศวกรรมศาสตร์",
+        "weight": {
+            "thai": 10,
+            "eng": 10,
+            "math": 20,
+            "sci": 20,
+            "chem": 0,
+            "bio": 0,
+            "phy": 20
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 20,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิศวกรรมระบบอิเล็กทรอนิกส์",
+        "faculty": "คณะวิศวกรรมศาสตร์",
+        "weight": {
+            "thai": 10,
+            "eng": 10,
+            "math": 30,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 30
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 20,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิศวกรรมโลจิสติกส์ หลักสูตรนานาชาติ",
+        "faculty": "คณะวิศวกรรมศาสตร์",
+        "weight": {
+            "thai": 0,
+            "eng": 30,
+            "math": 30,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 20
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 20,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิศวกรรมสิ่งแวดล้อม",
+        "faculty": "คณะวิศวกรรมศาสตร์",
+        "weight": {
+            "thai": 5,
+            "eng": 15,
+            "math": 25,
+            "sci": 0,
+            "chem": 10,
+            "bio": 0,
+            "phy": 25
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 20,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิศวกรรมสื่อดิจิทัล หลักสูตรนานาชาติ",
+        "faculty": "คณะวิศวกรรมศาสตร์",
+        "weight": {
+            "thai": 0,
+            "eng": 30,
+            "math": 30,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 30
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 10,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิศวกรรมอุตสาหการ",
+        "faculty": "คณะวิศวกรรมศาสตร์",
+        "weight": {
+            "thai": 0,
+            "eng": 20,
+            "math": 20,
+            "sci": 0,
+            "chem": 20,
+            "bio": 0,
+            "phy": 20
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 20,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+
+    {
+        "syllabus": "การสอนภาษาจีนในฐานะภาษาต่างประเทศ",
+        "faculty": "คณะศึกษาศาสตร์",
+        "weight": {
+            "thai": 40,
+            "eng": 40,
+            "math": 20,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "การสอนภาษาอังกฤษให้ผู้มีพื้นฐานภาษาอื่นนอกจากภาษาอังกฤษ",
+        "faculty": "คณะศึกษาศาสตร์",
+        "weight": {
+            "thai": 10,
+            "eng": 90,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิชาเอกการสอนภาษาญี่ปุ่น",
+        "faculty": "คณะศึกษาศาสตร์",
+        "weight": {
+            "thai": 40,
+            "eng": 40,
+            "math": 20,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิชาเอกการสอนภาษาไทย",
+        "faculty": "คณะศึกษาศาสตร์",
+        "weight": {
+            "thai": 65,
+            "eng": 30,
+            "math": 5,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิชาเอกคณิตศาสตรศึกษา",
+        "faculty": "คณะศึกษาศาสตร์",
+        "weight": {
+            "thai": 20,
+            "eng": 20,
+            "math": 40,
+            "sci": 20,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิชาเอกการคอมพิวเตอร์ศึกษา",
+        "faculty": "คณะศึกษาศาสตร์",
+        "weight": {
+            "thai": 20,
+            "eng": 25,
+            "math": 25,
+            "sci": 30,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิชาเอกพลศึกษา",
+        "faculty": "คณะศึกษาศาสตร์",
+        "weight": {
+            "thai": 10,
+            "eng": 30,
+            "math": 10,
+            "sci": 20,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 30,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกวิทยาศาสตร์ศึกษา",
+        "faculty": "คณะศึกษาศาสตร์",
+        "weight": {
+            "thai": 10,
+            "eng": 30,
+            "math": 20,
+            "sci": 10,
+            "chem": 10,
+            "bio": 10,
+            "phy": 10
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิชาเอกศิลปศึกษา",
+        "faculty": "คณะศึกษาศาสตร์",
+        "weight": {
+            "thai": 30,
+            "eng": 20,
+            "math": 10,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 40
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกสังคมศึกษา",
+        "faculty": "คณะศึกษาศาสตร์",
+        "weight": {
+            "thai": 20,
+            "eng": 35,
+            "math": 15,
+            "sci": 30,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+
+    {
+        "syllabus": "พยาบาลศาสตร์บัณฑิต",
+        "faculty": "คณะพยาบาลศาสตร์",
+        "weight": {
+            "thai": 10,
+            "eng": 20,
+            "math": 20,
+            "sci": 0,
+            "chem": 15,
+            "bio": 20,
+            "phy": 15
+        },
+        "has_specific_capability": false
+    },
+
+    {
+        "syllabus": "แพทยศาสตร์",
+        "faculty": "คณะแพทยศาสตร์",
+        "weight": {
+            "thai": 10,
+            "eng": 30,
+            "math": 15,
+            "sci": 0,
+            "chem": 15,
+            "bio": 15,
+            "phy": 15
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "โครงการผลิตแพทย์เพิ่มเพื่อชาวชนบทกลุ่มแพทย์เพื่อชุมชน",
+        "faculty": "คณะแพทยศาสตร์",
+        "weight": {
+            "thai": 10,
+            "eng": 30,
+            "math": 15,
+            "sci": 0,
+            "chem": 15,
+            "bio": 15,
+            "phy": 15
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "โครงการผลิตแพทย์เพิ่มเพื่อชาวชนบทกลุ่มลดความเหลื่อมล้ำ",
+        "faculty": "คณะแพทยศาสตร์",
+        "weight": {
+            "thai": 10,
+            "eng": 30,
+            "math": 15,
+            "sci": 0,
+            "chem": 15,
+            "bio": 15,
+            "phy": 15
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "รังสีเทคนิค",
+        "faculty": "คณะแพทยศาสตร์",
+        "weight": {
+            "thai": 10,
+            "eng": 15,
+            "math": 15,
+            "sci": 0,
+            "chem": 15,
+            "bio": 22.5,
+            "phy": 22.5
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "เวชนิทัศน์",
+        "faculty": "คณะแพทยศาสตร์",
+        "weight": {
+            "thai": 20,
+            "eng": 20,
+            "math": 0,
+            "sci": 20,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 20,
+                "artmed": 20
+            }
+        }
+    },
+
+    {
+        "syllabus": "วิชาเอกภาษาฝรั่งเศส (วิทย์)",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 30,
+            "eng": 30,
+            "math": 40,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิชาเอกภาษาฝรั่งเศส (ศิลป์)",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 50,
+            "eng": 50,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิชาเอกภาษาฝรั่งเศส เลือกสมรรถนะด้านภาษาฝรั่งเศส",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 30,
+            "eng": 30,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 40,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาฝรั่งเศส เลือกสมรรถนะด้านภาษาเยอรมัน",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 30,
+            "eng": 30,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 40,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาฝรั่งเศส เลือกสมรรถนะด้านภาษาจีน",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 30,
+            "eng": 30,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 40,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาฝรั่งเศส เลือกสมรรถนะด้านภาษาญี่ปุ่น",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 30,
+            "eng": 30,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 40,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาฝรั่งเศส เลือกสมรรถนะด้านภาษาเกาหลี",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 30,
+            "eng": 30,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 40
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาเยอรมัน (วิทย์)",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 30,
+            "eng": 30,
+            "math": 40,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิชาเอกภาษาเยอรมัน (ศิลป์)",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 50,
+            "eng": 50,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิชาเอกภาษาเยอรมัน เลือกสมรรถนะด้านภาษาฝรั่งเศส",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 30,
+            "eng": 30,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 40,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาเยอรมัน เลือกสมรรถนะด้านภาษาเยอรมัน",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 30,
+            "eng": 30,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 40,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาเยอรมัน เลือกสมรรถนะด้านภาษาจีน",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 30,
+            "eng": 30,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 40,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาเยอรมัน เลือกสมรรถนะด้านภาษาญี่ปุ่น",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 30,
+            "eng": 30,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 40,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาเยอรมัน เลือกสมรรถนะด้านภาษาเกาหลี",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 30,
+            "eng": 30,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 40
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาสเปน (วิทย์)",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 30,
+            "eng": 30,
+            "math": 40,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิชาเอกภาษาสเปน (ศิลป์)",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 50,
+            "eng": 50,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิชาเอกภาษาสเปน เลือกสมรรถนะด้านภาษาฝรั่งเศส",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 30,
+            "eng": 30,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 40,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาสเปน เลือกสมรรถนะด้านภาษาเยอรมัน",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 30,
+            "eng": 30,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 40,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาสเปน เลือกสมรรถนะด้านภาษาจีน",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 30,
+            "eng": 30,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 40,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาสเปน เลือกสมรรถนะด้านภาษาญี่ปุ่น",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 30,
+            "eng": 30,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 40,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาสเปน เลือกสมรรถนะด้านภาษาเกาหลี",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 30,
+            "eng": 30,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 40
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาญี่ปุ่น",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 20,
+            "eng": 40,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 40,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาญี่ปุ่น (แผน A)",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 20,
+            "eng": 40,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 40,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาญี่ปุ่น (แผน B)",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 20,
+            "eng": 40,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 40,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาเกาหลี",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 20,
+            "eng": 40,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 40
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาอังกฤษ",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 30,
+            "eng": 70,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิชาเอกภาษาไทย (วิทย์)",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 40,
+            "eng": 30,
+            "math": 30,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิชาเอกภาษาไทย (ศิลป์)",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 60,
+            "eng": 40,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิชาเอกภาษาไทย เลือกสมรรถนะด้านภาษาฝรั่งเศส",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 40,
+            "eng": 30,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 30,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาไทย เลือกสมรรถนะด้านภาษาเยอรมัน",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 40,
+            "eng": 30,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 30,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาไทย เลือกสมรรถนะด้านภาษาจีน",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 40,
+            "eng": 30,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 30,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาไทย เลือกสมรรถนะด้านภาษาญี่ปุ่น",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 40,
+            "eng": 30,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 30,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกภาษาไทย เลือกสมรรถนะด้านภาษาเกาหลี",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 40,
+            "eng": 30,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 30,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "เอเชียตะวันออกเฉียงใต้ศึกษา (วิทย์)",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 40,
+            "eng": 40,
+            "math": 20,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "เอเชียตะวันออกเฉียงใต้ศึกษา (ศิลป์)",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 50,
+            "eng": 50,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "เอเชียตะวันออกเฉียงใต้ศึกษา เลือกสมรรถนะด้านภาษาฝรั่งเศส",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 40,
+            "eng": 40,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 20,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "เอเชียตะวันออกเฉียงใต้ศึกษา เลือกสมรรถนะด้านภาษาเยอรมัน",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 40,
+            "eng": 40,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 20,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "เอเชียตะวันออกเฉียงใต้ศึกษา เลือกสมรรถนะด้านภาษาจีน",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 40,
+            "eng": 40,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 20,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "เอเชียตะวันออกเฉียงใต้ศึกษา เลือกสมรรถนะด้านภาษาญี่ปุ่น",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 40,
+            "eng": 40,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 20,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "เอเชียตะวันออกเฉียงใต้ศึกษา เลือกสมรรถนะด้านภาษาเกาหลี",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 40,
+            "eng": 40,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 20
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "รัฐประศาสนศาสตร์",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 25,
+            "eng": 30,
+            "math": 15,
+            "sci": 30,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "สังคมศาสตร์ วิชาเอกพัฒนาสังคม",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 40,
+            "eng": 30,
+            "math": 15,
+            "sci": 15,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "สังคมศาสตร์ วิชาเอกสังคมวิทยาและมนุษยวิทยา",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 40,
+            "eng": 30,
+            "math": 15,
+            "sci": 15,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "สารสนเทศศาสตรบัณฑิต",
+        "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+        "weight": {
+            "thai": 30,
+            "eng": 40,
+            "math": 15,
+            "sci": 15,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+
+    {
+        "syllabus": "กายภาพบำบัด",
+        "faculty": "คณะเทคนิคการแพทย์",
+        "weight": {
+            "thai": 10,
+            "eng": 20,
+            "math": 20,
+            "sci": 10,
+            "chem": 5,
+            "bio": 20,
+            "phy": 15
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "เทคนิคการแพทย์",
+        "faculty": "คณะเทคนิคการแพทย์",
+        "weight": {
+            "thai": 10,
+            "eng": 10,
+            "math": 10,
+            "sci": 10,
+            "chem": 25,
+            "bio": 25,
+            "phy": 10
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "อนามัยสิ่งแวดล้อม อาชีวอนามัยและความปลอดภัย (โครงการพิเศษ)",
+        "faculty": "คณะสาธารณสุขศาสตร์",
+        "weight": {
+            "thai": 10,
+            "eng": 15,
+            "math": 15,
+            "sci": 15,
+            "chem": 15,
+            "bio": 15,
+            "phy": 15
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิชาเอก อนามัยสิ่งแวดล้อม",
+        "faculty": "คณะสาธารณสุขศาสตร์",
+        "weight": {
+            "thai": 10,
+            "eng": 15,
+            "math": 15,
+            "sci": 15,
+            "chem": 15,
+            "bio": 15,
+            "phy": 15
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิชาเอก อาชีวอนามัยและความปลอดภัย",
+        "faculty": "คณะสาธารณสุขศาสตร์",
+        "weight": {
+            "thai": 10,
+            "eng": 15,
+            "math": 15,
+            "sci": 15,
+            "chem": 15,
+            "bio": 15,
+            "phy": 15
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "ทันตแพทย์ศาสตร์",
+        "faculty": "คณะสาธารณสุขศาสตร์",
+        "weight": {
+            "thai": 12,
+            "eng": 25,
+            "math": 20,
+            "sci": 0,
+            "chem": 15,
+            "bio": 15,
+            "phy": 13
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "สัตวแพทยศาสตร์",
+        "faculty": "คณะสัตวแพทย์ศาสตร์",
+        "weight": {
+            "thai": 15,
+            "eng": 15,
+            "math": 20,
+            "sci": 0,
+            "chem": 20,
+            "bio": 20,
+            "phy": 10
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "เภสัชศาสตร์บัณฑิต (โครงการพิเศษ)",
+        "faculty": "คณะเภสัชศาสตร์",
+        "weight": {
+            "thai": 10,
+            "eng": 20,
+            "math": 10,
+            "sci": 0,
+            "chem": 25,
+            "bio": 20,
+            "phy": 15
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "เภสัชศาสตร์บัณฑิต",
+        "faculty": "คณะเภสัชศาสตร์",
+        "weight": {
+            "thai": 10,
+            "eng": 20,
+            "math": 10,
+            "sci": 0,
+            "chem": 25,
+            "bio": 20,
+            "phy": 15
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "เภสัชศาสตร์บัณฑิต (โครงการพิเศษ นานาชาติ)",
+        "faculty": "คณะเภสัชศาสตร์",
+        "weight": {
+            "thai": 10,
+            "eng": 20,
+            "math": 10,
+            "sci": 0,
+            "chem": 25,
+            "bio": 20,
+            "phy": 15
+        },
+        "has_specific_capability": false
+    },
+    
+    {
+        "syllabus": "เทคโนโลยีการผลิต",
+        "faculty": "คณะเทคโนโลยี",
+        "weight": {
+            "thai": 15,
+            "eng": 20,
+            "math": 20,
+            "sci": 0,
+            "chem": 15,
+            "bio": 10,
+            "phy": 20
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "เทคโนโลยีการอาหาร",
+        "faculty": "คณะเทคโนโลยี",
+        "weight": {
+            "thai": 10,
+            "eng": 15,
+            "math": 15,
+            "sci": 15,
+            "chem": 15,
+            "bio": 15,
+            "phy": 15
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "เทคโนโลยีชีวภาพ",
+        "faculty": "คณะเทคโนโลยี",
+        "weight": {
+            "thai": 15,
+            "eng": 15,
+            "math": 20,
+            "sci": 0,
+            "chem": 20,
+            "bio": 15,
+            "phy": 15
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "เทคโนโลยีธรณี",
+        "faculty": "คณะเทคโนโลยี",
+        "weight": {
+            "thai": 10,
+            "eng": 15,
+            "math": 15,
+            "sci": 15,
+            "chem": 15,
+            "bio": 15,
+            "phy": 15
+        },
+        "has_specific_capability": false
+    },
+
+    {
+        "syllabus": "การออกแบบ",
+        "faculty": "คณะสถาปัตยกรรมศาสตร์",
+        "weight": {
+            "thai": 0,
+            "eng": 10,
+            "math": 25,
+            "sci": 25,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 40
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "การออกแบบ",
+        "faculty": "คณะสถาปัตยกรรมศาสตร์",
+        "weight": {
+            "thai": 0,
+            "eng": 10,
+            "math": 20,
+            "sci": 25,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 35,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+
+    {
+        "syllabus": "บริหารธุรกิจบัณฑิต สาขาวิชาผู้ประกอบการดิจิทัล",
+        "faculty": "คณะบริหารธุรกิจและการบัญชี",
+        "weight": {
+            "thai": 25,
+            "eng": 25,
+            "math": 25,
+            "sci": 25,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "บริหารธุรกิจบัณฑิต วิชาเอกการเงิน",
+        "faculty": "คณะบริหารธุรกิจและการบัญชี",
+        "weight": {
+            "thai": 25,
+            "eng": 30,
+            "math": 30,
+            "sci": 15,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "บริหารธุรกิจบัณฑิต วิชาเอกการจัดการ การประกอบพาณิชย์ และนวัตกรรม",
+        "faculty": "คณะบริหารธุรกิจและการบัญชี",
+        "weight": {
+            "thai": 25,
+            "eng": 30,
+            "math": 25,
+            "sci": 20,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "บริหารธุรกิจบัณฑิต วิชาเอกการจัดการธุรกิจบริการและการจัดงาน",
+        "faculty": "คณะบริหารธุรกิจและการบัญชี",
+        "weight": {
+            "thai": 25,
+            "eng": 35,
+            "math": 20,
+            "sci": 20,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "บริหารธุรกิจบัณฑิต วิชาเอกการตลาด",
+        "faculty": "คณะบริหารธุรกิจและการบัญชี",
+        "weight": {
+            "thai": 25,
+            "eng": 30,
+            "math": 25,
+            "sci": 20,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "บัญชีบัณฑิต",
+        "faculty": "คณะบริหารธุรกิจและการบัญชี",
+        "weight": {
+            "thai": 10,
+            "eng": 40,
+            "math": 40,
+            "sci": 10,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "บัญชีบัณฑิต (หลักสูตรนานาชาติ)",
+        "faculty": "คณะบริหารธุรกิจและการบัญชี",
+        "weight": {
+            "thai": 0,
+            "eng": 40,
+            "math": 40,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 20
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "การจัดการนวัตกรรมการท่องเที่ยว (กลุ่มเรียนภาษาไทย)",
+        "faculty": "คณะบริหารธุรกิจและการบัญชี",
+        "weight": {
+            "thai": 25,
+            "eng": 40,
+            "math": 25,
+            "sci": 10,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "การจัดการนวัตกรรมการท่องเที่ยว (กลุ่มเรียนภาษาอังกฤษ)",
+        "faculty": "คณะบริหารธุรกิจและการบัญชี",
+        "weight": {
+            "thai": 25,
+            "eng": 40,
+            "math": 25,
+            "sci": 10,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+
+    {
+        "syllabus": "นิติศาสตร์ (โครงการพิเศษ)",
+        "faculty": "คณะนิติศาสตร์",
+        "weight": {
+            "thai": 25,
+            "eng": 25,
+            "math": 25,
+            "sci": 25,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+
+    {
+        "syllabus": "สาขาวิชาทัศนศิลป์",
+        "faculty": "คณะศิลปกรรมศาสตร์",
+        "weight": {
+            "thai": 15,
+            "eng": 10,
+            "math": 10,
+            "sci": 15,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 25,
+                "makeup": 25,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "สาขาวิชาออกแบบนิเทศศิลป์",
+        "faculty": "คณะศิลปกรรมศาสตร์",
+        "weight": {
+            "thai": 15,
+            "eng": 10,
+            "math": 10,
+            "sci": 15,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 25,
+                "vart": 25,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "วิชาเอกดนตรี",
+        "faculty": "คณะศิลปกรรมศาสตร์",
+        "weight": {
+            "thai": 10,
+            "eng": 10,
+            "math": 10,
+            "sci": 10,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 60,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "สาขาวิชานาฎศิลป์",
+        "faculty": "คณะศิลปกรรมศาสตร์",
+        "weight": {
+            "thai": 15,
+            "eng": 10,
+            "math": 10,
+            "sci": 15,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 50
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+
+    {
+        "syllabus": "การจัดการท่องเที่ยว (นานาชาติ)",
+        "faculty": "วิทยาลัยนานาชาติ",
+        "weight": {
+            "thai": 0,
+            "eng": 100,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "การระหว่างประเทศ (หลักสูตรนานาชาติ)",
+        "faculty": "วิทยาลัยนานาชาติ",
+        "weight": {
+            "thai": 0,
+            "eng": 100,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "นิเทศศาสตรบัณฑิต วิชาเอกเทคโนโลยีสื่อสร้างสรรค์ (นานาชาติ)",
+        "faculty": "วิทยาลัยนานาชาติ",
+        "weight": {
+            "thai": 0,
+            "eng": 100,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "นิเทศศาสตรบัณฑิต วิชาเอกวารสารศาสตร์ระหว่างประเทศ (นานาชาติ)",
+        "faculty": "วิทยาลัยนานาชาติ",
+        "weight": {
+            "thai": 0,
+            "eng": 100,
+            "math": 0,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "การบริหารธุรกิจบัณฑิต (หลักสูตรนานาชาติ) วิชาเอกการตลาดระหว่างประเทศ",
+        "faculty": "วิทยาลัยนานาชาติ",
+        "weight": {
+            "thai": 0,
+            "eng": 70,
+            "math": 30,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "การบริหารธุรกิจบัณฑิต (หลักสูตรนานาชาติ) วิชาเอกการเป็นผู้ประกอบการระหว่างประเทศ",
+        "faculty": "วิทยาลัยนานาชาติ",
+        "weight": {
+            "thai": 0,
+            "eng": 70,
+            "math": 30,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "การบริหารธุรกิจบัณฑิต (หลักสูตรนานาชาติ) วิชาเอกธุรกิจสากล",
+        "faculty": "วิทยาลัยนานาชาติ",
+        "weight": {
+            "thai": 0,
+            "eng": 70,
+            "math": 30,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+
+    {
+        "syllabus": "เศรษฐศาสตร์บัณฑิต",
+        "faculty": "คณะเศรษฐศาสตร์",
+        "weight": {
+            "thai": 20,
+            "eng": 40,
+            "math": 40,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "เศรษฐศาสตร์บัณฑิต (หลักสูตรนานาชาติ)",
+        "faculty": "คณะเศรษฐศาสตร์",
+        "weight": {
+            "thai": 0,
+            "eng": 60,
+            "math": 40,
+            "sci": 0,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+
+    {
+        "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการปกครองและกิจการสาธารณะ สมรรถนะด้านคณิตศาสตร์",
+        "faculty": "วิทยาลัยการปกครองท้องถิ่น",
+        "weight": {
+            "thai": 20,
+            "eng": 35,
+            "math": 20,
+            "sci": 25,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการปกครองและกิจการสาธารณะ สมรรถนะด้านภาษาฝรั่งเศส",
+        "faculty": "วิทยาลัยการปกครองท้องถิ่น",
+        "weight": {
+            "thai": 25,
+            "eng": 35,
+            "math": 0,
+            "sci": 25,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 20,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการปกครองและกิจการสาธารณะ สมรรถนะด้านภาษาเยอรมัน",
+        "faculty": "วิทยาลัยการปกครองท้องถิ่น",
+        "weight": {
+            "thai": 25,
+            "eng": 35,
+            "math": 0,
+            "sci": 25,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 20,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการปกครองและกิจการสาธารณะ สมรรถนะด้านภาษาจีน",
+        "faculty": "วิทยาลัยการปกครองท้องถิ่น",
+        "weight": {
+            "thai": 25,
+            "eng": 35,
+            "math": 0,
+            "sci": 25,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 20,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการปกครองและกิจการสาธารณะ สมรรถนะด้านภาษาญี่ปุ่น",
+        "faculty": "วิทยาลัยการปกครองท้องถิ่น",
+        "weight": {
+            "thai": 25,
+            "eng": 35,
+            "math": 0,
+            "sci": 25,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 20,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการการเงินและการคลัง สมรรถนะด้านคณิตศาสตร์",
+        "faculty": "วิทยาลัยการปกครองท้องถิ่น",
+        "weight": {
+            "thai": 20,
+            "eng": 35,
+            "math": 20,
+            "sci": 25,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการการเงินและการคลัง สมรรถนะด้านภาษาฝรั่งเศส",
+        "faculty": "วิทยาลัยการปกครองท้องถิ่น",
+        "weight": {
+            "thai": 20,
+            "eng": 35,
+            "math": 0,
+            "sci": 25,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 20,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการการเงินและการคลัง สมรรถนะด้านภาษาเยอรมัน",
+        "faculty": "วิทยาลัยการปกครองท้องถิ่น",
+        "weight": {
+            "thai": 20,
+            "eng": 35,
+            "math": 0,
+            "sci": 25,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 20,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการการเงินและการคลัง สมรรถนะด้านภาษาจีน",
+        "faculty": "วิทยาลัยการปกครองท้องถิ่น",
+        "weight": {
+            "thai": 20,
+            "eng": 35,
+            "math": 0,
+            "sci": 25,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 20,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการการเงินและการคลัง สมรรถนะด้านภาษาญี่ปุ่น",
+        "faculty": "วิทยาลัยการปกครองท้องถิ่น",
+        "weight": {
+            "thai": 20,
+            "eng": 35,
+            "math": 0,
+            "sci": 25,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 20,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการเมืองและเทคโนโลยีเมือง สมรรถนะด้านคณิตศาสตร์",
+        "faculty": "วิทยาลัยการปกครองท้องถิ่น",
+        "weight": {
+            "thai": 20,
+            "eng": 35,
+            "math": 20,
+            "sci": 25,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการเมืองและเทคโนโลยีเมือง สมรรถนะด้านภาษาฝรั่งเศส",
+        "faculty": "วิทยาลัยการปกครองท้องถิ่น",
+        "weight": {
+            "thai": 20,
+            "eng": 35,
+            "math": 0,
+            "sci": 25,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 20,
+                "gr": 0,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการเมืองและเทคโนโลยีเมือง สมรรถนะด้านภาษาเยอรมัน",
+        "faculty": "วิทยาลัยการปกครองท้องถิ่น",
+        "weight": {
+            "thai": 20,
+            "eng": 35,
+            "math": 0,
+            "sci": 25,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 20,
+                "cn": 0,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการเมืองและเทคโนโลยีเมือง สมรรถนะด้านภาษาจีน",
+        "faculty": "วิทยาลัยการปกครองท้องถิ่น",
+        "weight": {
+            "thai": 20,
+            "eng": 35,
+            "math": 0,
+            "sci": 25,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 20,
+                "jp": 0,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+    {
+        "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการเมืองและเทคโนโลยีเมือง สมรรถนะด้านภาษาญี่ปุ่น",
+        "faculty": "วิทยาลัยการปกครองท้องถิ่น",
+        "weight": {
+            "thai": 20,
+            "eng": 35,
+            "math": 0,
+            "sci": 25,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": true,
+        "specific_capability": {
+            "foreign": {
+                "fr": 0,
+                "gr": 0,
+                "cn": 0,
+                "jp": 20,
+                "kr": 0
+            },
+            "fine_arts": {
+                "drawing": 0,
+                "makeup": 0,
+                "drawcom": 0,
+                "vart": 0,
+                "music": 0,
+                "dance": 0
+            },
+            "engineer": 0,
+            "architect": {
+                "arch": 0,
+                "design": 0
+            },
+            "education": {
+                "body": 0,
+                "goodatart": 0
+            },
+            "medical_vision": {
+                "techmed": 0,
+                "artmed": 0
+            }
+        }
+    },
+
+    {
+        "syllabus": "เทคโนโลยีสารสนเทศ (โครงการพิเศษ)",
+        "faculty": "วิทยาลัยการคอมพิวเตอร์",
+        "weight": {
+            "thai": 10,
+            "eng": 10,
+            "math": 20,
+            "sci": 40,
+            "chem": 0,
+            "bio": 0,
+            "phy": 20
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "เทคโนโลยีสารสนเทศ",
+        "faculty": "วิทยาลัยการคอมพิวเตอร์",
+        "weight": {
+            "thai": 10,
+            "eng": 10,
+            "math": 20,
+            "sci": 40,
+            "chem": 0,
+            "bio": 0,
+            "phy": 20
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "ภูมิสารสนเทศศาสตร์ (โครงการพิเศษ)",
+        "faculty": "วิทยาลัยการคอมพิวเตอร์",
+        "weight": {
+            "thai": 10,
+            "eng": 10,
+            "math": 20,
+            "sci": 45,
+            "chem": 0,
+            "bio": 0,
+            "phy": 15
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "ภูมิสารสนเทศศาสตร์",
+        "faculty": "วิทยาลัยการคอมพิวเตอร์",
+        "weight": {
+            "thai": 10,
+            "eng": 10,
+            "math": 20,
+            "sci": 45,
+            "chem": 0,
+            "bio": 0,
+            "phy": 15
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิทยาการคอมพิวเตอร์ (โครงการพิเศษ)",
+        "faculty": "วิทยาลัยการคอมพิวเตอร์",
+        "weight": {
+            "thai": 5,
+            "eng": 15,
+            "math": 20,
+            "sci": 40,
+            "chem": 0,
+            "bio": 0,
+            "phy": 20
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิทยาการคอมพิวเตอร์",
+        "faculty": "วิทยาลัยการคอมพิวเตอร์",
+        "weight": {
+            "thai": 5,
+            "eng": 15,
+            "math": 20,
+            "sci": 40,
+            "chem": 0,
+            "bio": 0,
+            "phy": 20
+        },
+        "has_specific_capability": false
+    },
+
+    {
+        "syllabus": "การท่องเที่ยวและอุตสาหกรรมการบริการ",
+        "faculty": "คณะสหวิทยาการ",
+        "weight": {
+            "thai": 20,
+            "eng": 40,
+            "math": 20,
+            "sci": 20,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "การสอนภาษาอังกฤษในฐานะภาษาต่างประเทศ",
+        "faculty": "คณะสหวิทยาการ",
+        "weight": {
+            "thai": 20,
+            "eng": 60,
+            "math": 10,
+            "sci": 10,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "เทคโนโลยีการผลิตสัตว์น้ำ",
+        "faculty": "คณะสหวิทยาการ",
+        "weight": {
+            "thai": 20,
+            "eng": 10,
+            "math": 20,
+            "sci": 0,
+            "chem": 15,
+            "bio": 35,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "เทคโนโลยีและนวัตกรรมอาหาร",
+        "faculty": "คณะสหวิทยาการ",
+        "weight": {
+            "thai": 10,
+            "eng": 10,
+            "math": 20,
+            "sci": 20,
+            "chem": 20,
+            "bio": 20,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "บริหารธุรกิจบัณฑิต วิชาเอกการเงินธุรกิจ",
+        "faculty": "คณะสหวิทยาการ",
+        "weight": {
+            "thai": 20,
+            "eng": 40,
+            "math": 20,
+            "sci": 20,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "บริหารธุรกิจบัณฑิต วิชาเอกธุรกิจระหว่างประเทศ",
+        "faculty": "คณะสหวิทยาการ",
+        "weight": {
+            "thai": 20,
+            "eng": 40,
+            "math": 20,
+            "sci": 20,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "บัญชีบัณฑิต",
+        "faculty": "คณะสหวิทยาการ",
+        "weight": {
+            "thai": 20,
+            "eng": 30,
+            "math": 30,
+            "sci": 20,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "ภาษาอังกฤษเพื่อการจัดการธุรกิจ",
+        "faculty": "คณะสหวิทยาการ",
+        "weight": {
+            "thai": 30,
+            "eng": 60,
+            "math": 5,
+            "sci": 5,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "รัฐประศาสนศาสตร์",
+        "faculty": "คณะสหวิทยาการ",
+        "weight": {
+            "thai": 20,
+            "eng": 40,
+            "math": 20,
+            "sci": 20,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิทยาการคอมพิวเตอร์และสารสนเทศ วิชาเอก วิทยาการข้อมูลและปัญญาประดิษฐ์",
+        "faculty": "คณะสหวิทยาการ",
+        "weight": {
+            "thai": 25,
+            "eng": 25,
+            "math": 30,
+            "sci": 20,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิทยาการคอมพิวเตอร์และสารสนเทศ วิชาเอก วิทยาการคอมพิวเตอร์และสารสนเทศ",
+        "faculty": "คณะสหวิทยาการ",
+        "weight": {
+            "thai": 20,
+            "eng": 25,
+            "math": 30,
+            "sci": 25,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิทยาศาสตร์การกีฬาและการออกกำลังกาย",
+        "faculty": "คณะสหวิทยาการ",
+        "weight": {
+            "thai": 15,
+            "eng": 15,
+            "math": 10,
+            "sci": 30,
+            "chem": 0,
+            "bio": 20,
+            "phy": 10
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "วิทยาศาสตร์สิ่งแวดล้อมและทรัพยากรธรรมชาติ",
+        "faculty": "คณะสหวิทยาการ",
+        "weight": {
+            "thai": 10,
+            "eng": 15,
+            "math": 25,
+            "sci": 0,
+            "chem": 25,
+            "bio": 25,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "เศรษฐศาสตร์ระหว่างประเทศ นวัตกรรม และความยั่งยืน",
+        "faculty": "คณะสหวิทยาการ",
+        "weight": {
+            "thai": 40,
+            "eng": 30,
+            "math": 20,
+            "sci": 10,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
+    },
+    {
+        "syllabus": "สาขาวิชานิติศาสตร์",
+        "faculty": "คณะสหวิทยาการ",
+        "weight": {
+            "thai": 40,
+            "eng": 40,
+            "math": 10,
+            "sci": 10,
+            "chem": 0,
+            "bio": 0,
+            "phy": 0
+        },
+        "has_specific_capability": false
     }
 ]

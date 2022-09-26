@@ -1,6 +1,14 @@
+import { useHotkeys } from "react-hotkeys-hook"
+import { useResetRecoilState } from "recoil"
+import { blurScreen } from "../../features/EssentialFeatures"
+import { capabilityState } from "../States/CapabilityState"
 
 
 const CapabilityPanel = ({children, id}:any) => {
+  const resetState = useResetRecoilState(capabilityState)
+  useHotkeys('esc', ()=>{
+    blurScreen()
+    resetState()})
     return (<div className="px-3 w-screen h-screen absolute">
         <div
         id={id}

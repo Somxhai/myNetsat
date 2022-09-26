@@ -22,14 +22,26 @@ const hasCapability = (syllabus:string) => {
 type weightType = {
   [subject:string]: number
 }
-const getWeightBySyllabus = (syllabus: string): weightType => {
-  let weight = { thai: 0, eng: 0, math: 0, sci: 0, chem: 0, bio: 0, phy: 0 };
+type capabilityWeightType = {
+  [mainCapability:string]: number | {[capability:string]:number}
+}
+const getNetsatWeightBySyllabus = (syllabus: string): weightType => {
+  let weight = {};
   getApi().forEach((val) => {
     if (val.syllabus == syllabus) {
-        weight = val.weight
+        weight = {...val.weight}
+    }
+  });
+  return weight;
+};
+const getCapabilityWeightBySyllabus = (syllabus: string): capabilityWeightType => {
+  let weight:capabilityWeightType = {};
+  getApi().forEach((val) => {
+    if (val.syllabus == syllabus && val.has_specific_capability) {
+        weight = {...val.specific_capability}
     }
   });
   return weight;
 };
 
-export { getApi, getFacultyBySyllabus, getWeightBySyllabus, hasCapability };
+export { getApi, getFacultyBySyllabus, getNetsatWeightBySyllabus, hasCapability, getCapabilityWeightBySyllabus };

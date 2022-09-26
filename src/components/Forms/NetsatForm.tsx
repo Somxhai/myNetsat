@@ -1,7 +1,3 @@
-import { useContext, useMemo } from "react";
-import { DataContext } from "../../features/DataContext";
-import { containerHandler } from "../../features/EssentialFeatures";
-import { hasCapability } from "../../features/GetAPI";
 import { OpenFormButton } from "../Template/Buttons";
 import { SubjectInput } from "../SubjectInput";
 
@@ -21,23 +17,6 @@ const NetsatForm = () => {
   );
 };
 const CapabilityForm = () => {
-  const { selected } = useContext(DataContext);
-  const toggleCapabilityForm = (v: boolean) => {
-    const form = document.getElementById("capability-form");
-    if (form != null) {
-      v ? form.classList.remove("hidden") : form.classList.add("hidden");
-    }
-  };
-  useMemo(() => {
-    let found = false;
-    for (const v of selected) {
-      if (hasCapability(v)) {
-        found = true;
-      }
-    }
-    found ? toggleCapabilityForm(true) : toggleCapabilityForm(false);
-  }, [selected]);
-
   return (
     <form
       id="capability-form"
@@ -56,6 +35,11 @@ const CapabilityForm = () => {
           placeholder="การวาดเส้น, องค์ประกอบทางศิลป์, การวาดเส้นเพื่อการสื่อสาร, ออกแบบนิเทศ, ด้านดนตรี และนาฎศิลป์"
         />
         <SubjectInput title="วิศวกรรมศาสตร์" id="engi" />
+        <OpenFormButton
+          containerID="archContainer"
+          title="สถาปัตยกรรม"
+          placeholder="สถาปัตยกรรม และการออกแบบ"
+        />
         <OpenFormButton
           containerID="eduContainer"
           title="ศึกษาศาสตร์"

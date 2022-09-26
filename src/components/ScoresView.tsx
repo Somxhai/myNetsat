@@ -1,29 +1,55 @@
-import { useCallback, useContext, useEffect, useMemo, useState } from "react";
-import { CalNetsatScore } from "../features/CalScore";
-import { DataContext } from "../features/DataContext";
-import { getScoreFromLocal } from "../features/EssentialFeatures";
-import { getFacultyBySyllabus, getWeightBySyllabus } from "../features/GetAPI";
+import { useEffect, useRef, useState } from "react";
+import { useRecoilState, useRecoilValue } from "recoil";
+import { calCapabilityScore, calNetsatScore } from "../features/CalScore";
+import {
+  getCapabilityWeightBySyllabus,
+  getFacultyBySyllabus,
+  getNetsatWeightBySyllabus,
+  hasCapability,
+} from "../features/GetAPI";
+import { getCapabilityScore } from "../features/GetScores";
+import {
+  calState,
+  netsatScoreState,
+  selectedSyllabusState,
+} from "./States/CapabilityState";
 
-interface type {
-  startCal?: boolean;
-  syllabus: string;
-}
-
-const ScoresView = ({ startCal, syllabus }: type) => {
+const ScoresView = ({ syllabus }: any) => {
+  const netsatScore = useRecoilValue(netsatScoreState);
   const faculty = getFacultyBySyllabus(syllabus);
+  const cal = useRecoilValue(calState);
   const [score, setScore] = useState("00.000");
-  const netsatWeight = getWeightBySyllabus(syllabus);
-  const netsatScore = getScoreFromLocal();
+  const netsatWeight = getNetsatWeightBySyllabus(syllabus);
+  const initial = useRef(true);
 
-  const formatter = () => {
-    const sumScore = CalNetsatScore(netsatWeight, netsatScore);
-    const result = sumScore > -1 ? sumScore.toPrecision(5) : "ใส่คะแนนไม่ครบ😒";
-    return result;
+  const calculation = () => {
+    let sumScore = calNetsatScore(netsatWeight, netsatScore);
+    if (sumScore == -1) {
+      setScore("ใส่คะแนนไม่ครบ😒");
+      return;
+    }
+    if (hasCapability(syllabus)) {
+      const capabilityWeight = getCapabilityWeightBySyllabus(syllabus);
+      const capabilityScores = getCapabilityScore();
+      const capabilitySum = calCapabilityScore(capabilityWeight, capabilityScores);
+      if (capabilitySum == -1) {
+        setScore("ใส่คะแนนไม่ครบ😒");
+        return;
+      }
+      sumScore += capabilitySum
+    }
+    const result = sumScore.toPrecision(5);
+    setScore(result);
   };
-  useEffect(()=>{
-    setScore(formatter)
-  }, [startCal])
-  
+
+  useEffect(() => {
+    if (initial.current) {
+      initial.current = false;
+      return;
+    }
+    calculation();
+  }, [cal]);
+
   return (
     <div className="flex px-3">
       <div className="border-b-2 flex items-center w-screen justify-between">
@@ -40,8 +66,8 @@ const ScoresView = ({ startCal, syllabus }: type) => {
   );
 };
 
-const RemoveButton = ({ syllabus }: type) => {
-  const { setSelected, selected } = useContext(DataContext);
+const RemoveButton = ({ syllabus }: any) => {
+  const [selected, setSelected] = useRecoilState(selectedSyllabusState);
   const remove = () => {
     setSelected(selected.filter((v) => v != syllabus));
   };
