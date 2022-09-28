@@ -1,6 +1,7 @@
-import { blurScreen } from "../../features/EssentialFeatures";
-import { useResetRecoilState, useSetRecoilState } from "recoil";
-import { capabilityState } from "../States/CapabilityState";
+import { blurScreen, isInputRequired } from "../../features/EssentialFeatures";
+import { useRecoilValue, useResetRecoilState, useSetRecoilState } from "recoil";
+import { capabilityID, selectedDataState } from "../States/States";
+import { useEffect, useState } from "react";
 
 const CloseIcon = () => {
   return (
@@ -17,9 +18,23 @@ interface OpenFormType {
   title: string;
   placeholder: string;
   containerID: string;
+  ids: string[]
 }
-const OpenFormButton = ({ title, placeholder, containerID }: OpenFormType) => {
-  const setForm = useSetRecoilState(capabilityState);
+const OpenFormButton = ({ title, placeholder, containerID, ids }: OpenFormType) => {
+  const setForm = useSetRecoilState(capabilityID);
+  const selected = useRecoilValue(selectedDataState)
+  const [bgColor, setBgColor] = useState("border-gray-200")
+  useEffect(()=>{
+    let change = false
+    for (const id of ids) {
+      const isRequired = isInputRequired(id, selected)
+      if (isRequired) {
+        change = true
+        break;
+      }
+    }
+    change ? setBgColor("border-purple-600") : setBgColor("border-gray-200")
+  }, [selected])
   return (
     <button
       className="outline-none"
@@ -32,7 +47,7 @@ const OpenFormButton = ({ title, placeholder, containerID }: OpenFormType) => {
     >
       <div className="mt-3">
         <p className="text-text_primary">{title}</p>
-        <div className="m-auto rounded-lg text-sm w-48 border-b-2 line-clamp-1 px-3 pt-2  select-none text-text_secondary hover:border-purple-500 max-w-xs">
+        <div className={`${bgColor} m-auto rounded-lg text-sm w-48 border-b-2 line-clamp-1 px-3 pt-2  select-none text-text_secondary hover:border-purple-500 max-w-xs`}>
           {placeholder}
         </div>
       </div>
@@ -40,12 +55,12 @@ const OpenFormButton = ({ title, placeholder, containerID }: OpenFormType) => {
   );
 };
 const EscFormButton = () => {
-  const resetState = useResetRecoilState(capabilityState);
+  const resetID = useResetRecoilState(capabilityID);
   return (
     <button
       onClick={() => {
         blurScreen()
-        resetState();
+        resetID();
       }}
       className="text-secondary"
     >

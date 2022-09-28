@@ -1,10 +1,11 @@
-import { useResetRecoilState } from "recoil";
+import { useResetRecoilState, useSetRecoilState } from "recoil";
 import { blurScreen } from "../../features/EssentialFeatures";
-import { capabilityState } from "../States/CapabilityState";
+import { capabilityID, searchState } from "../States/States";
 import { CloseIcon } from "../Template/Buttons";
 
-const SearchBar = ({ returnSearch }: any) => {
-  const resetState = useResetRecoilState(capabilityState)
+const SearchBar = () => {
+  const setSearch = useSetRecoilState(searchState)
+  const resetID = useResetRecoilState(capabilityID)
     return (
       <div className="flex text-secondary pb-2">
         <div className="mr-3">
@@ -30,13 +31,14 @@ const SearchBar = ({ returnSearch }: any) => {
           id="search_result"
           placeholder="ค้นหาคณะ / สาขา"
           onChange={(e) => {
-            returnSearch(e.target.value);
+            setSearch(e.target.value);
           }}
         />
         <button
           onClick={()=> {
             blurScreen();
-            resetState()}
+            resetID()
+          }
           }
           id="escapeKey"
         >

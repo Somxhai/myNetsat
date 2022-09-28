@@ -1,9 +1,38 @@
 import { OpenFormButton } from "../Template/Buttons";
-import { SubjectInput } from "../SubjectInput";
+import { SubjectInput } from "../Template/SubjectInput";
+import { useEffect, useRef } from "react";
+import { calState, netsatScore } from "../States/States";
+import { useRecoilValue, useSetRecoilState } from "recoil";
+import { ScoreType } from "../Types/StateType";
 
 const NetsatForm = () => {
+  const trigger = useRecoilValue(calState);
+  const form = useRef<HTMLFormElement>(null!);
+  const setScore = useSetRecoilState(netsatScore);
+  useEffect(() => {
+    setScore(() => {
+      const scoreToAdd: ScoreType = {
+        thai: parseInt(form.current["thai"].value),
+        eng: parseInt(form.current["eng"].value),
+        math: parseInt(form.current["math"].value),
+        sci: parseInt(form.current["sci"].value),
+        bio: parseInt(form.current["bio"].value),
+        chem: parseInt(form.current["chem"].value),
+        phy: parseInt(form.current["phy"].value),
+      };
+      for (const key of Object.keys(scoreToAdd)) {
+        if (scoreToAdd[key] > 100) scoreToAdd[key] = 100;
+      }
+      return scoreToAdd;
+    });
+  }, [trigger]);
+
   return (
-    <form id="input-form" className="text-sm pt-3 pb-9 m-auto text-center">
+    <form
+      ref={form}
+      id="input-form"
+      className="text-sm pt-3 pb-9 m-auto md:m-0 text-center w-fit"
+    >
       <p className="text-xl text-text_primary mt-5">ความฉลาดรู้ทั่วไป</p>
       <SubjectInput title="ภาษาไทย" id="thai" />
       <SubjectInput title="ภาษาอังกฤษ" id="eng" />
@@ -18,40 +47,45 @@ const NetsatForm = () => {
 };
 const CapabilityForm = () => {
   return (
-    <form
+    <div
       id="capability-form"
       className="text-sm pt-3 pb-9 m-auto text-center md:mt-5"
     >
       <p className="text-xl text-text_primary">สมรรถนะเฉพาะด้าน</p>
-      <div className="flex flex-col">
-        <OpenFormButton
-          containerID="languageContainer"
-          title="ภาษาต่างประเทศ"
-          placeholder="ฝรั่งเศส, เยอรมนี, ญี่ปุ่น และเกาหลี"
-        />
-        <OpenFormButton
-          containerID="artContainer"
-          title="ศิลปกรรมศาสตร์"
-          placeholder="การวาดเส้น, องค์ประกอบทางศิลป์, การวาดเส้นเพื่อการสื่อสาร, ออกแบบนิเทศ, ด้านดนตรี และนาฎศิลป์"
-        />
-        <SubjectInput title="วิศวกรรมศาสตร์" id="engi" />
-        <OpenFormButton
-          containerID="archContainer"
-          title="สถาปัตยกรรม"
-          placeholder="สถาปัตยกรรม และการออกแบบ"
-        />
-        <OpenFormButton
-          containerID="eduContainer"
-          title="ศึกษาศาสตร์"
-          placeholder="สมรรถนะทางกาย และความถนัดทางศิลป์"
-        />
-        <OpenFormButton
-          containerID="medContainer"
-          title="เวชนิทัศน์"
-          placeholder="เทคโนโลยีสำหรับเวชนิทัศน์และศิลป์สำหรับเวชนิทัศน์"
-        />
-      </div>
-    </form>
+        <div className="flex flex-col">
+          <OpenFormButton
+            ids={["fr", "gr", "cn", "jp", "kr"]}
+            containerID="languageContainer"
+            title="ภาษาต่างประเทศ"
+            placeholder="ฝรั่งเศส, เยอรมนี, จีน, ญี่ปุ่น, และเกาหลี"
+          />
+          <OpenFormButton
+            ids={["drawing", "makeup", "drawcom", "vart", "music", "dance"]}
+            containerID="artContainer"
+            title="ศิลปกรรมศาสตร์"
+            placeholder="การวาดเส้น, องค์ประกอบทางศิลป์, การวาดเส้นเพื่อการสื่อสาร, ออกแบบนิเทศ, ด้านดนตรี และนาฎศิลป์"
+          />
+          <SubjectInput title="วิศวกรรมศาสตร์" id="engineer" />
+          <OpenFormButton
+            ids={["arch", "design"]}
+            containerID="archContainer"
+            title="สถาปัตยกรรม"
+            placeholder="สถาปัตยกรรม และการออกแบบ"
+          />
+          <OpenFormButton
+            ids={["body", "goodatart"]}
+            containerID="eduContainer"
+            title="ศึกษาศาสตร์"
+            placeholder="สมรรถนะทางกาย และความถนัดทางศิลป์"
+          />
+          <OpenFormButton
+            ids={["techmed", "artmed"]}
+            containerID="medContainer"
+            title="เวชนิทัศน์"
+            placeholder="เทคโนโลยีสำหรับเวชนิทัศน์และศิลป์สำหรับเวชนิทัศน์"
+          />
+        </div>
+    </div>
   );
 };
 export { NetsatForm, CapabilityForm };

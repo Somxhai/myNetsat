@@ -1,24 +1,10 @@
-import { EscFormButton } from "./Template/Buttons";
-import CapabilityPanel from "./Template/CapabilityPanel";
-import { SubjectInput } from "./SubjectInput";
-import { useEffect } from "react";
-import { useRecoilValue } from "recoil";
-import { capabilityState } from "./States/CapabilityState";
+import { SubjectInput } from "../Template/SubjectInput";
+import { EscFormButton } from "../Template/Buttons";
+import PanelTemplate from "../Template/PanelTemplate";
 
 const LanguagesContainer = () => {
-  const capabilityId = useRecoilValue(capabilityState);
-  const languageContainer = document.getElementById("languageContainer")
-  useEffect(()=>{
-    if (languageContainer == null) return;
-    if (capabilityId.includes("languageContainer")) {
-      languageContainer.classList.remove('hidden')
-    } else {
-      languageContainer.classList.add('hidden')
-    }
-      
-  }, [capabilityId])
   return (
-    <CapabilityPanel id="languageContainer">
+    <PanelTemplate id="languageContainer">
       <div className="border-b-2 flex pb-2 justify-between">
         <p className="text-text_primary">ด้านภาษาต่างประเทศ</p>
         <EscFormButton />
@@ -30,23 +16,12 @@ const LanguagesContainer = () => {
         <SubjectInput id="jp" title="ญี่ปุ่น" />
         <SubjectInput id="kr" title="เกาหลี" />
       </div>
-    </CapabilityPanel>
+    </PanelTemplate>
   );
 };
 const ArtContainer = () => {
-  const capabilityId = useRecoilValue(capabilityState);
-  const artContainer = document.getElementById("artContainer")
-  useEffect(()=>{
-    if (artContainer == null) return;
-    if (capabilityId.includes("artContainer")) {
-      artContainer.classList.remove('hidden')
-    } else {
-      artContainer.classList.add('hidden')
-    }
-      
-  }, [capabilityId])
   return (
-    <CapabilityPanel id="artContainer">
+    <PanelTemplate id="artContainer">
       <div className="border-b-2 flex pb-2 justify-between">
         <p className="text-text_primary">ด้านศิลปศาสตร์</p>
         <EscFormButton />
@@ -59,23 +34,12 @@ const ArtContainer = () => {
         <SubjectInput id="music" title="ดนตรี" />
         <SubjectInput id="dance" title="นาฎศิลป์" />
       </div>
-    </CapabilityPanel>
+    </PanelTemplate>
   );
 };
 const EduContainer = () => {
-  const capabilityId = useRecoilValue(capabilityState);
-  const eduContainer = document.getElementById("eduContainer")
-  useEffect(()=>{
-    if (eduContainer == null) return;
-    if (capabilityId.includes("eduContainer")) {
-      eduContainer.classList.remove('hidden')
-    } else {
-      eduContainer.classList.add('hidden')
-    }
-      
-  }, [capabilityId])
   return (
-    <CapabilityPanel id="eduContainer">
+    <PanelTemplate id="eduContainer">
       <div className="border-b-2 flex pb-2 justify-between">
         <p className="text-text_primary">ด้านศึกษาศาสตร์</p>
         <EscFormButton />
@@ -84,23 +48,12 @@ const EduContainer = () => {
         <SubjectInput id="body" title="ทางกาย" />
         <SubjectInput id="goodatart" title="ถนัดทางศิลป์" />
       </div>
-    </CapabilityPanel>
+    </PanelTemplate>
   );
 };
 const MedContainer = () => {
-  const capabilityId = useRecoilValue(capabilityState);
-  const medContainer = document.getElementById("medContainer")
-  useEffect(()=>{
-    if (medContainer == null) return;
-    if (capabilityId.includes("medContainer")) {
-      medContainer.classList.remove('hidden')
-    } else {
-      medContainer.classList.add('hidden')
-    }
-      
-  }, [capabilityId])
   return (
-    <CapabilityPanel id="medContainer">
+    <PanelTemplate id="medContainer">
       <div className="border-b-2 flex pb-2 justify-between">
         <p className="text-text_primary">ด้านเวชนิทัศน์</p>
         <EscFormButton />
@@ -109,23 +62,12 @@ const MedContainer = () => {
         <SubjectInput id="techmed" title="เทคโนโลยีเวชนิทัศน์" />
         <SubjectInput id="artmed" title="ศิลป์สำหรับเวชนิทัศน์" />
       </div>
-    </CapabilityPanel>
+    </PanelTemplate>
   );
 };
 const ArchContainer = () => {
-  const capabilityId = useRecoilValue(capabilityState);
-  const archContainer = document.getElementById("artContainer")
-  useEffect(()=>{
-    if (archContainer == null) return;
-    if (capabilityId.includes("artContainer")) {
-      archContainer.classList.remove('hidden')
-    } else {
-      archContainer.classList.add('hidden')
-    }
-      
-  }, [capabilityId])
   return (
-    <CapabilityPanel id="archContainer">
+    <PanelTemplate id="archContainer">
       <div className="border-b-2 flex pb-2 justify-between">
         <p className="text-text_primary">ด้านสถาปัตยกรรม</p>
         <EscFormButton />
@@ -134,7 +76,7 @@ const ArchContainer = () => {
         <SubjectInput id="arch" title="สถาปัตยกรรม" />
         <SubjectInput id="design" title="การออกแบบ" />
       </div>
-    </CapabilityPanel>
+    </PanelTemplate>
   );
 };
 

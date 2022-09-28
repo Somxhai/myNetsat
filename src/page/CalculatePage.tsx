@@ -1,8 +1,7 @@
 import SearchContainer from "../components/SearchComponents/SearchContainer";
 import { blurScreen } from "../features/EssentialFeatures";
 import CalculateResult from "../components/CalculateResult";
-import { getNetSatScore } from "../features/GetScores";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { CapabilityForm, NetsatForm } from "../components/Forms/NetsatForm";
 import {
   ArchContainer,
@@ -10,56 +9,77 @@ import {
   EduContainer,
   LanguagesContainer,
   MedContainer,
-} from "../components/CapabilityContainer";
+} from "../components/Forms/CapabilityContainer";
 import {
   calState,
-  capabilityFormState,
-  capabilityState,
-  netsatScoreState,
-  selectedSyllabusState,
-} from "../components/States/CapabilityState";
-import { useRecoilState, useRecoilValue, useSetRecoilState } from "recoil";
-import { hasCapability } from "../features/GetAPI";
+  capabilityID,
+  capabilityScore,
+} from "../components/States/States";
+import { useRecoilState, useSetRecoilState } from "recoil";
 
 const CalculatePage = () => {
-  const setScore = useSetRecoilState(netsatScoreState);
   const [trigger, setTrigger] = useRecoilState(calState);
-  const setForm = useSetRecoilState(capabilityState);
-  const [capabilityForm, setCapabilityForm] = useRecoilState(capabilityFormState);
-  const selected = useRecoilValue(selectedSyllabusState);
-  useEffect(() => {
-    let show = false;
-    for (const v of selected) {
-      if (hasCapability(v)) {
-        show = true;
-      }
-    }
-    show ? setCapabilityForm(true) : setCapabilityForm(false);
-  }, [selected]);
+  const [capScore, setCapScore] = useRecoilState(capabilityScore);
+  const setForm = useSetRecoilState(capabilityID);
+  const capabilityFormRef = useRef<HTMLFormElement>(null!);
+  const engineerFormRef = useRef<HTMLFormElement>(null!);
 
-  const sendTrigger = () => {
-    setScore(getNetSatScore());
-    setTrigger(!trigger);
-  };
-  return (<div className="">
-      <SearchContainer />,
-      <LanguagesContainer />,
-      <ArtContainer />,
-      <EduContainer />,
-      <MedContainer />,
-      <ArchContainer />
+  useEffect(() => {
+    setCapScore(() => {
+      const prevClone = structuredClone(capScore);
+      prevClone.fr = parseInt(capabilityFormRef.current["fr"].value);
+      prevClone.gr = parseInt(capabilityFormRef.current["gr"].value);
+      prevClone.cn = parseInt(capabilityFormRef.current["cn"].value);
+      prevClone.jp = parseInt(capabilityFormRef.current["jp"].value);
+      prevClone.kr = parseInt(capabilityFormRef.current["kr"].value);
+
+      prevClone.drawing = parseInt(capabilityFormRef.current["drawing"].value);
+      prevClone.makeup = parseInt(capabilityFormRef.current["makeup"].value);
+      prevClone.engineer = parseInt(engineerFormRef.current["engineer"].value);
+      prevClone.drawcom = parseInt(capabilityFormRef.current["drawcom"].value);
+      prevClone.vart = parseInt(capabilityFormRef.current["vart"].value);
+      prevClone.music = parseInt(capabilityFormRef.current["music"].value);
+      prevClone.dance = parseInt(capabilityFormRef.current["dance"].value);
+
+      prevClone.arch = parseInt(capabilityFormRef.current["arch"].value);
+      prevClone.design = parseInt(capabilityFormRef.current["design"].value);
+
+      prevClone.body = parseInt(capabilityFormRef.current["body"].value);
+      prevClone.goodatart = parseInt(
+        capabilityFormRef.current["goodatart"].value
+      );
+
+      prevClone.techmed = parseInt(capabilityFormRef.current["techmed"].value);
+      prevClone.artmed = parseInt(capabilityFormRef.current["artmed"].value);
+      for (const key of Object.keys(prevClone)) {
+        if (prevClone[key] > 100) prevClone[key] = 100;
+      }
+      return prevClone;
+    });
+  }, [trigger]);
+  return (
+    <div>
+      <SearchContainer />
+      <form ref={capabilityFormRef} onSubmit={(e) => e.preventDefault()}>
+        <LanguagesContainer />
+        <ArtContainer />
+        <EduContainer />
+        <MedContainer />
+        <ArchContainer />
+      </form>
       <div
         id="calculatePage"
         className="overflow-x-hidden w-screen m-auto px-5"
       >
-        <div className="my-7 font-mitr relative bg-white px-6 py-3 shadow-sm ring-1 ring-gray-900/5 mx-auto max-w-2xl rounded-lg">
+        <div className="my-7 font-mitr relative bg-white px-6 py-3 shadow-sm ring-1 ring-gray-900/5 m-auto max-w-2xl rounded-lg">
           <p className="text-text_primary text-2xl text-center">
             คำนวณคะแนน Netsat
           </p>
-
-          <div className="border-b-2 md:flex items-start">
+          <div className="border-b-2 md:flex md:justify-around">
             <NetsatForm />
-            {capabilityForm ? <CapabilityForm /> : null}
+            <form ref={engineerFormRef}>
+              <CapabilityForm />
+            </form>
           </div>
           <div className="text-sm text-secondary w-fit m-auto mt-3 hover:text-black"></div>
           <div className="mt-7 flex font-[Kanit] align-baseline">
@@ -68,21 +88,20 @@ const CalculatePage = () => {
                 blurScreen();
                 setForm("searchContainer");
               }}
-              className="cursor-pointer select-none border-b-2 text-base text-purple-500  w-fit py-2 px-5 rounded-xl flex m-auto mt-3 hover:bg-slate-100 lg:px-12 lg:mt-5"
+              className="cursor-pointer select-none border-b-2 text-base text-white bg-purple-500 w-fit py-2 px-5 rounded-xl flex m-auto mt-3 hover:bg-purple-300 lg:px-12 lg:mt-5"
             >
               เลือกคณะ
             </button>
             <button
-              onClick={sendTrigger}
-              className="cursor-pointer select-none border-b-2 text-base text-green-500 w-fit py-2 px-5 rounded-xl flex m-auto mt-3 hover:bg-slate-100  lg:px-12 lg:mt-5"
+              onClick={() => setTrigger(!trigger)}
+              className="cursor-pointer select-none border-b-2 text-base text-white bg-green-500 w-fit py-2 px-5 rounded-xl flex m-auto mt-3 hover:bg-green-300  lg:px-12 lg:mt-5"
             >
               คำนวณ
             </button>
           </div>
         </div>
-        <div className="px-3 pb-9 md:px-9">
           <CalculateResult />
-        </div>
+
       </div>
     </div>
   );

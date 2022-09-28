@@ -1,34 +1,35 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useRecoilState } from "recoil";
-import { selectedSyllabusState } from "./States/CapabilityState";
+import { isIdSelected } from "../features/ApiFeatures";
+import { selectedDataState } from "./States/States";
+import { ValType } from "./Types/ValType";
 
-interface type {
-  value: {
-    syllabus: string;
-    faculty: string;
-  };
+interface SearchListType {
+  data: ValType;
 }
 
-const SearchList = ({ value }: type) => {
-  const syllabus: string = value.syllabus;
-  const faculty: string = value.faculty;
-  const [selected, setSelected] = useRecoilState(selectedSyllabusState);
-  const [check, setCheck] = useState(selected.includes(syllabus));
-  const handleChange = () => setCheck(!check);
+const SearchList = ({ data }: SearchListType) => {
+  const syllabus: string = data.syllabus;
+  const faculty: string = data.faculty;
+  const id: number = data.syllabus_id;
 
+  const [selected, setSelected] = useRecoilState(selectedDataState);
+  const [check, setCheck] = useState(isIdSelected(id, selected));
+  const handleChange = () => setCheck(!check);
+  useLayoutEffect(() => {
+    setCheck(isIdSelected(id, selected))
+  }, [selected]);
   useEffect(() => {
-    if (check) {
-      if (!selected.includes(syllabus)) {
-        setSelected([...selected, syllabus]);
-      }
+    if (check && !isIdSelected(id, selected)) {
+      setSelected([...selected, data]);
     } else {
-      setSelected(selected.filter((k) => k != syllabus));
+      setSelected(selected.filter((v) => v != data));
     }
   }, [check]);
   return (
     <button
       onClick={handleChange}
-      className="text-left p-3 w-full flex justify-between items-center bg-gray-50"
+      className="text-left p-3 w-full hover:bg-gray-100 flex justify-between items-center bg-gray-50"
     >
       <div>
         <div className="text-black">{syllabus}</div>

@@ -1,4 +1,6 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 #searchResult::-webkit-scrollbar {
     background-color: white;
     width: 0.5rem;
