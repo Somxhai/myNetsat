@@ -42,7 +42,7 @@ const ScoresView = ({ data }: ScoresViewType) => {
     }
     isNaN(sumNetsat)
       ? setScore("ใส่คะแนนให้ครบสิ 😠")
-      : setScore(sumNetsat.toPrecision(5));
+      : setScore(sumNetsat.toFixed(3));
   }, [trigger, netsatInputScore]);
   const remove = () => {
     setSelected(selected.filter((v) => v != data));
