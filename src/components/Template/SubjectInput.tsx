@@ -30,7 +30,7 @@ const SubjectInput = ({ title, id }: SubjectInputType) => {
         value={state}
         title={title}
         onChange={(e) => patternCheck(e)}
-        className={`${bgColor}  bg-white text-sm px-2 text-text_secondary hover:border-purple-500 focus:outline-none rounded-lg border-b-2`}
+        className={`${bgColor} bg-white text-sm px-2 text-text_secondary hover:border-purple-500 focus:outline-none rounded-lg border-b-2 border-t-0`}
         maxLength={6}
       />
     </div>

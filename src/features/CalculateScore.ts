@@ -14,8 +14,7 @@ const calNetsatScore = (weight: any, score: netsatType) => {
     if (isNaN(score[key]) && weight[key] != 0) {
       return NaN;
     } else if (!isNaN(score[key]) && weight[key] != 0) {
-      const percentage = weight[key] / 100;
-      sum += percentage * score[key];
+      sum += (weight[key]/100 * score[key]);
     }
   }
   return sum;
@@ -28,9 +27,7 @@ const calCapabilityScore = (
   let sum = 0;
   for (const key of Object.keys(weight)) {
     // language, fine_art etc.
-
     const capability = weight[key];
-
     // language: {thai: 0, eng: 0, ...}
     if (typeof capability == "object") {
       // loop through nested object
@@ -51,6 +48,7 @@ const calCapabilityScore = (
       sum += cal;
     }
   }
+
   return sum;
 };
 
