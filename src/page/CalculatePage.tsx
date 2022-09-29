@@ -38,30 +38,30 @@ const CalculatePage = () => {
   useEffect(() => {
     setCapScore(() => {
       const prevClone = structuredClone(capScore);
-      prevClone.fr = parseInt(capabilityFormRef.current["fr"].value);
-      prevClone.gr = parseInt(capabilityFormRef.current["gr"].value);
-      prevClone.cn = parseInt(capabilityFormRef.current["cn"].value);
-      prevClone.jp = parseInt(capabilityFormRef.current["jp"].value);
-      prevClone.kr = parseInt(capabilityFormRef.current["kr"].value);
+      prevClone.fr = parseFloat(capabilityFormRef.current["fr"].value);
+      prevClone.gr = parseFloat(capabilityFormRef.current["gr"].value);
+      prevClone.cn = parseFloat(capabilityFormRef.current["cn"].value);
+      prevClone.jp = parseFloat(capabilityFormRef.current["jp"].value);
+      prevClone.kr = parseFloat(capabilityFormRef.current["kr"].value);
 
-      prevClone.drawing = parseInt(capabilityFormRef.current["drawing"].value);
-      prevClone.makeup = parseInt(capabilityFormRef.current["makeup"].value);
-      prevClone.engineer = parseInt(engineerFormRef.current["engineer"].value);
-      prevClone.drawcom = parseInt(capabilityFormRef.current["drawcom"].value);
-      prevClone.vart = parseInt(capabilityFormRef.current["vart"].value);
-      prevClone.music = parseInt(capabilityFormRef.current["music"].value);
-      prevClone.dance = parseInt(capabilityFormRef.current["dance"].value);
+      prevClone.drawing = parseFloat(capabilityFormRef.current["drawing"].value);
+      prevClone.makeup = parseFloat(capabilityFormRef.current["makeup"].value);
+      prevClone.engineer = parseFloat(engineerFormRef.current["engineer"].value);
+      prevClone.drawcom = parseFloat(capabilityFormRef.current["drawcom"].value);
+      prevClone.vart = parseFloat(capabilityFormRef.current["vart"].value);
+      prevClone.music = parseFloat(capabilityFormRef.current["music"].value);
+      prevClone.dance = parseFloat(capabilityFormRef.current["dance"].value);
 
-      prevClone.arch = parseInt(capabilityFormRef.current["arch"].value);
-      prevClone.design = parseInt(capabilityFormRef.current["design"].value);
+      prevClone.arch = parseFloat(capabilityFormRef.current["arch"].value);
+      prevClone.design = parseFloat(capabilityFormRef.current["design"].value);
 
-      prevClone.body = parseInt(capabilityFormRef.current["body"].value);
-      prevClone.goodatart = parseInt(
+      prevClone.body = parseFloat(capabilityFormRef.current["body"].value);
+      prevClone.goodatart = parseFloat(
         capabilityFormRef.current["goodatart"].value
       );
 
-      prevClone.techmed = parseInt(capabilityFormRef.current["techmed"].value);
-      prevClone.artmed = parseInt(capabilityFormRef.current["artmed"].value);
+      prevClone.techmed = parseFloat(capabilityFormRef.current["techmed"].value);
+      prevClone.artmed = parseFloat(capabilityFormRef.current["artmed"].value);
       for (const key of Object.keys(prevClone)) {
         if (prevClone[key] > 100) prevClone[key] = 100;
       }
@@ -93,8 +93,10 @@ const CalculatePage = () => {
               <CapabilityForm />
             </form>
           </div>
-          <div className="text-sm text-secondary w-fit m-auto mt-3 hover:text-black"></div>
-          <div className="mt-7 flex font-[Kanit] align-baseline">
+          <div className="text-xs text-secondary w-fit mt-3">
+            <p>* ใช้คะแนนดิบในการคำนวณ เว็บจะคำนวณเป็น % ให้</p>
+          </div>
+          <div className="mt-5 flex font-[Kanit] align-baseline">
             <button
               onClick={() => {
                 setBlur(!blur);
@@ -122,6 +124,16 @@ const CalculatePage = () => {
           >
             Somxhai
           </a>
+          <p>
+            ขอบคุณข้อมูลจาก{" "}
+            <a
+              target="_blank"
+              className="underline"
+              href="https://admissions.kku.ac.th/quota65/?fbclid=IwAR1_7d5q1T-Tmfb2wwdLjdasGG7JlgbkOcCYZTb9RBiddJtu1X1UwonXpek"
+            >
+              admissions.kku.ac.th/quota65
+            </a>
+          </p>
         </p>
       </div>
     </main>

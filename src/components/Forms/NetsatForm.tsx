@@ -12,13 +12,13 @@ const NetsatForm = () => {
   useEffect(() => {
     setScore(() => {
       const scoreToAdd: ScoreType = {
-        thai: parseInt(form.current["thai"].value),
-        eng: parseInt(form.current["eng"].value),
-        math: parseInt(form.current["math"].value),
-        sci: parseInt(form.current["sci"].value),
-        bio: parseInt(form.current["bio"].value),
-        chem: parseInt(form.current["chem"].value),
-        phy: parseInt(form.current["phy"].value),
+        thai: parseFloat(form.current["thai"].value),
+        eng: parseFloat(form.current["eng"].value),
+        math: parseFloat(form.current["math"].value),
+        sci: parseFloat(form.current["sci"].value),
+        bio: parseFloat(form.current["bio"].value),
+        chem: parseFloat(form.current["chem"].value),
+        phy: parseFloat(form.current["phy"].value),
       };
       for (const key of Object.keys(scoreToAdd)) {
         if (scoreToAdd[key] > 100) scoreToAdd[key] = 100;
