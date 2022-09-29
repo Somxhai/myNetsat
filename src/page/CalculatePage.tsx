@@ -1,7 +1,6 @@
 import SearchContainer from "../components/SearchComponents/SearchContainer";
-import { blurScreen } from "../features/EssentialFeatures";
 import CalculateResult from "../components/CalculateResult";
-import { useEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
 import { CapabilityForm, NetsatForm } from "../components/Forms/NetsatForm";
 import {
   ArchContainer,
@@ -11,6 +10,7 @@ import {
   MedContainer,
 } from "../components/Forms/CapabilityContainer";
 import {
+  blurScreenState,
   calState,
   capabilityID,
   capabilityScore,
@@ -18,12 +18,23 @@ import {
 import { useRecoilState, useSetRecoilState } from "recoil";
 
 const CalculatePage = () => {
+  const [blur, setBlur] = useRecoilState(blurScreenState);
   const [trigger, setTrigger] = useRecoilState(calState);
   const [capScore, setCapScore] = useRecoilState(capabilityScore);
   const setForm = useSetRecoilState(capabilityID);
   const capabilityFormRef = useRef<HTMLFormElement>(null!);
   const engineerFormRef = useRef<HTMLFormElement>(null!);
-
+  const calculatePageRef = useRef<HTMLDivElement>(null!);
+  const initial = useRef(true);
+  useLayoutEffect(() => {
+    if (initial.current) {
+      initial.current = false;
+      return;
+    }
+    calculatePageRef.current.classList.contains("blurScreen")
+      ? calculatePageRef.current.classList.remove("blurScreen")
+      : calculatePageRef.current.classList.add("blurScreen");
+  }, [blur]);
   useEffect(() => {
     setCapScore(() => {
       const prevClone = structuredClone(capScore);
@@ -58,7 +69,7 @@ const CalculatePage = () => {
     });
   }, [trigger]);
   return (
-    <div>
+    <main>
       <SearchContainer />
       <form ref={capabilityFormRef} onSubmit={(e) => e.preventDefault()}>
         <LanguagesContainer />
@@ -69,9 +80,10 @@ const CalculatePage = () => {
       </form>
       <div
         id="calculatePage"
-        className="overflow-x-hidden w-screen m-auto px-5"
+        ref={calculatePageRef}
+        className="w-screen m-auto px-5 overflow-y-hidden"
       >
-        <div className="my-7 font-mitr relative bg-white px-6 py-3 shadow-sm ring-1 ring-gray-900/5 m-auto max-w-2xl rounded-lg">
+        <div className="my-7 font-mitr relative bg-white px-6 py-3 shadow-sm ring-1 ring-gray-900/5 m-auto max-w-2xl rounded-lg ">
           <p className="text-text_primary text-2xl text-center">
             คำนวณคะแนน Netsat
           </p>
@@ -85,7 +97,7 @@ const CalculatePage = () => {
           <div className="mt-7 flex font-[Kanit] align-baseline">
             <button
               onClick={() => {
-                blurScreen();
+                setBlur(!blur);
                 setForm("searchContainer");
               }}
               className="cursor-pointer select-none border-b-2 text-base text-white bg-purple-500 w-fit py-2 px-5 rounded-xl flex m-auto mt-3 hover:bg-purple-300 lg:px-12 lg:mt-5"
@@ -100,10 +112,19 @@ const CalculatePage = () => {
             </button>
           </div>
         </div>
-          <CalculateResult />
-
+        <CalculateResult />
+        <p className="text-text_secondary text-center pb-3">
+          Made by{" "}
+          <a
+            target="_blank"
+            href="https://www.instagram.com/peaktoleast/"
+            className="underline"
+          >
+            Somxhai
+          </a>
+        </p>
       </div>
-    </div>
+    </main>
   );
 };
 

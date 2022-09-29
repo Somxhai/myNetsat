@@ -1,8 +1,8 @@
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { useRecoilState } from "recoil";
 import { isIdSelected } from "../features/ApiFeatures";
 import { selectedDataState } from "./States/States";
-import { ValType } from "./Types/ValType";
+import { ValType } from "./Types/DataType";
 
 interface SearchListType {
   data: ValType;
@@ -17,7 +17,7 @@ const SearchList = ({ data }: SearchListType) => {
   const [check, setCheck] = useState(isIdSelected(id, selected));
   const handleChange = () => setCheck(!check);
   useLayoutEffect(() => {
-    setCheck(isIdSelected(id, selected))
+    setCheck(isIdSelected(id, selected));
   }, [selected]);
   useEffect(() => {
     if (check && !isIdSelected(id, selected)) {

@@ -1,28 +1,28 @@
 import { atom, DefaultValue, selector } from "recoil";
 import { ScoreType } from "../Types/StateType";
-import { ValType } from "../Types/ValType";
+import { ValType } from "../Types/DataType";
 
-const capabilityID = atom({
+export const capabilityID = atom({
   key: "capabilityID",
   default: "",
 });
 
-const capabilityFormState = atom({
+export const capabilityFormState = atom({
   key: "capabilityForm",
   default: false,
 });
 
-const selectedDataState = atom({
+export const selectedDataState = atom({
   key: "selectedDataState",
   default: <ValType[]>[],
 });
 
-const calState = atom({
+export const calState = atom({
   key: "calState",
   default: false,
 });
 
-const netsatScore = atom({
+export const netsatScore = atom({
   key: "netsatScore",
   default: <ScoreType>{
     thai: NaN,
@@ -35,7 +35,12 @@ const netsatScore = atom({
   },
 });
 
-const capabilityScore = atom({
+export const blurScreenState = atom({
+  key: "blurscreenState",
+  default: false,
+});
+
+export const capabilityScore = atom({
   key: "capabilityScore",
   default: <ScoreType>{
     fr: NaN,
@@ -46,7 +51,7 @@ const capabilityScore = atom({
 
     drawing: NaN,
     makeup: NaN,
-    
+
     drawcom: NaN,
     vart: NaN,
     music: NaN,
@@ -65,22 +70,11 @@ const capabilityScore = atom({
   },
 });
 
-const requiredScoreInput = atom({
+export const requiredScoreInput = atom({
   key: "requiredScoreInput",
   default: [],
 });
-const searchState = atom({
+export const searchState = atom({
   key: "searchState",
   default: "",
 });
-
-export {
-  capabilityID,
-  capabilityFormState,
-  searchState,
-  selectedDataState,
-  calState,
-  netsatScore,
-  requiredScoreInput,
-  capabilityScore,
-};

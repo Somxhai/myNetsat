@@ -6,11 +6,9 @@ const SearchContainer = () => {
   return (
     <PanelTemplate id="searchContainer">
       <SearchBar />
-        <SearchResults />
+      <SearchResults />
     </PanelTemplate>
   );
 };
-
-
 
 export default SearchContainer;

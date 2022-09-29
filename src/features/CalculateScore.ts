@@ -36,14 +36,16 @@ const calCapabilityScore = (
       // loop through nested object
       for (const subject of Object.keys(capability)) {
         // example: thai != 0 (thai is required) and score is not NaN
-        if (capability[subject] != 0 && isNaN(score[subject]))return NaN;
+        if (capability[subject] != 0 && isNaN(score[subject])) return NaN;
         if (capability[subject] != 0 && !isNaN(score[subject])) {
           const cal = (capability[subject] / 100) * score[subject];
           sum += cal;
-        } 
+        }
       }
     } else if (
-      typeof capability == "number" && capability != 0 && !isNaN(score[key])
+      typeof capability == "number" &&
+      capability != 0 &&
+      !isNaN(score[key])
     ) {
       const cal = (capability / 100) * score[key];
       sum += cal;

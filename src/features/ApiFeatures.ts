@@ -1,6 +1,6 @@
 import { useRecoilValue } from "recoil";
 import { selectedDataState } from "../components/States/States";
-import { ValType } from "../components/Types/ValType";
+import { ValType } from "../components/Types/DataType";
 import DATA from "../data.json";
 
 type weightType = {
@@ -28,12 +28,6 @@ const hasCapability = (syllabus: string): boolean => {
   return false;
 };
 
-const getRequiredInputId = (syllabus: string) => {
-  for (const value of getApi()) {
-   
-  }
-};
-
 const getNetsatWeightBySyllabus = (syllabus: string): weightType => {
   let weight = {};
   getApi().forEach((val) => {
@@ -55,16 +49,14 @@ const getCapabilityWeightBySyllabus = (
   return weight;
 };
 
-const isIdSelected = (id:number, data:ValType[]):boolean => {
+const isIdSelected = (id: number, data: ValType[]): boolean => {
   for (const val of data) {
     if (val.syllabus_id == id) {
       return true;
     }
   }
   return false;
-}
-
-
+};
 
 export {
   isIdSelected,

@@ -1,21 +1,23 @@
 import { useLayoutEffect, useRef } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 import { useRecoilState } from "recoil";
-import { blurScreen } from "../../features/EssentialFeatures";
-import { capabilityID } from "../States/States";
+import { blurScreenState, capabilityID } from "../States/States";
 import { PanelType } from "../Types/PanelType";
 
 const PanelTemplate = ({ children, id }: PanelType) => {
   const [capabilityId, setCapabilityId] = useRecoilState(capabilityID);
   const elm = useRef<HTMLDivElement>(null!);
-
-  useHotkeys("esc", () => {
+  const [blur, setBlur] = useRecoilState(blurScreenState);
+  const closePanel = () => {
     if (elm.current == null) return;
-    if (!elm.current?.classList) {
-      blurScreen();
+    if (capabilityId == id) {
+      setBlur(!blur)
       setCapabilityId("");
     }
-  });
+  };
+
+  useHotkeys("esc", () => closePanel());
+
   useLayoutEffect(() => {
     if (elm.current == null) return;
     if (capabilityId == id) {
@@ -26,14 +28,13 @@ const PanelTemplate = ({ children, id }: PanelType) => {
   }, [capabilityId]);
 
   return (
-    <div className="px-3 absolute">
-      <div
-        ref={elm}
-        id={id}
-        className="hidden p-5 max-w-2xl min-w-fit fixed z-10 bg-white shadow-xl left-1/2 -translate-x-1/2 translate-y-5 rounded-lg"
-      >
-        {children}
-      </div>
+    <div
+      ref={elm}
+      id={id}
+      // left-1/2 -translate-x-1/2 translate-y-5
+      className="hidden fixed first-line:text-sm md:text-md p-5 max-w-2xl m-auto t w-fit h-fit z-10 bg-white shadow-xl left-1/2 -translate-x-1/2 translate-y-5 rounded-lg"
+    >
+      {children}
     </div>
   );
 };

@@ -1,11 +1,11 @@
-import { useResetRecoilState, useSetRecoilState } from "recoil";
-import { blurScreen } from "../../features/EssentialFeatures";
-import { capabilityID, searchState } from "../States/States";
+import { useRecoilState, useResetRecoilState, useSetRecoilState } from "recoil";
+import { blurScreenState, capabilityID, searchState } from "../States/States";
 import { CloseIcon } from "../Template/Buttons";
 
 const SearchBar = () => {
   const setSearch = useSetRecoilState(searchState)
   const resetID = useResetRecoilState(capabilityID)
+  const [blur, setBlur] = useRecoilState(blurScreenState);
     return (
       <div className="flex text-secondary pb-2">
         <div className="mr-3">
@@ -36,7 +36,7 @@ const SearchBar = () => {
         />
         <button
           onClick={()=> {
-            blurScreen();
+            setBlur(!blur)
             resetID()
           }
           }

@@ -1,7 +1,7 @@
 import { useRecoilValue } from "recoil";
 import ScoresView from "./ScoresView";
 import { selectedDataState } from "./States/States";
-import { ValType } from "./Types/ValType";
+import { ValType } from "./Types/DataType";
 
 const CalculateResult = () => {
   const selected = useRecoilValue(selectedDataState);
@@ -16,7 +16,7 @@ const CalculateResult = () => {
         <p className="text-black text-center h-fit text-3xl py-3 border-b-2">
           หน้าต่างคะแนน
         </p>
-        <div className="h-fit min-h-full py-4">
+        <div className="py-4">
           {scoresView.length > 0 ? (
             <div className="space-y-2">{scoresView}</div>
           ) : (

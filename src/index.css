@@ -31,7 +31,9 @@ input:-webkit-autofill {
 
 @layer utilities {
   .blurScreen {
-    @apply blur-sm pointer-events-none overflow-y-hidden;
+
+    @apply blur-sm pointer-events-none;
+    
   }
   
 }
