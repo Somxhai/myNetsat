@@ -26,6 +26,7 @@ const CalculatePage = () => {
   const engineerFormRef = useRef<HTMLFormElement>(null!);
   const calculatePageRef = useRef<HTMLDivElement>(null!);
   const initial = useRef(true);
+  console.log("อยากใช้ API หรอ? ติดต่อผ่าน IG: peaktoleast");
   useLayoutEffect(() => {
     if (initial.current) {
       initial.current = false;
