@@ -1,15 +1,15 @@
 import { useMemo, useRef, useState } from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
-import { calCapabilityScore, calNetsatScore } from "../features/CalculateScore";
+import { calCapabilityScore, calNetsatScore } from "../../features/CalculateScore";
 import {
   calState,
   capabilityScore,
   netsatScore,
   selectedDataState,
-} from "./States/States";
-import { DownIcon } from "./Template/Buttons";
-import { ValType } from "./Types/DataType";
-import { CapabilityTable, NetsatTable } from "./Table/NetsatTable";
+} from "../../States/States";
+import { DownIcon } from "../template/Buttons";
+import { ValType } from "../../Types/DataType";
+import { CapabilityTable, NetsatTable } from "../table/NetsatTable";
 
 interface ScoresViewType {
   data: ValType;
@@ -47,7 +47,7 @@ const ScoresView = ({ data }: ScoresViewType) => {
   const remove = () => {
     setSelected(selected.filter((v) => v != data));
   };
-
+  
   return (
     <div className="mx-3 border-b-2">
       <div className="flex">

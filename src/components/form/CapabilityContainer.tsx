@@ -1,6 +1,6 @@
-import { SubjectInput } from "../Template/SubjectInput";
-import { EscFormButton } from "../Template/Buttons";
-import PanelTemplate from "../Template/PanelTemplate";
+import { SubjectInput } from "../template/SubjectInput";
+import { EscFormButton } from "../template/Buttons";
+import PanelTemplate from "../template/PanelTemplate";
 
 const LanguagesContainer = () => {
   return (

@@ -1,10 +1,10 @@
 import { useMemo } from "react";
-import SearchList from "../SearchList";
+import SearchList from "./SearchList";
 import { getApi } from "../../features/ApiFeatures";
 import "../../styles/scrollwheel.css";
-import { ValType } from "../Types/DataType";
+import { ValType } from "../../Types/DataType";
 import { useRecoilValue } from "recoil";
-import { searchState } from "../States/States";
+import { searchState } from "../../States/States";
 
 const SearchResults = () => {
   const search = useRecoilValue(searchState);

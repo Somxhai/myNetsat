@@ -1,6 +1,6 @@
 import { useRecoilValue } from "recoil";
-import { selectedDataState } from "../components/States/States";
-import { ValType } from "../components/Types/DataType";
+import { selectedDataState } from "../States/States";
+import { ValType } from "../Types/DataType";
 import DATA from "../data.json";
 
 type weightType = {

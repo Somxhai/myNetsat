@@ -1,6 +1,6 @@
 import SearchResults from "./SearchResults";
 import SearchBar from "./SearchBar";
-import PanelTemplate from "../Template/PanelTemplate";
+import PanelTemplate from "../template/PanelTemplate";
 
 const SearchContainer = () => {
   return (

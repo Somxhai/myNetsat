@@ -1,21 +1,22 @@
-import SearchContainer from "../components/SearchComponents/SearchContainer";
-import CalculateResult from "../components/CalculateResult";
+import SearchContainer from "../components/search/SearchContainer";
+import CalculateResult from "../components/result/CalculateResult";
 import { useEffect, useLayoutEffect, useRef } from "react";
-import { CapabilityForm, NetsatForm } from "../components/Forms/NetsatForm";
+import { CapabilityForm, NetsatForm } from "../components/form/NetsatForm";
 import {
   ArchContainer,
   ArtContainer,
   EduContainer,
   LanguagesContainer,
   MedContainer,
-} from "../components/Forms/CapabilityContainer";
+} from "../components/form/CapabilityContainer";
 import {
   blurScreenState,
   calState,
   capabilityID,
   capabilityScore,
-} from "../components/States/States";
+} from "../States/States";
 import { useRecoilState, useSetRecoilState } from "recoil";
+import Footer from "../components/Footer";
 
 const CalculatePage = () => {
   const [blur, setBlur] = useRecoilState(blurScreenState);
@@ -26,7 +27,7 @@ const CalculatePage = () => {
   const engineerFormRef = useRef<HTMLFormElement>(null!);
   const calculatePageRef = useRef<HTMLDivElement>(null!);
   const initial = useRef(true);
-  console.log("อยากใช้ API หรอ? ติดต่อผ่าน IG: peaktoleast");
+  
   useLayoutEffect(() => {
     if (initial.current) {
       initial.current = false;
@@ -116,26 +117,7 @@ const CalculatePage = () => {
           </div>
         </div>
         <CalculateResult />
-        <p className="text-text_secondary text-center pb-3">
-          Made by{" "}
-          <a
-            target="_blank"
-            href="https://www.instagram.com/peaktoleast/"
-            className="underline"
-          >
-            Somxhai
-          </a>
-          <p>
-            ขอบคุณข้อมูลจาก{" "}
-            <a
-              target="_blank"
-              className="underline"
-              href="https://admissions.kku.ac.th/quota65/?fbclid=IwAR1_7d5q1T-Tmfb2wwdLjdasGG7JlgbkOcCYZTb9RBiddJtu1X1UwonXpek"
-            >
-              admissions.kku.ac.th/quota65
-            </a>
-          </p>
-        </p>
+            <Footer />
       </div>
     </main>
   );

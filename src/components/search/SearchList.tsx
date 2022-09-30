@@ -1,8 +1,8 @@
 import { useEffect, useLayoutEffect, useState } from "react";
 import { useRecoilState } from "recoil";
-import { isIdSelected } from "../features/ApiFeatures";
-import { selectedDataState } from "./States/States";
-import { ValType } from "./Types/DataType";
+import { isIdSelected } from "../../features/ApiFeatures";
+import { selectedDataState } from "../../States/States";
+import { ValType } from "../../Types/DataType";
 
 interface SearchListType {
   data: ValType;

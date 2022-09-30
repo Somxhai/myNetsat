@@ -1,6 +1,6 @@
 import { useRecoilState, useResetRecoilState, useSetRecoilState } from "recoil";
-import { blurScreenState, capabilityID, searchState } from "../States/States";
-import { CloseIcon } from "../Template/Buttons";
+import { blurScreenState, capabilityID, searchState } from "../../States/States";
+import { CloseIcon } from "../template/Buttons";
 
 const SearchBar = () => {
   const setSearch = useSetRecoilState(searchState)

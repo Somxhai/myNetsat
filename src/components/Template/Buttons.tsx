@@ -1,6 +1,6 @@
 import { isInputRequired } from "../../features/EssentialFeatures";
 import { useRecoilState, useRecoilValue, useResetRecoilState, useSetRecoilState } from "recoil";
-import { blurScreenState, capabilityID, selectedDataState } from "../States/States";
+import { blurScreenState, capabilityID, selectedDataState } from "../../States/States";
 import { useEffect, useState } from "react";
 
 const CloseIcon = () => {

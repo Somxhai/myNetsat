@@ -1,9 +1,9 @@
-import { OpenFormButton } from "../Template/Buttons";
-import { SubjectInput } from "../Template/SubjectInput";
+import { OpenFormButton } from "../template/Buttons";
+import { SubjectInput } from "../template/SubjectInput";
 import { useEffect, useRef } from "react";
-import { calState, netsatScore } from "../States/States";
+import { calState, netsatScore } from "../../States/States";
 import { useRecoilValue, useSetRecoilState } from "recoil";
-import { ScoreType } from "../Types/StateType";
+import { ScoreType } from "../../Types/StateType";
 
 const NetsatForm = () => {
   const trigger = useRecoilValue(calState);

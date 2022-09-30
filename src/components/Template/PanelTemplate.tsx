@@ -1,8 +1,8 @@
 import { useLayoutEffect, useRef } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 import { useRecoilState } from "recoil";
-import { blurScreenState, capabilityID } from "../States/States";
-import { PanelType } from "../Types/PanelType";
+import { blurScreenState, capabilityID } from "../../States/States";
+import { PanelType } from "../../Types/PanelType";
 
 const PanelTemplate = ({ children, id }: PanelType) => {
   const [capabilityId, setCapabilityId] = useRecoilState(capabilityID);

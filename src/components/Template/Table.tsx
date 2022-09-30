@@ -2,7 +2,7 @@ import {
   checkCapabilitySubject,
   checkNetsatSubject,
 } from "../../features/EssentialFeatures";
-import { TableDataType } from "../Types/TableType";
+import { TableDataType } from "../../Types/TableType";
 
 export const NetsatTableData = ({
   title,

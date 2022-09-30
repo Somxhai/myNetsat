@@ -1,4 +1,4 @@
-import { ValType } from "../components/Types/DataType";
+import { ValType } from "../Types/DataType";
 
 
 export const checkCapabilitySubject = (capability: string): string => {

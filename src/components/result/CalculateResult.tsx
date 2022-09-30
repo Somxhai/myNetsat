@@ -1,7 +1,7 @@
 import { useRecoilValue } from "recoil";
 import ScoresView from "./ScoresView";
-import { selectedDataState } from "./States/States";
-import { ValType } from "./Types/DataType";
+import { selectedDataState } from "../../States/States";
+import { ValType } from "../../Types/DataType";
 
 const CalculateResult = () => {
   const selected = useRecoilValue(selectedDataState);
