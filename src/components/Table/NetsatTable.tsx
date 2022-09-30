@@ -1,10 +1,11 @@
 import { getAllCapabilityWeight } from "../../features/EssentialFeatures";
-import { NetsatTableData } from "../Template/Table";
-import { NetsatTableType } from "../Types/TableType";
+import { NetsatTableData } from "../template/Table";
+import { NetsatTableType } from "../../Types/TableType";
 
 
 
 export const NetsatTable = ({ data }: NetsatTableType) => {
+  
   return (
     <div
       className={`text-center w-fit my-2 ${
@@ -50,7 +51,8 @@ export const CapabilityTable = ({ data }: NetsatTableType) => {
         </thead>
         <tbody>
           {getAllCapabilityWeight(data).map(([k, v]) => {
-            return <NetsatTableData title={k as string} score={v as number} capabilityData={true}/>
+            const formatKey = `${data.syllabus_id}_${k}`;
+            return <NetsatTableData title={k as string} score={v as number} capabilityData={true} key={formatKey}/>
           })}
         </tbody>
       </table>
