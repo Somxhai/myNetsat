@@ -3,6 +3,7 @@
         "syllabus": "คณิตศาสตร์",
         "faculty": "คณะวิทยาศาสตร์",
         "syllabus_id": 0,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 15,
@@ -13,6 +14,7 @@
             "phy": 10
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -47,6 +49,7 @@
     {
         "syllabus": "เคมี",
         "syllabus_id": 1,
+        "has_minimum_score": false,
         "faculty": "คณะวิทยาศาสตร์",
         "weight": {
             "thai": 10,
@@ -58,6 +61,7 @@
             "phy": 15
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -93,6 +97,7 @@
         "syllabus": "จุลชีววิทยา",
         "faculty": "คณะวิทยาศาสตร์",
         "syllabus_id": 2,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 15,
@@ -103,6 +108,7 @@
             "phy": 10
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -138,6 +144,7 @@
         "syllabus": "ชีวเคมี",
         "faculty": "คณะวิทยาศาสตร์",
         "syllabus_id": 3,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 15,
@@ -148,6 +155,7 @@
             "phy": 10
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -183,7 +191,7 @@
         "syllabus": "ชีววิทยา",
         "faculty": "คณะวิทยาศาสตร์",
         "syllabus_id": 4,
-    
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 15,
@@ -194,6 +202,7 @@
             "phy": 10
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -229,7 +238,9 @@
         "syllabus": "ฟิสิกส์",
         "faculty": "คณะวิทยาศาสตร์",
         "syllabus_id": 5,
+        "has_minimum_score": false,
         "has_specific_capability": false,
+        "is_national": false,
         "weight": {
             "thai": 10,
             "eng": 10,
@@ -274,6 +285,7 @@
         "syllabus": "วัสดุศาสตร์และนาโนเทคโนโลยี",
         "faculty": "คณะวิทยาศาสตร์",
         "syllabus_id": 6,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 10,
@@ -284,6 +296,7 @@
             "phy": 20
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -319,6 +332,7 @@
         "syllabus": "วิทยาศาสตร์สิ่งแวดล้อม",
         "faculty": "คณะวิทยาศาสตร์",
         "syllabus_id": 7,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 15,
@@ -329,6 +343,7 @@
             "phy": 10
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -364,6 +379,7 @@
         "syllabus": "สถิติและวิทยาการข้อมูล สาขาเอกสถิติศาสตร์",
         "faculty": "คณะวิทยาศาสตร์",
         "syllabus_id": 8,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 10,
@@ -374,6 +390,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -409,6 +426,7 @@
         "syllabus": "สถิติและวิทยาการข้อมูล สาขาวิชาเอกสารสนเทศสถิติและวิทยาการข้อมูล",
         "faculty": "คณะวิทยาศาสตร์",
         "syllabus_id": 9,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 10,
@@ -419,6 +437,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -454,6 +473,7 @@
         "syllabus": "การประมง",
         "faculty": "คณะเกษตรศาสตร์",
         "syllabus_id": 10,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 15,
@@ -464,6 +484,7 @@
             "phy": 10
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -499,6 +520,7 @@
         "syllabus": "เกษตรนวัตกรรม",
         "faculty": "คณะเกษตรศาสตร์",
         "syllabus_id": 11,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 15,
@@ -509,6 +531,7 @@
             "phy": 10
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -544,6 +567,7 @@
         "syllabus": "เกษตรศาสตร์ วิชาเอกการส่งเสริมและพัฒนาการเกษตร",
         "faculty": "คณะเกษตรศาสตร์",
         "syllabus_id": 12,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 15,
@@ -554,6 +578,7 @@
             "phy": 10
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -589,6 +614,7 @@
         "syllabus": "เกษตรศาสตร์ วิชาเอกกีฏวิทยา",
         "faculty": "คณะเกษตรศาสตร์",
         "syllabus_id": 13,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 15,
@@ -599,6 +625,7 @@
             "phy": 10
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -634,6 +661,7 @@
         "syllabus": "เกษตรศาสตร์ วิชาเอกปฐพีศาสตร์และสิ่งแวดล้อม",
         "faculty": "คณะเกษตรศาสตร์",
         "syllabus_id": 14,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 15,
@@ -644,6 +672,7 @@
             "phy": 10
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -679,6 +708,7 @@
         "syllabus": "เกษตรศาสตร์ วิชาเอกพืชไร่",
         "faculty": "คณะเกษตรศาสตร์",
         "syllabus_id": 15,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 15,
@@ -689,6 +719,7 @@
             "phy": 10
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -724,6 +755,7 @@
         "syllabus": "เกษตรศาสตร์ วิชาเอกพืชสวน",
         "faculty": "คณะเกษตรศาสตร์",
         "syllabus_id": 16,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 15,
@@ -734,6 +766,7 @@
             "phy": 10
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -769,6 +802,7 @@
         "syllabus": "เกษตรศาสตร์ วิชาเอกโรคพืชวิทยา",
         "faculty": "คณะเกษตรศาสตร์",
         "syllabus_id": 17,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 15,
@@ -779,6 +813,7 @@
             "phy": 10
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -814,6 +849,7 @@
         "syllabus": "เกษตรศาสตร์ วิชาเอกสัตวศาสตร์",
         "faculty": "คณะเกษตรศาสตร์",
         "syllabus_id": 18,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 15,
@@ -824,6 +860,7 @@
             "phy": 10
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -859,6 +896,7 @@
         "syllabus": "เศรษฐศาสตร์เกษตร",
         "faculty": "คณะเกษตรศาสตร์",
         "syllabus_id": 19,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 15,
@@ -869,6 +907,7 @@
             "phy": 10
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -904,6 +943,7 @@
         "syllabus": "วิศวกรรมเกษตร",
         "faculty": "คณะวิศวกรรมศาสตร์",
         "syllabus_id": 20,
+
         "weight": {
             "thai": 5,
             "eng": 15,
@@ -913,7 +953,13 @@
             "bio": 0,
             "phy": 30
         },
+        "has_minimum_score": true,
+        "minimum_score": {
+            "math": 30,
+            "phy": 40
+        },
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -949,6 +995,7 @@
         "syllabus": "วิศวกรรมคอมพิวเตอร์",
         "faculty": "คณะวิศวกรรมศาสตร์",
         "syllabus_id": 21,
+
         "weight": {
             "thai": 5,
             "eng": 15,
@@ -958,7 +1005,9 @@
             "bio": 0,
             "phy": 20
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1003,7 +1052,14 @@
             "bio": 0,
             "phy": 25
         },
+        "has_minimum_score": true,
+        "minimum_score": {
+            "eng": 30,
+            "math": 20,
+            "phy": 20
+        },
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1048,7 +1104,14 @@
             "bio": 0,
             "phy": 16
         },
+        "has_minimum_score": true,
+        "minimum_score": {
+            "eng": 30,
+            "math": 20,
+            "phy": 20
+        },
         "has_specific_capability": true,
+        "is_national": true,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1084,6 +1147,7 @@
         "syllabus": "วิศวกรรมเครื่องกล",
         "faculty": "คณะวิศวกรรมศาสตร์",
         "syllabus_id": 24,
+
         "weight": {
             "thai": 0,
             "eng": 10,
@@ -1093,7 +1157,9 @@
             "bio": 0,
             "phy": 25
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1138,7 +1204,14 @@
             "bio": 0,
             "phy": 30
         },
+        "has_minimum_score": true,
+        "minimum_score": {
+            "eng": 30,
+            "math": 25,
+            "phy": 25
+        },
         "has_specific_capability": true,
+        "is_national": true,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1174,6 +1247,7 @@
         "syllabus": "วิศวกรรมไฟฟ้า",
         "faculty": "คณะวิศวกรรมศาสตร์",
         "syllabus_id": 26,
+
         "weight": {
             "thai": 0,
             "eng": 20,
@@ -1183,7 +1257,13 @@
             "bio": 0,
             "phy": 30
         },
+        "has_minimum_score": true,
+        "minimum_score": {
+            "math": 40,
+            "phy": 40
+        },
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1219,6 +1299,7 @@
         "syllabus": "วิศวกรรมโยธา",
         "faculty": "คณะวิศวกรรมศาสตร์",
         "syllabus_id": 27,
+
         "weight": {
             "thai": 0,
             "eng": 20,
@@ -1228,7 +1309,9 @@
             "bio": 0,
             "phy": 30
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1264,6 +1347,7 @@
         "syllabus": "วิศวกรรมระบบอัตโนมัติ หุ่นยนต์ และปัญญาประดิษฐ์",
         "faculty": "คณะวิศวกรรมศาสตร์",
         "syllabus_id": 28,
+
         "weight": {
             "thai": 10,
             "eng": 10,
@@ -1273,7 +1357,9 @@
             "bio": 0,
             "phy": 20
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1309,6 +1395,7 @@
         "syllabus": "วิศวกรรมระบบอิเล็กทรอนิกส์",
         "faculty": "คณะวิศวกรรมศาสตร์",
         "syllabus_id": 29,
+
         "weight": {
             "thai": 10,
             "eng": 10,
@@ -1318,7 +1405,9 @@
             "bio": 0,
             "phy": 30
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1354,6 +1443,7 @@
         "syllabus": "วิศวกรรมโลจิสติกส์ หลักสูตรนานาชาติ",
         "faculty": "คณะวิศวกรรมศาสตร์",
         "syllabus_id": 30,
+
         "weight": {
             "thai": 0,
             "eng": 30,
@@ -1363,7 +1453,13 @@
             "bio": 0,
             "phy": 20
         },
+        "has_minimum_score": true,
         "has_specific_capability": true,
+        "is_national": true,
+        "minimum_score": {
+            "eng": 25,
+            "math": 25
+        },
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1399,6 +1495,7 @@
         "syllabus": "วิศวกรรมสิ่งแวดล้อม",
         "faculty": "คณะวิศวกรรมศาสตร์",
         "syllabus_id": 31,
+
         "weight": {
             "thai": 5,
             "eng": 15,
@@ -1408,7 +1505,9 @@
             "bio": 0,
             "phy": 25
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1444,6 +1543,7 @@
         "syllabus": "วิศวกรรมสื่อดิจิทัล หลักสูตรนานาชาติ",
         "faculty": "คณะวิศวกรรมศาสตร์",
         "syllabus_id": 32,
+
         "weight": {
             "thai": 0,
             "eng": 30,
@@ -1453,7 +1553,9 @@
             "bio": 0,
             "phy": 30
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": true,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1489,6 +1591,7 @@
         "syllabus": "วิศวกรรมอุตสาหการ",
         "faculty": "คณะวิศวกรรมศาสตร์",
         "syllabus_id": 33,
+
         "weight": {
             "thai": 0,
             "eng": 20,
@@ -1498,7 +1601,16 @@
             "bio": 0,
             "phy": 20
         },
+        "has_minimum_score": true,
+        "minimum_score": {
+            "eng": 30,
+            "math": 30,
+            "chem": 30,
+            "phy": 30,
+            "engineer": 30
+        },
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1531,9 +1643,10 @@
         }
     },
     {
-        "syllabus": "การสอนภาษาจีนในฐานะภาษาต่างประเทศ",
+        "syllabus": "การสอนภาษาจีนในฐานะภาษาต่างประเทศ (โครงการพิเศษ) (หลักสูตร 5 ปี)",
         "faculty": "คณะศึกษาศาสตร์",
         "syllabus_id": 34,
+        "has_minimum_score": false,
         "weight": {
             "thai": 40,
             "eng": 40,
@@ -1544,6 +1657,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1576,9 +1690,10 @@
         }
     },
     {
-        "syllabus": "การสอนภาษาอังกฤษให้ผู้มีพื้นฐานภาษาอื่นนอกจากภาษาอังกฤษ",
+        "syllabus": "การสอนภาษาอังกฤษให้ผู้มีพื้นฐานภาษาอื่นนอกจากภาษาอังกฤษ (โครงการพิเศษ นานาชาติ)",
         "faculty": "คณะศึกษาศาสตร์",
         "syllabus_id": 35,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 90,
@@ -1589,6 +1704,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1624,6 +1740,7 @@
         "syllabus": "วิชาเอกการสอนภาษาญี่ปุ่น",
         "faculty": "คณะศึกษาศาสตร์",
         "syllabus_id": 36,
+        "has_minimum_score": false,
         "weight": {
             "thai": 40,
             "eng": 40,
@@ -1634,6 +1751,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1669,6 +1787,12 @@
         "syllabus": "วิชาเอกการสอนภาษาไทย",
         "faculty": "คณะศึกษาศาสตร์",
         "syllabus_id": 37,
+        "has_minimum_score": true,
+        "minimum_score": {
+            "thai": 30,
+            "eng": 25,
+            "math": 20
+        },
         "weight": {
             "thai": 65,
             "eng": 30,
@@ -1679,6 +1803,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1714,6 +1839,7 @@
         "syllabus": "วิชาเอกคณิตศาสตรศึกษา",
         "faculty": "คณะศึกษาศาสตร์",
         "syllabus_id": 38,
+        "has_minimum_score": false,
         "weight": {
             "thai": 20,
             "eng": 20,
@@ -1724,6 +1850,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1759,6 +1886,7 @@
         "syllabus": "วิชาเอกการคอมพิวเตอร์ศึกษา",
         "faculty": "คณะศึกษาศาสตร์",
         "syllabus_id": 39,
+        "has_minimum_score": false,
         "weight": {
             "thai": 20,
             "eng": 25,
@@ -1769,6 +1897,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1813,7 +1942,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1849,6 +1980,13 @@
         "syllabus": "วิชาเอกวิทยาศาสตร์ศึกษา",
         "faculty": "คณะศึกษาศาสตร์",
         "syllabus_id": 41,
+        "has_minimum_score": true,
+        "minimum_score": {
+            "sci": 25,
+            "chem": 25,
+            "bio": 25,
+            "phy": 25
+        },
         "weight": {
             "thai": 10,
             "eng": 30,
@@ -1859,6 +1997,7 @@
             "phy": 10
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1894,6 +2033,7 @@
         "syllabus": "วิชาเอกศิลปศึกษา",
         "faculty": "คณะศึกษาศาสตร์",
         "syllabus_id": 42,
+  
         "weight": {
             "thai": 30,
             "eng": 20,
@@ -1903,7 +2043,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1939,6 +2081,7 @@
         "syllabus": "วิชาเอกสังคมศึกษา",
         "faculty": "คณะศึกษาศาสตร์",
         "syllabus_id": 43,
+        "has_minimum_score": false,
         "weight": {
             "thai": 20,
             "eng": 35,
@@ -1949,6 +2092,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -1984,6 +2128,7 @@
         "syllabus": "พยาบาลศาสตร์บัณฑิต",
         "faculty": "คณะพยาบาลศาสตร์",
         "syllabus_id": 44,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 20,
@@ -1994,6 +2139,7 @@
             "phy": 15
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -2027,8 +2173,9 @@
     },
     {
         "syllabus": "แพทยศาสตร์",
-        "faculty": "คณะแพทยศาสตร์",
+        "faculty": "คณะแพทยศาสตร์ (001)",
         "syllabus_id": 45,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 30,
@@ -2039,6 +2186,7 @@
             "phy": 15
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -2071,9 +2219,19 @@
         }
     },
     {
-        "syllabus": "โครงการผลิตแพทย์เพิ่มเพื่อชาวชนบทกลุ่มแพทย์เพื่อชุมชน",
+        "syllabus": "โครงการผลิตแพทย์เพิ่มเพื่อชาวชนบทกลุ่มแพทย์เพื่อชุมชน (CPIRD)",
         "faculty": "คณะแพทยศาสตร์",
         "syllabus_id": 46,
+        "has_minimum_score": true,
+        "minimum_score": {
+            "thai": 30,
+            "eng": 30,
+            "math": 30,
+            "chem": 30,
+            "bio": 30,
+            "phy": 30
+        },
+        "min_sum": 50,
         "weight": {
             "thai": 10,
             "eng": 30,
@@ -2084,6 +2242,7 @@
             "phy": 15
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -2116,9 +2275,11 @@
         }
     },
     {
-        "syllabus": "โครงการผลิตแพทย์เพิ่มเพื่อชาวชนบทกลุ่มลดความเหลื่อมล้ำ",
+        "syllabus": "โครงการผลิตแพทย์เพิ่มเพื่อชาวชนบทกลุ่มลดความเหลื่อมล้ำ (Inclusive)",
         "faculty": "คณะแพทยศาสตร์",
         "syllabus_id": 47,
+        "has_minimum_score": true,
+        "min_sum": 50,
         "weight": {
             "thai": 10,
             "eng": 30,
@@ -2128,7 +2289,16 @@
             "bio": 15,
             "phy": 15
         },
+        "minimum_score": {
+            "thai": 30,
+            "eng": 30,
+            "math": 30,
+            "chem": 30,
+            "bio": 30,
+            "phy": 30
+        },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -2161,9 +2331,18 @@
         }
     },
     {
-        "syllabus": "รังสีเทคนิค",
+        "syllabus": "รังสีเทคนิค (ภาคปกติ)",
         "faculty": "คณะแพทยศาสตร์",
         "syllabus_id": 48,
+        "has_minimum_score": true,
+        "minimum_score": {
+            "thai": 20,
+            "eng": 20,
+            "chem": 20,
+            "math": 30,
+            "bio": 30,
+            "phy": 30
+        },
         "weight": {
             "thai": 10,
             "eng": 15,
@@ -2174,6 +2353,7 @@
             "phy": 22.5
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -2206,9 +2386,10 @@
         }
     },
     {
-        "syllabus": "เวชนิทัศน์",
+        "syllabus": "เวชนิทัศน์ (ภาคปกติ)",
         "faculty": "คณะแพทยศาสตร์",
         "syllabus_id": 49,
+
         "weight": {
             "thai": 20,
             "eng": 20,
@@ -2218,7 +2399,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -2254,6 +2437,7 @@
         "syllabus": "วิชาเอกภาษาฝรั่งเศส (วิทย์)",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 50,
+        "has_minimum_score": false,
         "weight": {
             "thai": 30,
             "eng": 30,
@@ -2264,6 +2448,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -2299,6 +2484,7 @@
         "syllabus": "วิชาเอกภาษาฝรั่งเศส (ศิลป์)",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 51,
+        "has_minimum_score": false,
         "weight": {
             "thai": 50,
             "eng": 50,
@@ -2309,6 +2495,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -2344,6 +2531,7 @@
         "syllabus": "วิชาเอกภาษาฝรั่งเศส เลือกสมรรถนะด้านภาษาฝรั่งเศส",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 52,
+
         "weight": {
             "thai": 30,
             "eng": 30,
@@ -2353,7 +2541,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 40,
@@ -2389,6 +2579,7 @@
         "syllabus": "วิชาเอกภาษาฝรั่งเศส เลือกสมรรถนะด้านภาษาเยอรมัน",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 53,
+
         "weight": {
             "thai": 30,
             "eng": 30,
@@ -2398,7 +2589,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -2434,6 +2627,7 @@
         "syllabus": "วิชาเอกภาษาฝรั่งเศส เลือกสมรรถนะด้านภาษาจีน",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 54,
+ 
         "weight": {
             "thai": 30,
             "eng": 30,
@@ -2443,7 +2637,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -2488,7 +2684,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -2524,6 +2722,7 @@
         "syllabus": "วิชาเอกภาษาฝรั่งเศส เลือกสมรรถนะด้านภาษาเกาหลี",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 56,
+
         "weight": {
             "thai": 30,
             "eng": 30,
@@ -2533,7 +2732,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -2569,6 +2770,7 @@
         "syllabus": "วิชาเอกภาษาเยอรมัน (วิทย์)",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 57,
+        "has_minimum_score": false,
         "weight": {
             "thai": 30,
             "eng": 30,
@@ -2579,6 +2781,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -2614,6 +2817,7 @@
         "syllabus": "วิชาเอกภาษาเยอรมัน (ศิลป์)",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 58,
+        "has_minimum_score": false,
         "weight": {
             "thai": 50,
             "eng": 50,
@@ -2624,6 +2828,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -2659,6 +2864,7 @@
         "syllabus": "วิชาเอกภาษาเยอรมัน เลือกสมรรถนะด้านภาษาฝรั่งเศส",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 59,
+
         "weight": {
             "thai": 30,
             "eng": 30,
@@ -2668,7 +2874,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 40,
@@ -2713,7 +2921,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -2749,6 +2959,7 @@
         "syllabus": "วิชาเอกภาษาเยอรมัน เลือกสมรรถนะด้านภาษาจีน",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 61,
+
         "weight": {
             "thai": 30,
             "eng": 30,
@@ -2758,7 +2969,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -2794,6 +3007,7 @@
         "syllabus": "วิชาเอกภาษาเยอรมัน เลือกสมรรถนะด้านภาษาญี่ปุ่น",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 62,
+
         "weight": {
             "thai": 30,
             "eng": 30,
@@ -2803,7 +3017,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -2839,6 +3055,7 @@
         "syllabus": "วิชาเอกภาษาเยอรมัน เลือกสมรรถนะด้านภาษาเกาหลี",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 63,
+
         "weight": {
             "thai": 30,
             "eng": 30,
@@ -2848,7 +3065,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -2884,6 +3103,7 @@
         "syllabus": "วิชาเอกภาษาสเปน (วิทย์)",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 64,
+        "has_minimum_score": false,
         "weight": {
             "thai": 30,
             "eng": 30,
@@ -2894,6 +3114,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -2929,6 +3150,7 @@
         "syllabus": "วิชาเอกภาษาสเปน (ศิลป์)",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 65,
+        "has_minimum_score": false,
         "weight": {
             "thai": 50,
             "eng": 50,
@@ -2939,6 +3161,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -2974,6 +3197,7 @@
         "syllabus": "วิชาเอกภาษาสเปน เลือกสมรรถนะด้านภาษาฝรั่งเศส",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 66,
+
         "weight": {
             "thai": 30,
             "eng": 30,
@@ -2983,7 +3207,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 40,
@@ -3019,6 +3245,7 @@
         "syllabus": "วิชาเอกภาษาสเปน เลือกสมรรถนะด้านภาษาเยอรมัน",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 67,
+
         "weight": {
             "thai": 30,
             "eng": 30,
@@ -3028,7 +3255,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -3064,6 +3293,7 @@
         "syllabus": "วิชาเอกภาษาสเปน เลือกสมรรถนะด้านภาษาจีน",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 68,
+
         "weight": {
             "thai": 30,
             "eng": 30,
@@ -3073,7 +3303,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -3109,6 +3341,7 @@
         "syllabus": "วิชาเอกภาษาสเปน เลือกสมรรถนะด้านภาษาญี่ปุ่น",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 69,
+
         "weight": {
             "thai": 30,
             "eng": 30,
@@ -3118,7 +3351,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -3154,6 +3389,7 @@
         "syllabus": "วิชาเอกภาษาสเปน เลือกสมรรถนะด้านภาษาเกาหลี",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 70,
+
         "weight": {
             "thai": 30,
             "eng": 30,
@@ -3163,7 +3399,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -3199,6 +3437,7 @@
         "syllabus": "วิชาเอกภาษาญี่ปุ่น",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 71,
+
         "weight": {
             "thai": 20,
             "eng": 40,
@@ -3208,7 +3447,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -3244,6 +3485,7 @@
         "syllabus": "วิชาเอกภาษาญี่ปุ่น (แผน A)",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 72,
+
         "weight": {
             "thai": 20,
             "eng": 40,
@@ -3253,7 +3495,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -3289,6 +3533,7 @@
         "syllabus": "วิชาเอกภาษาญี่ปุ่น (แผน B)",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 73,
+
         "weight": {
             "thai": 20,
             "eng": 40,
@@ -3298,7 +3543,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -3334,6 +3581,7 @@
         "syllabus": "วิชาเอกภาษาเกาหลี",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 74,
+
         "weight": {
             "thai": 20,
             "eng": 40,
@@ -3343,7 +3591,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -3379,6 +3629,7 @@
         "syllabus": "วิชาเอกภาษาอังกฤษ",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 75,
+        "has_minimum_score": false,
         "weight": {
             "thai": 30,
             "eng": 70,
@@ -3389,6 +3640,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -3424,6 +3676,7 @@
         "syllabus": "วิชาเอกภาษาไทย (วิทย์)",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 76,
+        "has_minimum_score": false,
         "weight": {
             "thai": 40,
             "eng": 30,
@@ -3434,6 +3687,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -3469,6 +3723,7 @@
         "syllabus": "วิชาเอกภาษาไทย (ศิลป์)",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 77,
+        "has_minimum_score": false,
         "weight": {
             "thai": 60,
             "eng": 40,
@@ -3479,6 +3734,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -3514,6 +3770,7 @@
         "syllabus": "วิชาเอกภาษาไทย เลือกสมรรถนะด้านภาษาฝรั่งเศส",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 78,
+
         "weight": {
             "thai": 40,
             "eng": 30,
@@ -3523,7 +3780,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 30,
@@ -3559,6 +3818,7 @@
         "syllabus": "วิชาเอกภาษาไทย เลือกสมรรถนะด้านภาษาเยอรมัน",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 79,
+
         "weight": {
             "thai": 40,
             "eng": 30,
@@ -3568,7 +3828,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -3604,6 +3866,7 @@
         "syllabus": "วิชาเอกภาษาไทย เลือกสมรรถนะด้านภาษาจีน",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 80,
+
         "weight": {
             "thai": 40,
             "eng": 30,
@@ -3613,7 +3876,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -3649,6 +3914,7 @@
         "syllabus": "วิชาเอกภาษาไทย เลือกสมรรถนะด้านภาษาญี่ปุ่น",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 81,
+
         "weight": {
             "thai": 40,
             "eng": 30,
@@ -3658,7 +3924,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -3694,6 +3962,7 @@
         "syllabus": "วิชาเอกภาษาไทย เลือกสมรรถนะด้านภาษาเกาหลี",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 82,
+
         "weight": {
             "thai": 40,
             "eng": 30,
@@ -3703,7 +3972,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -3739,6 +4010,7 @@
         "syllabus": "เอเชียตะวันออกเฉียงใต้ศึกษา (วิทย์)",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 83,
+        "has_minimum_score": false,
         "weight": {
             "thai": 40,
             "eng": 40,
@@ -3749,6 +4021,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -3784,6 +4057,7 @@
         "syllabus": "เอเชียตะวันออกเฉียงใต้ศึกษา (ศิลป์)",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 84,
+        "has_minimum_score": false,
         "weight": {
             "thai": 50,
             "eng": 50,
@@ -3794,6 +4068,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -3829,6 +4104,7 @@
         "syllabus": "เอเชียตะวันออกเฉียงใต้ศึกษา เลือกสมรรถนะด้านภาษาฝรั่งเศส",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 85,
+
         "weight": {
             "thai": 40,
             "eng": 40,
@@ -3838,7 +4114,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 20,
@@ -3874,6 +4152,7 @@
         "syllabus": "เอเชียตะวันออกเฉียงใต้ศึกษา เลือกสมรรถนะด้านภาษาเยอรมัน",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 86,
+
         "weight": {
             "thai": 40,
             "eng": 40,
@@ -3883,7 +4162,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -3919,6 +4200,7 @@
         "syllabus": "เอเชียตะวันออกเฉียงใต้ศึกษา เลือกสมรรถนะด้านภาษาจีน",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 87,
+
         "weight": {
             "thai": 40,
             "eng": 40,
@@ -3928,7 +4210,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -3964,6 +4248,7 @@
         "syllabus": "เอเชียตะวันออกเฉียงใต้ศึกษา เลือกสมรรถนะด้านภาษาญี่ปุ่น",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 88,
+
         "weight": {
             "thai": 40,
             "eng": 40,
@@ -3973,7 +4258,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4018,7 +4305,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4054,6 +4343,7 @@
         "syllabus": "รัฐประศาสนศาสตร์",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 90,
+        "has_minimum_score": false,
         "weight": {
             "thai": 25,
             "eng": 30,
@@ -4064,6 +4354,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4099,6 +4390,7 @@
         "syllabus": "สังคมศาสตร์ วิชาเอกพัฒนาสังคม",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 91,
+        "has_minimum_score": false,
         "weight": {
             "thai": 40,
             "eng": 30,
@@ -4109,6 +4401,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4144,6 +4437,7 @@
         "syllabus": "สังคมศาสตร์ วิชาเอกสังคมวิทยาและมนุษยวิทยา",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 92,
+        "has_minimum_score": false,
         "weight": {
             "thai": 40,
             "eng": 30,
@@ -4154,6 +4448,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4186,9 +4481,10 @@
         }
     },
     {
-        "syllabus": "สารสนเทศศาสตรบัณฑิต",
+        "syllabus": "สารสนเทศศาสตรบัณฑิต (โครงการสร้างบัณฑิตพันธุ์ใหม่)",
         "faculty": "คณะมนุษยศาสตร์และสังคมศาสตร์",
         "syllabus_id": 93,
+        "has_minimum_score": false,
         "weight": {
             "thai": 30,
             "eng": 40,
@@ -4199,6 +4495,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4234,6 +4531,7 @@
         "syllabus": "กายภาพบำบัด",
         "faculty": "คณะเทคนิคการแพทย์",
         "syllabus_id": 94,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 20,
@@ -4244,6 +4542,7 @@
             "phy": 15
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4279,6 +4578,7 @@
         "syllabus": "เทคนิคการแพทย์",
         "faculty": "คณะเทคนิคการแพทย์",
         "syllabus_id": 95,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 10,
@@ -4289,6 +4589,7 @@
             "phy": 10
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4324,6 +4625,7 @@
         "syllabus": "อนามัยสิ่งแวดล้อม อาชีวอนามัยและความปลอดภัย (โครงการพิเศษ)",
         "faculty": "คณะสาธารณสุขศาสตร์",
         "syllabus_id": 96,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 15,
@@ -4334,6 +4636,7 @@
             "phy": 15
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4369,6 +4672,7 @@
         "syllabus": "วิชาเอก อนามัยสิ่งแวดล้อม",
         "faculty": "คณะสาธารณสุขศาสตร์",
         "syllabus_id": 97,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 15,
@@ -4379,6 +4683,7 @@
             "phy": 15
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4414,6 +4719,7 @@
         "syllabus": "วิชาเอก อาชีวอนามัยและความปลอดภัย",
         "faculty": "คณะสาธารณสุขศาสตร์",
         "syllabus_id": 98,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 15,
@@ -4424,6 +4730,7 @@
             "phy": 15
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4459,6 +4766,7 @@
         "syllabus": "ทันตแพทย์ศาสตร์",
         "faculty": "คณะสาธารณสุขศาสตร์",
         "syllabus_id": 99,
+        "has_minimum_score": true,
         "weight": {
             "thai": 12,
             "eng": 25,
@@ -4468,7 +4776,17 @@
             "bio": 15,
             "phy": 13
         },
+        "min_sum": 50,
+        "minimum_score": {
+            "thai": 30,
+            "eng": 30,
+            "math": 30,
+            "chem": 30,
+            "bio": 30,
+            "phy": 30
+        },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4504,6 +4822,7 @@
         "syllabus": "สัตวแพทยศาสตร์",
         "faculty": "คณะสัตวแพทย์ศาสตร์",
         "syllabus_id": 100,
+        "has_minimum_score": false,
         "weight": {
             "thai": 15,
             "eng": 15,
@@ -4514,6 +4833,7 @@
             "phy": 10
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4549,6 +4869,7 @@
         "syllabus": "เภสัชศาสตร์บัณฑิต (โครงการพิเศษ)",
         "faculty": "คณะเภสัชศาสตร์",
         "syllabus_id": 101,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 20,
@@ -4559,6 +4880,7 @@
             "phy": 15
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4594,6 +4916,7 @@
         "syllabus": "เภสัชศาสตร์บัณฑิต",
         "faculty": "คณะเภสัชศาสตร์",
         "syllabus_id": 102,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 20,
@@ -4604,6 +4927,7 @@
             "phy": 15
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4639,6 +4963,7 @@
         "syllabus": "เภสัชศาสตร์บัณฑิต (โครงการพิเศษ นานาชาติ)",
         "faculty": "คณะเภสัชศาสตร์",
         "syllabus_id": 103,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 20,
@@ -4649,6 +4974,7 @@
             "phy": 15
         },
         "has_specific_capability": false,
+        "is_national": true,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4684,6 +5010,7 @@
         "syllabus": "เทคโนโลยีการผลิต",
         "faculty": "คณะเทคโนโลยี",
         "syllabus_id": 104,
+        "has_minimum_score": false,
         "weight": {
             "thai": 15,
             "eng": 20,
@@ -4694,6 +5021,7 @@
             "phy": 20
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4729,6 +5057,7 @@
         "syllabus": "เทคโนโลยีการอาหาร",
         "faculty": "คณะเทคโนโลยี",
         "syllabus_id": 105,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 15,
@@ -4739,6 +5068,7 @@
             "phy": 15
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4774,6 +5104,7 @@
         "syllabus": "เทคโนโลยีชีวภาพ",
         "faculty": "คณะเทคโนโลยี",
         "syllabus_id": 106,
+        "has_minimum_score": false,
         "weight": {
             "thai": 15,
             "eng": 15,
@@ -4784,6 +5115,7 @@
             "phy": 15
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4819,6 +5151,7 @@
         "syllabus": "เทคโนโลยีธรณี",
         "faculty": "คณะเทคโนโลยี",
         "syllabus_id": 107,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 15,
@@ -4829,6 +5162,7 @@
             "phy": 15
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4864,6 +5198,7 @@
         "syllabus": "สถาปัตยกรรมศาสตร์บัณฑิต",
         "faculty": "คณะสถาปัตยกรรมศาสตร์",
         "syllabus_id": 108,
+
         "weight": {
             "thai": 0,
             "eng": 20,
@@ -4873,7 +5208,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4909,6 +5246,7 @@
         "syllabus": "การออกแบบ",
         "faculty": "คณะสถาปัตยกรรมศาสตร์",
         "syllabus_id": 109,
+
         "weight": {
             "thai": 0,
             "eng": 10,
@@ -4918,7 +5256,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4954,6 +5294,7 @@
         "syllabus": "บริหารธุรกิจบัณฑิต สาขาวิชาผู้ประกอบการดิจิทัล",
         "faculty": "คณะบริหารธุรกิจและการบัญชี",
         "syllabus_id": 110,
+        "has_minimum_score": false,
         "weight": {
             "thai": 25,
             "eng": 25,
@@ -4964,6 +5305,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -4999,6 +5341,7 @@
         "syllabus": "บริหารธุรกิจบัณฑิต วิชาเอกการเงิน",
         "faculty": "คณะบริหารธุรกิจและการบัญชี",
         "syllabus_id": 111,
+        "has_minimum_score": false,
         "weight": {
             "thai": 25,
             "eng": 30,
@@ -5009,6 +5352,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -5044,6 +5388,7 @@
         "syllabus": "บริหารธุรกิจบัณฑิต วิชาเอกการจัดการ การประกอบพาณิชย์ และนวัตกรรม",
         "faculty": "คณะบริหารธุรกิจและการบัญชี",
         "syllabus_id": 112,
+        "has_minimum_score": false,
         "weight": {
             "thai": 25,
             "eng": 30,
@@ -5054,6 +5399,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -5089,6 +5435,7 @@
         "syllabus": "บริหารธุรกิจบัณฑิต วิชาเอกการจัดการธุรกิจบริการและการจัดงาน",
         "faculty": "คณะบริหารธุรกิจและการบัญชี",
         "syllabus_id": 113,
+        "has_minimum_score": false,
         "weight": {
             "thai": 25,
             "eng": 35,
@@ -5099,6 +5446,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -5134,6 +5482,7 @@
         "syllabus": "บริหารธุรกิจบัณฑิต วิชาเอกการตลาด",
         "faculty": "คณะบริหารธุรกิจและการบัญชี",
         "syllabus_id": 114,
+        "has_minimum_score": false,
         "weight": {
             "thai": 25,
             "eng": 30,
@@ -5144,6 +5493,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -5179,6 +5529,7 @@
         "syllabus": "บัญชีบัณฑิต",
         "faculty": "คณะบริหารธุรกิจและการบัญชี",
         "syllabus_id": 115,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 40,
@@ -5189,6 +5540,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -5224,6 +5576,12 @@
         "syllabus": "บัญชีบัณฑิต (หลักสูตรนานาชาติ)",
         "faculty": "คณะบริหารธุรกิจและการบัญชี",
         "syllabus_id": 116,
+        "has_minimum_score": true,
+        "minimum_score": {
+            "eng": 50,
+            "math": 50,
+            "phy": 50
+        },
         "weight": {
             "thai": 0,
             "eng": 40,
@@ -5234,6 +5592,7 @@
             "phy": 20
         },
         "has_specific_capability": false,
+        "is_national": true,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -5269,6 +5628,7 @@
         "syllabus": "การจัดการนวัตกรรมการท่องเที่ยว (กลุ่มเรียนภาษาไทย)",
         "faculty": "คณะบริหารธุรกิจและการบัญชี",
         "syllabus_id": 117,
+        "has_minimum_score": false,
         "weight": {
             "thai": 25,
             "eng": 40,
@@ -5279,6 +5639,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -5314,6 +5675,7 @@
         "syllabus": "การจัดการนวัตกรรมการท่องเที่ยว (กลุ่มเรียนภาษาอังกฤษ)",
         "faculty": "คณะบริหารธุรกิจและการบัญชี",
         "syllabus_id": 118,
+        "has_minimum_score": false,
         "weight": {
             "thai": 25,
             "eng": 40,
@@ -5324,6 +5686,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -5359,6 +5722,7 @@
         "syllabus": "นิติศาสตร์ (โครงการพิเศษ)",
         "faculty": "คณะนิติศาสตร์",
         "syllabus_id": 119,
+        "has_minimum_score": false,
         "weight": {
             "thai": 25,
             "eng": 25,
@@ -5369,6 +5733,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -5404,6 +5769,7 @@
         "syllabus": "สาขาวิชาทัศนศิลป์",
         "faculty": "คณะศิลปกรรมศาสตร์",
         "syllabus_id": 120,
+
         "weight": {
             "thai": 15,
             "eng": 10,
@@ -5413,7 +5779,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -5449,6 +5817,7 @@
         "syllabus": "สาขาวิชาออกแบบนิเทศศิลป์",
         "faculty": "คณะศิลปกรรมศาสตร์",
         "syllabus_id": 121,
+
         "weight": {
             "thai": 15,
             "eng": 10,
@@ -5458,7 +5827,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -5494,6 +5865,7 @@
         "syllabus": "วิชาเอกดนตรี",
         "faculty": "คณะศิลปกรรมศาสตร์",
         "syllabus_id": 122,
+
         "weight": {
             "thai": 10,
             "eng": 10,
@@ -5503,7 +5875,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -5539,6 +5913,7 @@
         "syllabus": "สาขาวิชานาฎศิลป์",
         "faculty": "คณะศิลปกรรมศาสตร์",
         "syllabus_id": 123,
+
         "weight": {
             "thai": 15,
             "eng": 10,
@@ -5548,7 +5923,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -5584,6 +5961,10 @@
         "syllabus": "การจัดการท่องเที่ยว (นานาชาติ)",
         "faculty": "วิทยาลัยนานาชาติ",
         "syllabus_id": 124,
+        "has_minimum_score": true,
+        "minimum_score": {
+            "eng": 20
+        },
         "weight": {
             "thai": 0,
             "eng": 100,
@@ -5594,6 +5975,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -5629,6 +6011,10 @@
         "syllabus": "การระหว่างประเทศ (หลักสูตรนานาชาติ)",
         "faculty": "วิทยาลัยนานาชาติ",
         "syllabus_id": 125,
+        "has_minimum_score": true,
+        "minimum_score": {
+            "eng": 20
+        },
         "weight": {
             "thai": 0,
             "eng": 100,
@@ -5639,6 +6025,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": true,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -5674,6 +6061,10 @@
         "syllabus": "นิเทศศาสตรบัณฑิต วิชาเอกเทคโนโลยีสื่อสร้างสรรค์ (นานาชาติ)",
         "faculty": "วิทยาลัยนานาชาติ",
         "syllabus_id": 126,
+        "has_minimum_score": true,
+        "minimum_score": {
+            "eng": 20
+        },
         "weight": {
             "thai": 0,
             "eng": 100,
@@ -5684,6 +6075,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -5719,6 +6111,10 @@
         "syllabus": "นิเทศศาสตรบัณฑิต วิชาเอกวารสารศาสตร์ระหว่างประเทศ (นานาชาติ)",
         "faculty": "วิทยาลัยนานาชาติ",
         "syllabus_id": 127,
+        "has_minimum_score": true,
+        "minimum_score": {
+            "eng": 20
+        },
         "weight": {
             "thai": 0,
             "eng": 100,
@@ -5729,6 +6125,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -5764,6 +6161,10 @@
         "syllabus": "การบริหารธุรกิจบัณฑิต (หลักสูตรนานาชาติ) วิชาเอกการตลาดระหว่างประเทศ",
         "faculty": "วิทยาลัยนานาชาติ",
         "syllabus_id": 128,
+        "has_minimum_score": true,
+        "minimum_score": {
+            "eng": 20
+        },
         "weight": {
             "thai": 0,
             "eng": 70,
@@ -5774,6 +6175,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": true,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -5809,6 +6211,10 @@
         "syllabus": "การบริหารธุรกิจบัณฑิต (หลักสูตรนานาชาติ) วิชาเอกการเป็นผู้ประกอบการระหว่างประเทศ",
         "faculty": "วิทยาลัยนานาชาติ",
         "syllabus_id": 129,
+        "has_minimum_score": true,
+        "minimum_score": {
+            "eng": 20
+        },
         "weight": {
             "thai": 0,
             "eng": 70,
@@ -5819,6 +6225,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": true,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -5854,6 +6261,10 @@
         "syllabus": "การบริหารธุรกิจบัณฑิต (หลักสูตรนานาชาติ) วิชาเอกธุรกิจสากล",
         "faculty": "วิทยาลัยนานาชาติ",
         "syllabus_id": 130,
+        "has_minimum_score": true,
+        "minimum_score": {
+            "eng": 20
+        },
         "weight": {
             "thai": 0,
             "eng": 70,
@@ -5864,6 +6275,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": true,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -5899,6 +6311,7 @@
         "syllabus": "เศรษฐศาสตร์บัณฑิต",
         "faculty": "คณะเศรษฐศาสตร์",
         "syllabus_id": 131,
+        "has_minimum_score": true,
         "weight": {
             "thai": 20,
             "eng": 40,
@@ -5909,6 +6322,11 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
+        "minimum_score": {
+            "eng": 15,
+            "math": 15
+        },
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -5944,6 +6362,7 @@
         "syllabus": "เศรษฐศาสตร์บัณฑิต (หลักสูตรนานาชาติ)",
         "faculty": "คณะเศรษฐศาสตร์",
         "syllabus_id": 132,
+        "has_minimum_score": true,
         "weight": {
             "thai": 0,
             "eng": 60,
@@ -5953,7 +6372,12 @@
             "bio": 0,
             "phy": 0
         },
+        "minimum_score": {
+            "eng": 30,
+            "math": 15
+        },
         "has_specific_capability": false,
+        "is_national": true,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -5989,6 +6413,7 @@
         "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการปกครองและกิจการสาธารณะ สมรรถนะด้านคณิตศาสตร์",
         "faculty": "วิทยาลัยการปกครองท้องถิ่น",
         "syllabus_id": 133,
+        "has_minimum_score": false,
         "weight": {
             "thai": 20,
             "eng": 35,
@@ -5999,6 +6424,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -6034,6 +6460,7 @@
         "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการปกครองและกิจการสาธารณะ สมรรถนะด้านภาษาฝรั่งเศส",
         "faculty": "วิทยาลัยการปกครองท้องถิ่น",
         "syllabus_id": 134,
+
         "weight": {
             "thai": 20,
             "eng": 35,
@@ -6043,7 +6470,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 20,
@@ -6079,6 +6508,7 @@
         "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการปกครองและกิจการสาธารณะ สมรรถนะด้านภาษาเยอรมัน",
         "faculty": "วิทยาลัยการปกครองท้องถิ่น",
         "syllabus_id": 135,
+
         "weight": {
             "thai": 20,
             "eng": 35,
@@ -6088,7 +6518,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -6124,6 +6556,7 @@
         "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการปกครองและกิจการสาธารณะ สมรรถนะด้านภาษาจีน",
         "faculty": "วิทยาลัยการปกครองท้องถิ่น",
         "syllabus_id": 136,
+
         "weight": {
             "thai": 20,
             "eng": 35,
@@ -6133,7 +6566,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -6169,6 +6604,7 @@
         "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการปกครองและกิจการสาธารณะ สมรรถนะด้านภาษาญี่ปุ่น",
         "faculty": "วิทยาลัยการปกครองท้องถิ่น",
         "syllabus_id": 137,
+
         "weight": {
             "thai": 20,
             "eng": 35,
@@ -6178,7 +6614,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -6214,6 +6652,7 @@
         "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการการเงินและการคลัง สมรรถนะด้านคณิตศาสตร์",
         "faculty": "วิทยาลัยการปกครองท้องถิ่น",
         "syllabus_id": 138,
+        "has_minimum_score": false,
         "weight": {
             "thai": 20,
             "eng": 35,
@@ -6224,6 +6663,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -6259,6 +6699,7 @@
         "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการการเงินและการคลัง สมรรถนะด้านภาษาฝรั่งเศส",
         "faculty": "วิทยาลัยการปกครองท้องถิ่น",
         "syllabus_id": 139,
+
         "weight": {
             "thai": 20,
             "eng": 35,
@@ -6268,7 +6709,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 20,
@@ -6304,6 +6747,7 @@
         "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการการเงินและการคลัง สมรรถนะด้านภาษาเยอรมัน",
         "faculty": "วิทยาลัยการปกครองท้องถิ่น",
         "syllabus_id": 140,
+
         "weight": {
             "thai": 20,
             "eng": 35,
@@ -6313,7 +6757,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -6358,7 +6804,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -6403,7 +6851,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -6439,6 +6889,7 @@
         "syllabus": "หลักสูตรรัฐประศาสนศาสตรบัณฑิต วิชาเอกการจัดการเมืองและเทคโนโลยีเมือง สมรรถนะด้านคณิตศาสตร์",
         "faculty": "วิทยาลัยการปกครองท้องถิ่น",
         "syllabus_id": 143,
+        "has_minimum_score": false,
         "weight": {
             "thai": 20,
             "eng": 35,
@@ -6449,6 +6900,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -6493,7 +6945,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 20,
@@ -6538,7 +6992,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -6583,7 +7039,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -6628,7 +7086,9 @@
             "bio": 0,
             "phy": 0
         },
+        "has_minimum_score": false,
         "has_specific_capability": true,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -6664,6 +7124,7 @@
         "syllabus": "เทคโนโลยีสารสนเทศ (โครงการพิเศษ)",
         "faculty": "วิทยาลัยการคอมพิวเตอร์",
         "syllabus_id": 148,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 10,
@@ -6674,6 +7135,7 @@
             "phy": 20
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -6709,6 +7171,7 @@
         "syllabus": "เทคโนโลยีสารสนเทศ",
         "faculty": "วิทยาลัยการคอมพิวเตอร์",
         "syllabus_id": 149,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 10,
@@ -6719,6 +7182,7 @@
             "phy": 20
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -6754,6 +7218,7 @@
         "syllabus": "ภูมิสารสนเทศศาสตร์ (โครงการพิเศษ)",
         "faculty": "วิทยาลัยการคอมพิวเตอร์",
         "syllabus_id": 150,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 10,
@@ -6764,6 +7229,7 @@
             "phy": 15
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -6799,6 +7265,7 @@
         "syllabus": "ภูมิสารสนเทศศาสตร์",
         "faculty": "วิทยาลัยการคอมพิวเตอร์",
         "syllabus_id": 151,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 10,
@@ -6809,6 +7276,7 @@
             "phy": 15
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -6844,6 +7312,7 @@
         "syllabus": "วิทยาการคอมพิวเตอร์ (โครงการพิเศษ)",
         "faculty": "วิทยาลัยการคอมพิวเตอร์",
         "syllabus_id": 152,
+        "has_minimum_score": false,
         "weight": {
             "thai": 5,
             "eng": 15,
@@ -6854,6 +7323,7 @@
             "phy": 20
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -6889,6 +7359,7 @@
         "syllabus": "วิทยาการคอมพิวเตอร์",
         "faculty": "วิทยาลัยการคอมพิวเตอร์",
         "syllabus_id": 153,
+        "has_minimum_score": false,
         "weight": {
             "thai": 5,
             "eng": 15,
@@ -6899,6 +7370,7 @@
             "phy": 20
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -6934,6 +7406,7 @@
         "syllabus": "การท่องเที่ยวและอุตสาหกรรมการบริการ",
         "faculty": "คณะสหวิทยาการ",
         "syllabus_id": 154,
+        "has_minimum_score": false,
         "weight": {
             "thai": 20,
             "eng": 40,
@@ -6944,6 +7417,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -6979,6 +7453,7 @@
         "syllabus": "การสอนภาษาอังกฤษในฐานะภาษาต่างประเทศ",
         "faculty": "คณะสหวิทยาการ",
         "syllabus_id": 155,
+        "has_minimum_score": false,
         "weight": {
             "thai": 20,
             "eng": 60,
@@ -6989,6 +7464,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -7024,6 +7500,7 @@
         "syllabus": "เทคโนโลยีการผลิตสัตว์น้ำ",
         "faculty": "คณะสหวิทยาการ",
         "syllabus_id": 156,
+        "has_minimum_score": false,
         "weight": {
             "thai": 20,
             "eng": 10,
@@ -7034,6 +7511,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -7069,6 +7547,7 @@
         "syllabus": "เทคโนโลยีและนวัตกรรมอาหาร",
         "faculty": "คณะสหวิทยาการ",
         "syllabus_id": 157,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 10,
@@ -7079,6 +7558,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -7114,6 +7594,7 @@
         "syllabus": "บริหารธุรกิจบัณฑิต วิชาเอกการเงินธุรกิจ",
         "faculty": "คณะสหวิทยาการ",
         "syllabus_id": 158,
+        "has_minimum_score": false,
         "weight": {
             "thai": 20,
             "eng": 40,
@@ -7124,6 +7605,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -7159,6 +7641,7 @@
         "syllabus": "บริหารธุรกิจบัณฑิต วิชาเอกธุรกิจระหว่างประเทศ",
         "faculty": "คณะสหวิทยาการ",
         "syllabus_id": 159,
+        "has_minimum_score": false,
         "weight": {
             "thai": 20,
             "eng": 40,
@@ -7169,6 +7652,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -7204,6 +7688,7 @@
         "syllabus": "บัญชีบัณฑิต",
         "faculty": "คณะสหวิทยาการ",
         "syllabus_id": 160,
+        "has_minimum_score": false,
         "weight": {
             "thai": 20,
             "eng": 30,
@@ -7214,6 +7699,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -7249,6 +7735,7 @@
         "syllabus": "ภาษาอังกฤษเพื่อการจัดการธุรกิจ",
         "faculty": "คณะสหวิทยาการ",
         "syllabus_id": 161,
+        "has_minimum_score": false,
         "weight": {
             "thai": 30,
             "eng": 60,
@@ -7259,6 +7746,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -7294,6 +7782,7 @@
         "syllabus": "รัฐประศาสนศาสตร์",
         "faculty": "คณะสหวิทยาการ",
         "syllabus_id": 162,
+        "has_minimum_score": false,
         "weight": {
             "thai": 20,
             "eng": 40,
@@ -7304,6 +7793,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -7339,6 +7829,7 @@
         "syllabus": "วิทยาการคอมพิวเตอร์และสารสนเทศ วิชาเอก วิทยาการข้อมูลและปัญญาประดิษฐ์",
         "faculty": "คณะสหวิทยาการ",
         "syllabus_id": 163,
+        "has_minimum_score": false,
         "weight": {
             "thai": 25,
             "eng": 25,
@@ -7349,6 +7840,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -7384,6 +7876,7 @@
         "syllabus": "วิทยาการคอมพิวเตอร์และสารสนเทศ วิชาเอก วิทยาการคอมพิวเตอร์และสารสนเทศ",
         "faculty": "คณะสหวิทยาการ",
         "syllabus_id": 164,
+        "has_minimum_score": false,
         "weight": {
             "thai": 20,
             "eng": 25,
@@ -7394,6 +7887,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -7429,6 +7923,7 @@
         "syllabus": "วิทยาศาสตร์การกีฬาและการออกกำลังกาย",
         "faculty": "คณะสหวิทยาการ",
         "syllabus_id": 165,
+        "has_minimum_score": false,
         "weight": {
             "thai": 15,
             "eng": 15,
@@ -7439,6 +7934,7 @@
             "phy": 10
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -7474,6 +7970,7 @@
         "syllabus": "วิทยาศาสตร์สิ่งแวดล้อมและทรัพยากรธรรมชาติ",
         "faculty": "คณะสหวิทยาการ",
         "syllabus_id": 166,
+        "has_minimum_score": false,
         "weight": {
             "thai": 10,
             "eng": 15,
@@ -7484,6 +7981,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -7519,6 +8017,7 @@
         "syllabus": "เศรษฐศาสตร์ระหว่างประเทศ นวัตกรรม และความยั่งยืน",
         "faculty": "คณะสหวิทยาการ",
         "syllabus_id": 167,
+        "has_minimum_score": false,
         "weight": {
             "thai": 40,
             "eng": 30,
@@ -7529,6 +8028,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
@@ -7564,6 +8064,7 @@
         "syllabus": "สาขาวิชานิติศาสตร์",
         "faculty": "คณะสหวิทยาการ",
         "syllabus_id": 168,
+        "has_minimum_score": false,
         "weight": {
             "thai": 40,
             "eng": 40,
@@ -7574,6 +8075,7 @@
             "phy": 0
         },
         "has_specific_capability": false,
+        "is_national": false,
         "specific_capability": {
             "foreign": {
                 "fr": 0,
