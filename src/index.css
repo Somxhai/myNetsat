@@ -29,11 +29,22 @@ input:-webkit-autofill {
   -webkit-text-fill-color: #6c6d7a !important;
 }
 
+#dropdownMenu::-webkit-scrollbar-thumb {
+  background-color: #6c6d7a;
+  border-radius: 0.75rem;
+  width: 5rem;
+}
 @layer utilities {
   .blurScreen {
-
     @apply blur-sm pointer-events-none;
-    
   }
-  
+  .scrollbar::-webkit-scrollbar {
+    background-color: white;
+    width: 0.5rem;
+  }
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #6c6d7a;
+    border-radius: 0.75rem;
+    width: 5rem;
+  }
 }
