@@ -8,6 +8,7 @@ export const NetsatTableData = ({
   title,
   score,
   capabilityData,
+  minScore
 }: TableDataType) => {
  
   return (
@@ -18,6 +19,8 @@ export const NetsatTableData = ({
           : checkNetsatSubject(title)}
       </td>
       <td className="px-3 text-text_secondary">{score}</td>
+      <td className="px-3 text-text_secondary">{minScore ?? null}</td>
+      
     </tr>
   );
 };
