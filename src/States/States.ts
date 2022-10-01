@@ -1,5 +1,5 @@
-import { atom, DefaultValue, selector } from "recoil";
-import { ScoreType } from "../Types/StateType";
+import { atom } from "recoil";
+import { EngTestType, ScoreType } from "../Types/StateType";
 import { ValType } from "../Types/DataType";
 
 export const capabilityID = atom({
@@ -11,6 +11,11 @@ export const capabilityFormState = atom({
   key: "capabilityForm",
   default: false,
 });
+
+export const engTestScore = atom({
+  key: 'engTestScore',
+  default: <EngTestType>{name: "TOEFL CB", score:0}
+})
 
 export const selectedDataState = atom({
   key: "selectedDataState",
