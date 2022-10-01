@@ -1,9 +1,0 @@
-#searchResult::-webkit-scrollbar {
-    background-color: white;
-    width: 0.5rem;
-}
-#searchResult::-webkit-scrollbar-thumb {
-    background-color: #6c6d7a;
-    border-radius: 0.75rem;
-    width: 5rem;
-}
