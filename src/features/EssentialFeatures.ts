@@ -1,5 +1,6 @@
 import { ValType } from "../Types/DataType";
-
+import { ScoreType } from "../Types/StateType";
+import { getEngTest } from "./ApiFeatures";
 
 export const checkCapabilitySubject = (capability: string): string => {
   switch (capability.toLowerCase()) {
@@ -49,6 +50,26 @@ export const checkCapabilitySubject = (capability: string): string => {
       return "";
   }
 };
+
+export const hasNationalEngOrPhar = (val: ValType[]) => {
+  for (const v of val) {
+    if (v.is_national && (isEngineer(v) || isPharmarcy(v))) return true;
+  }
+  return false;
+};
+
+export const isEngineer = (data: ValType) => {
+  return data.faculty.includes("คณะวิศวกรรมศาสตร์");
+};
+export const isPharmarcy = (data: ValType) => {
+  return data.faculty.includes("คณะเภสัชศาสตร์");
+};
+export const patternCheck = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const value = e.target.value;
+  const pattern = "^([0-9]+\\.?[0-9]*|[0-9]*\\.[0-9]+)$";
+  if (value.match(pattern) || value == "") return value;
+  return "";
+};
 export const checkNetsatSubject = (subject: string): string => {
   switch (subject.toLowerCase()) {
     case "thai":
@@ -68,6 +89,10 @@ export const checkNetsatSubject = (subject: string): string => {
     default:
       return "";
   }
+};
+
+export const isBusinessAndAccounting = (data: ValType) => {
+  return data.faculty == "คณะบริหารธุรกิจและการบัญชี";
 };
 
 export const isInputRequired = (id: string, selectedData: ValType[]) => {
@@ -108,18 +133,40 @@ export const isInputRequired = (id: string, selectedData: ValType[]) => {
   }
   return false;
 };
-
-
-export const getAllCapabilityWeight = (data:ValType) => {
-  let capAndScore = []
-  for (const [k, v] of Object.entries(data.specific_capability)) {
-    if (typeof v == 'object') {
-      for (const [k1, v1] of Object.entries(v)) {
-        if (v1 != 0) capAndScore.push([k1, v1])
-      }
-    } else if (typeof v == 'number' && v != 0) {
-      capAndScore.push([k, v])
+export const checkMinEngTestScore = (
+  testName: string,
+  score: number,
+  faculty: string
+) => {
+  for (const [k, v] of Object.entries(getEngTest(faculty))) {
+    if (k == testName && score >= v) {
+      return true;
     }
   }
-  return capAndScore
-}
+  return false;
+};
+
+export const getAllCapabilityWeight = (data: ValType) => {
+  let capAndScore = [];
+  for (const [k, v] of Object.entries(data.specific_capability)) {
+    if (typeof v == "object") {
+      for (const [k1, v1] of Object.entries(v)) {
+        if (v1 != 0) capAndScore.push([k1, v1]);
+      }
+    } else if (typeof v == "number" && v != 0) {
+      capAndScore.push([k, v]);
+    }
+  }
+  return capAndScore;
+};
+
+export const checkMinScore = (scores: ScoreType, data: ValType) => {
+  if (data.minimum_score != null) {
+    for (const [k, v] of Object.entries(data.minimum_score)) {
+      if (scores[k] < v) {
+        return false;
+      }
+    }
+  }
+  return true;
+};

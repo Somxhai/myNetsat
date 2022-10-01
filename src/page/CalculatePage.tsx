@@ -18,6 +18,7 @@ import {
 import { useRecoilState, useSetRecoilState } from "recoil";
 import Footer from "../components/Footer";
 
+
 const CalculatePage = () => {
   const [blur, setBlur] = useRecoilState(blurScreenState);
   const [trigger, setTrigger] = useRecoilState(calState);
@@ -94,9 +95,10 @@ const CalculatePage = () => {
             <form ref={engineerFormRef}>
               <CapabilityForm />
             </form>
+        
           </div>
           <div className="text-xs text-secondary w-fit mt-3">
-            <p>* ใช้คะแนนดิบในการคำนวณ เว็บจะคำนวณเป็น % ให้</p>
+            <p>* ภาษาไทยและภาษาอังกฤษใช้คะแนนร้อยละ</p>
           </div>
           <div className="mt-5 flex font-[Kanit] align-baseline">
             <button
