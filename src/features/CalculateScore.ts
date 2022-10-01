@@ -1,4 +1,3 @@
-import { forwardRef } from "react";
 
 interface netsatType {
   [key: string]: number;
