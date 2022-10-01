@@ -7,3 +7,7 @@ export interface NetsatFormType {
 export interface CapabilityFormType {
   href: RefObject<HTMLFormElement>
 }
+export interface DropDownButtonType {
+  title:string
+  onClick:Function
+}
