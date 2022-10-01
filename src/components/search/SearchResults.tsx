@@ -1,17 +1,15 @@
 import { useMemo } from "react";
 import SearchList from "./SearchList";
 import { getApi } from "../../features/ApiFeatures";
-import "../../styles/scrollwheel.css";
 import { ValType } from "../../Types/DataType";
 import { useRecoilValue } from "recoil";
 import { searchState } from "../../States/States";
 
 const SearchResults = () => {
   const search = useRecoilValue(searchState);
-  const JSONdata = getApi();
   const output: JSX.Element[] = useMemo(
     () =>
-      JSONdata.filter((val: ValType) => {
+    getApi().filter((val: ValType) => {
         if (search == "") {
           return val;
         } else if (
@@ -30,7 +28,7 @@ const SearchResults = () => {
     <div className="justify-center border-t-2  text-center h-72 w-72">
       <div
         id="searchResult"
-        className="mt-3 pr-1 overflow-y-scroll h-64  first:rounded-t-lg last:rounded-b-lg"
+        className="mt-3 pr-1 overflow-y-scroll h-64  first:rounded-t-lg last:rounded-b-lg scrollbar"
       >
         {output.length > 0 ? (
           output
