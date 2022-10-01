@@ -4,6 +4,8 @@ import { useEffect, useRef } from "react";
 import { calState, netsatScore } from "../../States/States";
 import { useRecoilValue, useSetRecoilState } from "recoil";
 import { ScoreType } from "../../Types/StateType";
+import EngTestForm from "./EngTestForm";
+
 
 const NetsatForm = () => {
   const trigger = useRecoilValue(calState);
@@ -84,6 +86,7 @@ const CapabilityForm = () => {
             title="เวชนิทัศน์"
             placeholder="เทคโนโลยีสำหรับเวชนิทัศน์และศิลป์สำหรับเวชนิทัศน์"
           />
+          <EngTestForm />
         </div>
     </div>
   );
