@@ -1,25 +1,17 @@
-import { useRecoilValue } from "recoil";
-import { selectedDataState } from "../States/States";
+
 import { ValType } from "../Types/DataType";
 import DATA from "../data.json";
+import EngTestData from "../engTestData.json";
 
-type weightType = {
-  [subject: string]: number;
+export const getApi = () => DATA;
+export const getEngTest = (faculty: string) => {
+  return (
+    EngTestData[faculty as keyof typeof EngTestData] ??
+    EngTestData["engineer" as keyof typeof EngTestData]
+  );
 };
-type capabilityWeightType = {
-  [mainCapability: string]: number | { [capability: string]: number };
-};
-const getApi = () => DATA;
-const getFacultyBySyllabus = (syllabus: string): string => {
-  let result = "";
-  getApi().forEach((val) => {
-    if (val.syllabus == syllabus) {
-      result = val.faculty;
-    }
-  });
-  return result;
-};
-const hasCapability = (syllabus: string): boolean => {
+
+export const hasCapability = (syllabus: string): boolean => {
   for (const value of getApi()) {
     if (value.syllabus == syllabus) {
       return value.has_specific_capability ?? false;
@@ -28,41 +20,21 @@ const hasCapability = (syllabus: string): boolean => {
   return false;
 };
 
-const getNetsatWeightBySyllabus = (syllabus: string): weightType => {
-  let weight = {};
-  getApi().forEach((val) => {
-    if (val.syllabus == syllabus) {
-      weight = { ...val.weight };
-    }
-  });
-  return weight;
-};
-const getCapabilityWeightBySyllabus = (
-  syllabus: string
-): capabilityWeightType => {
-  let weight: capabilityWeightType = {};
-  getApi().forEach((val) => {
-    if (val.syllabus == syllabus && val.has_specific_capability) {
-      weight = { ...val.specific_capability };
-    }
-  });
-  return weight;
+export const getMinEngTestScore = (
+  testName: string,
+  faculty: string
+) => {
+  if (getEngTest(faculty).hasOwnProperty(testName)) return getEngTest(faculty)[testName as keyof typeof getEngTest]
+  return 0;
 };
 
-const isIdSelected = (id: number, data: ValType[]): boolean => {
+
+
+export const isIdSelected = (id: number, data: ValType[]): boolean => {
   for (const val of data) {
     if (val.syllabus_id == id) {
       return true;
     }
   }
   return false;
-};
-
-export {
-  isIdSelected,
-  getApi,
-  getFacultyBySyllabus,
-  getNetsatWeightBySyllabus,
-  hasCapability,
-  getCapabilityWeightBySyllabus,
 };
