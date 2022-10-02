@@ -21,7 +21,16 @@ const Footer = () => {
           admissions.kku.ac.th/quota65
         </a>
       </p>
-      <p>อยากใช้ API? <a href="https://github.com/Somxhai/NetsatAPI" className="underline hover:text-text_primary">GITHUB</a></p>
+      <p>
+        อยากใช้ API?{" "}
+        <a
+          target="_blank"
+          href="https://github.com/Somxhai/NetsatAPI"
+          className="underline hover:text-text_primary"
+        >
+          GITHUB
+        </a>
+      </p>
     </footer>
   );
 };
