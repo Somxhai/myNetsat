@@ -6,12 +6,12 @@ import {
 } from "../../features/EssentialFeatures";
 import { calState, engTestScore, selectedDataState } from "../../States/States";
 import { DropDownButtonType } from "../../Types/FormType";
-import { DownIcon } from "../template/Buttons";
+import { DownIcon } from "../template/ButtonsAndIcons";
 
 const EngTestForm = () => {
   const selected = useRecoilValue(selectedDataState);
   const [eng, setEng] = useState("TOEFL CB");
-  const trigger = useRecoilValue(calState)
+  const trigger = useRecoilValue(calState);
   const setEngScore = useSetRecoilState(engTestScore);
   const ref = useRef<HTMLDivElement>(null!);
   const engRef = useRef<HTMLInputElement>(null!);
@@ -35,18 +35,18 @@ const EngTestForm = () => {
   }, [eng, trigger]);
 
   return (
-    <div ref={ref} className="hidden mt-3">
+    <main ref={ref} className="hidden mt-3">
       <p className="text-text_primary text-ellipsis">
         ผลทดสอบอังกฤษ (TOEFL, CU-TEP...)
       </p>
-      <div className="flex space-x-3 w-fit m-auto justify-between mt-1">
+      <section className="flex space-x-3 w-fit m-auto justify-between mt-1">
         <input
           onChange={(e) => setScore(patternCheck(e))}
           ref={engRef}
           value={score}
           maxLength={6}
           className="bg-white text-sm px-2 text-text_secondary border-purple-500 focus:outline-none rounded-lg border-b-2 w-24"
-        ></input>
+        />
         <div className="w-max">
           <button
             onClick={(e) => {
@@ -64,7 +64,7 @@ const EngTestForm = () => {
             } relative text-black flex`}
           >
             {dropdown && (
-              <div className="absolute scrollbar bg-gray-50 shadow-md rounded-md mt-2 overflow-y-scroll h-32 min-h-fit">
+              <section className="absolute scrollbar bg-gray-50 shadow-md rounded-md mt-2 overflow-y-scroll h-32 min-h-fit">
                 {[
                   "TOEFL CB",
                   "TOEFL IB",
@@ -75,20 +75,25 @@ const EngTestForm = () => {
                   "TU-GET PB",
                   "TU-GET CB",
                   "KEPT",
-                  "KKU-AELT"
-                ].map(v => {
-                  return (<DropdownButtonElement title={v} key={v} onClick={()=>{
-                    setEng(v);
-                    setDropdown(!dropdown)
-                  }}/>)
+                  "KKU-AELT",
+                ].map((v) => {
+                  return (
+                    <DropdownButtonElement
+                      title={v}
+                      key={v}
+                      onClick={() => {
+                        setEng(v);
+                        setDropdown(!dropdown);
+                      }}
+                    />
+                  );
                 })}
-                
-              </div>
+              </section>
             )}
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

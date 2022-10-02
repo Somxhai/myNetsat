@@ -6,7 +6,7 @@ import {
   isEngineer,
 } from "../../features/EssentialFeatures";
 import { engTestScore, netsatScore } from "../../States/States";
-import { ValTypeArgument } from "../../Types/TableType";
+import { ValTypeArgument } from "../../Types/ArgumentType";
 
 export const EnglishTest = ({ data }: ValTypeArgument) => {
   const engScore = useRecoilValue(engTestScore);
@@ -35,7 +35,11 @@ export const EnglishTest = ({ data }: ValTypeArgument) => {
             isEngineer(data) ? "engineer" : "pharmarcy"
           )}
         </p>
-        <p className="text-xs text-text_secondary text-left">{engScore.name=="KKU-AELT"  && isEngineer(data) && "*ค่าเฉลี่ยของทุก Band"}</p>
+        <p className="text-xs text-text_secondary text-left">
+          {engScore.name == "KKU-AELT" &&
+            isEngineer(data) &&
+            "*ค่าเฉลี่ยของทุก Band"}
+        </p>
         {!pass &&
           isEngineer(data) &&
           "ต้องได้รับการอบรมเตรียมความพร้อมด้านภาษาอังกฤษ"}

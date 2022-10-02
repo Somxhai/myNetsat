@@ -11,11 +11,11 @@ const CalculateResult = () => {
   });
 
   return (
-    <div className="pb-9 md:px-9">
-      <div className="bg-white rounded-lg min-h-min border-2 shadow-sm ">
-        <p className="text-black text-center h-fit text-3xl py-3 border-b-2">
+    <main className="pb-9 md:px-9">
+      <section className="bg-white rounded-lg min-h-min border-2 shadow-sm ">
+        <h1 className="text-black text-center h-fit text-3xl py-3 border-b-2">
           หน้าต่างคะแนน
-        </p>
+        </h1>
         <div className="py-4">
           {scoresView.length > 0 ? (
             <div className="space-y-2">{scoresView}</div>
@@ -25,8 +25,8 @@ const CalculateResult = () => {
             </p>
           )}
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 export default CalculateResult;

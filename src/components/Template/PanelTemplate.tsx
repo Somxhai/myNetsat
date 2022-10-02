@@ -11,7 +11,7 @@ const PanelTemplate = ({ children, id }: PanelType) => {
   const closePanel = () => {
     if (elm.current == null) return;
     if (capabilityId == id) {
-      setBlur(!blur)
+      setBlur(!blur);
       setCapabilityId("");
     }
   };

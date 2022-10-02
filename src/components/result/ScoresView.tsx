@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
 import {
   calCapabilityScore,
@@ -10,7 +10,7 @@ import {
   netsatScore,
   selectedDataState,
 } from "../../States/States";
-import { DownIcon } from "../template/Buttons";
+import { CloseIcon, DownIcon } from "../template/ButtonsAndIcons";
 import { ValType } from "../../Types/DataType";
 import { CapabilityTable, NetsatTable } from "../table/NetsatTable";
 import {
@@ -33,24 +33,25 @@ const ScoresView = ({ data }: ScoresViewType) => {
   const [selected, setSelected] = useRecoilState(selectedDataState);
   const [show, setShow] = useState(false);
   const engScore = useRecoilValue(engTestScore);
-  const faculty = data.faculty;
   const init = useRef(true);
-  const viewRef = useRef<HTMLDivElement>(null!);
+  const detailRef = useRef<HTMLDivElement>(null!);
 
   useEffect(() => {
     if (init.current) {
       init.current = false;
       return;
     }
-
+    // are the scores pass the requirements
     if (data.has_minimum_score) {
       if (!checkMinScore({ ...netsatInputScore, ...capInputScore }, data)) {
         setScore("คะแนนไม่ถึงเกณฑ์ขั้นต่ำ");
         return;
       }
     }
-    // start the calculation
+
+    // calculation
     let sumNetsat = calNetsatScore(data.weight, netsatInputScore);
+
     if (data.has_specific_capability) {
       const sumCap = calCapabilityScore(
         data.specific_capability,
@@ -69,15 +70,18 @@ const ScoresView = ({ data }: ScoresViewType) => {
         checkMinEngTestScore(engScore.name, engScore.score, "engineer")
           ? setScore(sumNetsat.toFixed(3))
           : setScore("*" + sumNetsat.toFixed(3));
+      } else {
+        setScore(sumNetsat.toFixed(3));
       }
-      // Normal
+    } else if (data.min_sum != null) {
+      sumNetsat >= data.min_sum
+        ? setScore(sumNetsat.toFixed(3))
+        : setScore(`คะแนนรวมไม่ถึงขั้นต่ำ ${data.min_sum}`);
     } else {
+      // no capability scores, minimum ...
       setScore(sumNetsat.toFixed(3));
     }
   }, [netsatInputScore]);
-  const remove = () => {
-    setSelected(selected.filter((v) => v != data));
-  };
 
   return (
     <main
@@ -85,58 +89,50 @@ const ScoresView = ({ data }: ScoresViewType) => {
         show && "pb-3"
       }`}
     >
-      <div className="flex">
-        <div className="flex items-center w-screen justify-between">
-          <div className="flex items-center py-3 justify-between">
-            <button
-              onClick={remove}
-              className="text-black bg-white z-40 p-3 mr-3 border-red-400 border-b-2 rounded-lg ease-in duration-150 hover:scale-125"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="w-3 h-3 md:h-5 md:w-5"
-              >
-                <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-              </svg>
-            </button>
-            <div className="flex-grow">
-              <p className="text-black text-sm text-ellipsis">
-                {data.syllabus}
-              </p>
-              <p className="text-secondary text-xs">{faculty}</p>
-            </div>
-          </div>
-          <div className=" flex text-text_secondary">
-            <div
-              className={`text-sm text-center md:text-left md:text-base font-medium whitespace-nowrap text-text_primary`}
-            >
-              {score}
-            </div>
-            <button
-              className="ease-in duration-150 hover:scale-125 hover:text-black"
-              title="ดูข้อมูลเพิ่มเติม"
-              onClick={() => setShow(!show)}
-            >
-              <DownIcon />
-            </button>
-          </div>
+      <section className="flex items-center w-full justify-between">
+        <div className="flex items-center py-3 justify-between">
+          <button
+            onClick={() => {
+              setSelected(selected.filter((v) => v != data));
+            }}
+            className="text-black bg-white z-40 p-3 mr-3 border-red-400 border-b-2 rounded-lg ease-in duration-150 hover:scale-125"
+          >
+            <CloseIcon />
+          </button>
+          <blockquote>
+            <p className="text-black text-sm text-ellipsis">{data.syllabus}</p>
+            <p className="text-secondary text-xs">{data.faculty}</p>
+          </blockquote>
         </div>
-      </div>
-      <div className="md:flex">
-        <div
+        <div className=" flex text-text_secondary">
+          <div
+            className={`text-sm text-center md:text-left md:text-base font-medium whitespace-nowrap text-text_primary`}
+          >
+            {score}
+          </div>
+          <button
+            className="ease-in duration-150 hover:scale-125 hover:text-black"
+            title="ดูข้อมูลเพิ่มเติม"
+            onClick={() => setShow(!show)}
+          >
+            <DownIcon />
+          </button>
+        </div>
+      </section>
+
+      <section className="md:flex">
+        <main
           className={`transition-all duration-[100] ease-in ${
             show ? "opacity-100" : "opacity-0"
           } text-text_primary h-fit`}
-          ref={viewRef}
+          ref={detailRef}
         >
           <div
             className={`m-auto md:m-0 w-fit mb-3 transition-all ease-linear duration-[150] ${
               show ? "h-full" : "h-0"
             }`}
           >
-            <div className="block justify-between items-baseline ">
+            <section className="block justify-between items-baseline ">
               <div className="md:flex">
                 <NetsatTable data={data} />
                 {data.has_specific_capability && (
@@ -146,8 +142,8 @@ const ScoresView = ({ data }: ScoresViewType) => {
               {data.is_national && (isEngineer(data) || isPharmarcy(data)) && (
                 <EnglishTest data={data} />
               )}
-            </div>
-            <div className="text-text_secondary">
+            </section>
+            <blockquote className="text-text_secondary">
               {(isPharmarcy(data) || isBusinessAndAccounting(data)) && show && (
                 <p>
                   อ่านเกณฑ์เพิ่มเติมที่{" "}
@@ -159,10 +155,10 @@ const ScoresView = ({ data }: ScoresViewType) => {
                   </a>
                 </p>
               )}
-            </div>
+            </blockquote>
           </div>
-        </div>
-      </div>
+        </main>
+      </section>
     </main>
   );
 };

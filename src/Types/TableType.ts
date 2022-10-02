@@ -1,4 +1,3 @@
-import { ValType } from "./DataType";
 
 export interface TableDataType {
   title: string;
@@ -6,6 +5,4 @@ export interface TableDataType {
   capabilityData?: boolean;
   minScore?: number | null | undefined
 }
-export interface ValTypeArgument {
-  data: ValType;
-}
+

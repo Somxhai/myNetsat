@@ -1,25 +1,25 @@
 import { SubjectInput } from "../template/SubjectInput";
-import { EscFormButton } from "../template/Buttons";
+import { EscFormButton } from "../template/ButtonsAndIcons";
 import PanelTemplate from "../template/PanelTemplate";
 
-const LanguagesContainer = () => {
+export const LanguagesContainer = () => {
   return (
     <PanelTemplate id="languageContainer">
-      <div className="border-b-2 flex pb-2 justify-between">
+      <blockquote className="border-b-2 flex pb-2 justify-between">
         <p className="text-text_primary">ด้านภาษาต่างประเทศ</p>
         <EscFormButton />
-      </div>
-      <div className="p-5 text-left">
+      </blockquote>
+      <section className="p-5 text-left">
         <SubjectInput id="fr" title="ฝรั่งเศส" />
         <SubjectInput id="gr" title="เยอรมนี" />
         <SubjectInput id="cn" title="จีน" />
         <SubjectInput id="jp" title="ญี่ปุ่น" />
         <SubjectInput id="kr" title="เกาหลี" />
-      </div>
+      </section>
     </PanelTemplate>
   );
 };
-const ArtContainer = () => {
+export const ArtContainer = () => {
   return (
     <PanelTemplate id="artContainer">
       <div className="border-b-2 flex pb-2 justify-between">
@@ -37,7 +37,7 @@ const ArtContainer = () => {
     </PanelTemplate>
   );
 };
-const EduContainer = () => {
+export const EduContainer = () => {
   return (
     <PanelTemplate id="eduContainer">
       <div className="border-b-2 flex pb-2 justify-between">
@@ -51,7 +51,7 @@ const EduContainer = () => {
     </PanelTemplate>
   );
 };
-const MedContainer = () => {
+export const MedContainer = () => {
   return (
     <PanelTemplate id="medContainer">
       <div className="border-b-2 flex pb-2 justify-between">
@@ -65,7 +65,7 @@ const MedContainer = () => {
     </PanelTemplate>
   );
 };
-const ArchContainer = () => {
+export const ArchContainer = () => {
   return (
     <PanelTemplate id="archContainer">
       <div className="border-b-2 flex pb-2 justify-between">
@@ -80,10 +80,5 @@ const ArchContainer = () => {
   );
 };
 
-export {
-  LanguagesContainer,
-  ArtContainer,
-  EduContainer,
-  MedContainer,
-  ArchContainer,
-};
+
+

@@ -1,10 +1,11 @@
 import { getAllCapabilityWeight } from "../../features/EssentialFeatures";
+import { ValTypeArgument } from "../../Types/ArgumentType";
 import { NetsatTableData } from "../template/Table";
-import { ValTypeArgument } from "../../Types/TableType";
+
 
 export const NetsatTable = ({ data }: ValTypeArgument) => {
   return (
-    <div
+    <main
       className={`text-center w-fit my-2 m-auto ${
         data.has_specific_capability ? "md:border-r-2" : ""
       }`}
@@ -42,12 +43,12 @@ export const NetsatTable = ({ data }: ValTypeArgument) => {
             })}
         </tbody>
       </table>
-    </div>
+    </main>
   );
 };
 export const CapabilityTable = ({ data }: ValTypeArgument) => {
   return (
-    <div className="text-center w-fit m-auto my-2">
+    <main className="text-center w-fit m-auto my-2">
       <p className="px-3">คะแนนสมรรถนะเฉพาะ</p>
       <table className="text-center">
         <thead>
@@ -76,6 +77,6 @@ export const CapabilityTable = ({ data }: ValTypeArgument) => {
           })}
         </tbody>
       </table>
-    </div>
+    </main>
   );
 };

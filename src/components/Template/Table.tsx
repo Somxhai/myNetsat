@@ -8,9 +8,8 @@ export const NetsatTableData = ({
   title,
   score,
   capabilityData,
-  minScore
+  minScore,
 }: TableDataType) => {
- 
   return (
     <tr>
       <td className="px-3 text-text_primary">
@@ -20,7 +19,6 @@ export const NetsatTableData = ({
       </td>
       <td className="px-3 text-text_secondary">{score}</td>
       <td className="px-3 text-text_secondary">{minScore ?? null}</td>
-      
     </tr>
   );
 };

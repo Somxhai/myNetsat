@@ -1,4 +1,4 @@
-import { OpenFormButton } from "../template/Buttons";
+import { OpenFormButton } from "../template/ButtonsAndIcons";
 import { SubjectInput } from "../template/SubjectInput";
 import { useEffect, useRef } from "react";
 import { calState, netsatScore } from "../../States/States";
@@ -32,7 +32,6 @@ const NetsatForm = () => {
   return (
     <form
       ref={form}
-      id="input-form"
       className="text-sm pt-3 pb-9 m-auto md:m-0 text-center w-fit"
     >
       <p className="text-xl text-text_primary mt-5">ความฉลาดรู้ทั่วไป</p>
@@ -50,11 +49,10 @@ const NetsatForm = () => {
 const CapabilityForm = () => {
   return (
     <div
-      id="capability-form"
       className="text-sm pt-3 pb-9 m-auto text-center md:mt-5"
     >
       <p className="text-xl text-text_primary">สมรรถนะเฉพาะด้าน</p>
-        <div className="flex flex-col">
+        <section className="flex flex-col">
           <OpenFormButton
             ids={["fr", "gr", "cn", "jp", "kr"]}
             containerID="languageContainer"
@@ -87,7 +85,7 @@ const CapabilityForm = () => {
             placeholder="เทคโนโลยีสำหรับเวชนิทัศน์และศิลป์สำหรับเวชนิทัศน์"
           />
           <EngTestForm />
-        </div>
+        </section>
     </div>
   );
 };

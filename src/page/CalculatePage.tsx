@@ -18,7 +18,6 @@ import {
 import { useRecoilState, useSetRecoilState } from "recoil";
 import Footer from "../components/Footer";
 
-
 const CalculatePage = () => {
   const [blur, setBlur] = useRecoilState(blurScreenState);
   const [trigger, setTrigger] = useRecoilState(calState);
@@ -28,7 +27,7 @@ const CalculatePage = () => {
   const engineerFormRef = useRef<HTMLFormElement>(null!);
   const calculatePageRef = useRef<HTMLDivElement>(null!);
   const initial = useRef(true);
-  
+
   useLayoutEffect(() => {
     if (initial.current) {
       initial.current = false;
@@ -47,10 +46,16 @@ const CalculatePage = () => {
       prevClone.jp = parseFloat(capabilityFormRef.current["jp"].value);
       prevClone.kr = parseFloat(capabilityFormRef.current["kr"].value);
 
-      prevClone.drawing = parseFloat(capabilityFormRef.current["drawing"].value);
+      prevClone.drawing = parseFloat(
+        capabilityFormRef.current["drawing"].value
+      );
       prevClone.makeup = parseFloat(capabilityFormRef.current["makeup"].value);
-      prevClone.engineer = parseFloat(engineerFormRef.current["engineer"].value);
-      prevClone.drawcom = parseFloat(capabilityFormRef.current["drawcom"].value);
+      prevClone.engineer = parseFloat(
+        engineerFormRef.current["engineer"].value
+      );
+      prevClone.drawcom = parseFloat(
+        capabilityFormRef.current["drawcom"].value
+      );
       prevClone.vart = parseFloat(capabilityFormRef.current["vart"].value);
       prevClone.music = parseFloat(capabilityFormRef.current["music"].value);
       prevClone.dance = parseFloat(capabilityFormRef.current["dance"].value);
@@ -63,7 +68,9 @@ const CalculatePage = () => {
         capabilityFormRef.current["goodatart"].value
       );
 
-      prevClone.techmed = parseFloat(capabilityFormRef.current["techmed"].value);
+      prevClone.techmed = parseFloat(
+        capabilityFormRef.current["techmed"].value
+      );
       prevClone.artmed = parseFloat(capabilityFormRef.current["artmed"].value);
       for (const key of Object.keys(prevClone)) {
         if (prevClone[key] > 100) prevClone[key] = 100;
@@ -90,16 +97,17 @@ const CalculatePage = () => {
           <p className="text-text_primary text-2xl text-center">
             คำนวณคะแนน Netsat
           </p>
-          <div className="border-b-2 md:flex md:justify-around">
+          <section className="border-b-2 md:flex md:justify-around">
             <NetsatForm />
             <form ref={engineerFormRef}>
               <CapabilityForm />
             </form>
-        
-          </div>
-          <div className="text-xs text-secondary w-fit mt-3">
-            <p>* ภาษาไทยและภาษาอังกฤษใช้คะแนนร้อยละ</p>
-          </div>
+          </section>
+
+          <p className="text-xs text-secondary w-fit mt-3">
+            * ภาษาไทยและภาษาอังกฤษใช้คะแนนร้อยละ
+          </p>
+
           <div className="mt-5 flex font-[Kanit] align-baseline">
             <button
               onClick={() => {
@@ -119,7 +127,7 @@ const CalculatePage = () => {
           </div>
         </div>
         <CalculateResult />
-            <Footer />
+        <Footer />
       </div>
     </main>
   );

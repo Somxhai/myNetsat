@@ -25,7 +25,7 @@ const SearchResults = () => {
   );
 
   return (
-    <div className="justify-center border-t-2  text-center h-72 w-72">
+    <main className="justify-center border-t-2  text-center h-72 w-72">
       <div
         id="searchResult"
         className="mt-3 pr-1 overflow-y-scroll h-64  first:rounded-t-lg last:rounded-b-lg scrollbar"
@@ -40,7 +40,7 @@ const SearchResults = () => {
           </p>
         )}
       </div>
-    </div>
+    </main>
   );
 };
 export default SearchResults;

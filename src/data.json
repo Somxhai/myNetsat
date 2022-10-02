@@ -2174,6 +2174,7 @@
     {
         "syllabus": "แพทยศาสตร์",
         "faculty": "คณะแพทยศาสตร์ (001)",
+        "min_sum": 50,
         "syllabus_id": 45,
         "has_minimum_score": false,
         "weight": {
@@ -2221,6 +2222,7 @@
     {
         "syllabus": "โครงการผลิตแพทย์เพิ่มเพื่อชาวชนบทกลุ่มแพทย์เพื่อชุมชน (CPIRD)",
         "faculty": "คณะแพทยศาสตร์",
+        
         "syllabus_id": 46,
         "has_minimum_score": true,
         "minimum_score": {
@@ -2334,6 +2336,7 @@
         "syllabus": "รังสีเทคนิค (ภาคปกติ)",
         "faculty": "คณะแพทยศาสตร์",
         "syllabus_id": 48,
+        "min_sum": 50,
         "has_minimum_score": true,
         "minimum_score": {
             "thai": 20,
@@ -2389,7 +2392,7 @@
         "syllabus": "เวชนิทัศน์ (ภาคปกติ)",
         "faculty": "คณะแพทยศาสตร์",
         "syllabus_id": 49,
-
+        "min_sum": 50,
         "weight": {
             "thai": 20,
             "eng": 20,
@@ -4821,6 +4824,7 @@
     {
         "syllabus": "สัตวแพทยศาสตร์",
         "faculty": "คณะสัตวแพทย์ศาสตร์",
+        "min_sum": 50,
         "syllabus_id": 100,
         "has_minimum_score": false,
         "weight": {
