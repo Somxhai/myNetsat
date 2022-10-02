@@ -85,9 +85,10 @@ const ScoresView = ({ data }: ScoresViewType) => {
 
   return (
     <main
+    onClick={()=>setShow(!show)}
       className={`mx-3 border-b-2 transition-all duration-100 ease-in ${
-        show && "pb-3"
-      }`}
+        show && "pb-3 "
+      } cursor-pointer`}
     >
       <section className="flex items-center w-full justify-between">
         <div className="flex items-center py-3 justify-between">
