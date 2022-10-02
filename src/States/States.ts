@@ -1,11 +1,20 @@
 import { atom } from "recoil";
-import { EngTestType, ScoreType } from "../Types/StateType";
+import { EngTestStoreType, EngTestType, ScoreType } from "../Types/StateType";
 import { ValType } from "../Types/DataType";
 
 export const capabilityID = atom({
   key: "capabilityID",
   default: "",
 });
+
+export const dataStore = atom({
+  key: 'dataStore',
+  default: []
+})
+export const engTestStore = atom({
+  key: 'engTestStore',
+  default: <EngTestStoreType>{}
+})
 
 export const capabilityFormState = atom({
   key: "capabilityForm",
