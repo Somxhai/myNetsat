@@ -7,6 +7,7 @@ import {
 import {
   capabilityScore,
   engTestScore,
+  engTestStore,
   netsatScore,
   selectedDataState,
 } from "../../States/States";
@@ -35,7 +36,11 @@ const ScoresView = ({ data }: ScoresViewType) => {
   const engScore = useRecoilValue(engTestScore);
   const init = useRef(true);
   const detailRef = useRef<HTMLDivElement>(null!);
-
+  const engTestData = useRecoilValue(engTestStore);
+  const minEngData =
+    isEngineer(data) && data.is_national
+      ? engTestData["engineer"]
+      : engTestData["pharmarcy"];
   useEffect(() => {
     if (init.current) {
       init.current = false;
@@ -61,18 +66,13 @@ const ScoresView = ({ data }: ScoresViewType) => {
     }
     // checking the score
     if (isNaN(sumNetsat)) setScore("ใส่คะแนนให้ครบสิ 😠");
-    else if (data.is_national) {
-      if (isPharmarcy(data)) {
-        checkMinEngTestScore(engScore.name, engScore.score, "pharmarcy")
-          ? setScore(sumNetsat.toFixed(3))
-          : setScore("ไม่ผ่านคะแนนภาษาอังกฤษ");
-      } else if (isEngineer(data)) {
-        checkMinEngTestScore(engScore.name, engScore.score, "engineer")
-          ? setScore(sumNetsat.toFixed(3))
-          : setScore("*" + sumNetsat.toFixed(3));
-      } else {
-        setScore(sumNetsat.toFixed(3));
-      }
+    else if (!minEngData.hasOwnProperty(engScore.name)) {
+      setScore(`คณะนี้ไม่ใช้คะแนนสอบ ${engScore.name}`);
+      return;
+    } else if (data.is_national) {
+      checkMinEngTestScore(engScore.name, engScore.score, minEngData)
+        ? setScore(sumNetsat.toFixed(3))
+        : setScore("ไม่ผ่านคะแนนภาษาอังกฤษ");
     } else if (data.min_sum != null) {
       sumNetsat >= data.min_sum
         ? setScore(sumNetsat.toFixed(3))

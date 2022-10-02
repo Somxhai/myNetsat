@@ -1,6 +1,6 @@
+import { EngTestNestedType } from "../Types/ArgumentType";
 import { ValType } from "../Types/DataType";
 import { ScoreType } from "../Types/StateType";
-import { getEngTest } from "./ApiFeatures";
 
 export const checkCapabilitySubject = (capability: string): string => {
   switch (capability.toLowerCase()) {
@@ -90,11 +90,9 @@ export const checkNetsatSubject = (subject: string): string => {
       return "";
   }
 };
-
 export const isBusinessAndAccounting = (data: ValType) => {
   return data.faculty == "คณะบริหารธุรกิจและการบัญชี";
 };
-
 export const isInputRequired = (id: string, selectedData: ValType[]) => {
   for (const select of selectedData) {
     // search in netsat
@@ -102,9 +100,8 @@ export const isInputRequired = (id: string, selectedData: ValType[]) => {
       if (
         id == netsatKey &&
         select.weight[netsatKey as keyof typeof select.weight] != 0
-      ) {
+      )
         return true;
-      }
     }
     // search in capability
     for (const capKey of Object.keys(select.specific_capability)) {
@@ -136,37 +133,28 @@ export const isInputRequired = (id: string, selectedData: ValType[]) => {
 export const checkMinEngTestScore = (
   testName: string,
   score: number,
-  faculty: string
+  facultyEngTest: EngTestNestedType
 ) => {
-  for (const [k, v] of Object.entries(getEngTest(faculty))) {
-    if (k == testName && score >= v) {
-      return true;
-    }
-  }
+  for (const [k, v] of Object.entries(facultyEngTest))
+    if (k == testName && score >= v) return true;
   return false;
 };
 
 export const getAllCapabilityWeight = (data: ValType) => {
   let capAndScore = [];
   for (const [k, v] of Object.entries(data.specific_capability)) {
-    if (typeof v == "object") {
-      for (const [k1, v1] of Object.entries(v)) {
+    if (typeof v == "object")
+      for (const [k1, v1] of Object.entries(v))
         if (v1 != 0) capAndScore.push([k1, v1]);
-      }
-    } else if (typeof v == "number" && v != 0) {
-      capAndScore.push([k, v]);
-    }
+        else if (typeof v == "number" && v != 0) capAndScore.push([k, v]);
   }
   return capAndScore;
 };
 
 export const checkMinScore = (scores: ScoreType, data: ValType) => {
   if (data.minimum_score != null) {
-    for (const [k, v] of Object.entries(data.minimum_score)) {
-      if (scores[k] < v) {
-        return false;
-      }
-    }
+    for (const [k, v] of Object.entries(data.minimum_score))
+      if (scores[k] < v) return false;
   }
   return true;
 };

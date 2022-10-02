@@ -1,17 +1,17 @@
 import { ValType } from "../Types/DataType";
-import DATA from "../data.json";
-import EngTestData from "../engTestData.json";
+import { client } from "../API/axios";
+import { EngTestNestedType } from "../Types/ArgumentType";
 
-export const getApi = () => DATA;
-export const getEngTest = (faculty: string) => {
-  return (
-    EngTestData[faculty as keyof typeof EngTestData] ??
-    EngTestData["engineer" as keyof typeof EngTestData]
-  );
+export const getApi = async (suburl: string) => {
+  const response = await client.get(`/${suburl}`);
+  return response;
 };
 
-export const hasCapability = (syllabus: string): boolean => {
-  for (const value of getApi()) {
+export const hasCapability = (
+  syllabus: string,
+  apiData: ValType[]
+): boolean => {
+  for (const value of apiData) {
     if (value.syllabus == syllabus) {
       return value.has_specific_capability ?? false;
     }
@@ -19,10 +19,12 @@ export const hasCapability = (syllabus: string): boolean => {
   return false;
 };
 
-export const getMinEngTestScore = (testName: string, faculty: string) => {
-  if (getEngTest(faculty).hasOwnProperty(testName))
-    return getEngTest(faculty)[testName as keyof typeof getEngTest];
-  return 0;
+export const getMinEngTestScore = (
+  testName: string,
+  facultyEngTest: EngTestNestedType
+) => {
+  if (facultyEngTest.hasOwnProperty(testName)) return facultyEngTest[testName];
+  return NaN;
 };
 
 export const isIdSelected = (id: number, data: ValType[]): boolean => {
