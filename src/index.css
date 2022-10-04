@@ -47,4 +47,8 @@ input:-webkit-autofill {
     border-radius: 0.75rem;
     width: 5rem;
   }
+  @media only screen and (max-width: 425px) {
+    .scrollbar::-webkit-scrollbar-thumb {display:none;}
+    .scrollbar::-webkit-scrollbar {display: none;}
+  }
 }

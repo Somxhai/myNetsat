@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="text-text_secondary text-center pb-3">
+    <footer className="text-text_secondary text-center pb-3 text-xs md:text-sm">
       Made by{" "}
       <a
         target="_blank"

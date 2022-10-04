@@ -61,6 +61,7 @@ export const hasNationalEngOrPhar = (val: ValType[]) => {
 export const isEngineer = (data: ValType) => {
   return data.faculty.includes("คณะวิศวกรรมศาสตร์");
 };
+
 export const isPharmarcy = (data: ValType) => {
   return data.faculty.includes("คณะเภสัชศาสตร์");
 };
@@ -91,8 +92,12 @@ export const checkNetsatSubject = (subject: string): string => {
   }
 };
 export const isBusinessAndAccounting = (data: ValType) => {
-  return data.faculty == "คณะบริหารธุรกิจและการบัญชี";
+  return (
+    data.faculty == "คณะบริหารธุรกิจและการบัญชี" &&
+    [118, 116].includes(data.syllabus_id)
+  );
 };
+
 export const isInputRequired = (id: string, selectedData: ValType[]) => {
   for (const select of selectedData) {
     // search in netsat
@@ -143,10 +148,11 @@ export const checkMinEngTestScore = (
 export const getAllCapabilityWeight = (data: ValType) => {
   let capAndScore = [];
   for (const [k, v] of Object.entries(data.specific_capability)) {
-    if (typeof v == "object")
+    if (typeof v == "object") {
       for (const [k1, v1] of Object.entries(v))
         if (v1 != 0) capAndScore.push([k1, v1]);
-        else if (typeof v == "number" && v != 0) capAndScore.push([k, v]);
+    }
+    else if (typeof v == "number" && v != 0) capAndScore.push([k, v]);
   }
   return capAndScore;
 };

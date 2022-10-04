@@ -6,4 +6,5 @@ export interface OpenFormType {
 }
 export interface IconType {
   className?: string
+
 }

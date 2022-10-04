@@ -12,8 +12,26 @@ import {
 } from "../../States/States";
 import { useEffect, useState } from "react";
 import { IconType, OpenFormType } from "../../Types/ButtonType";
+export const CheckIcon = ({ className }: IconType) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={`${className} w-6 h-6`}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M4.5 12.75l6 6 9-13.5"
+      />
+    </svg>
+  );
+};
 
-export const EscIcon = ({className}:IconType) => {
+export const EscIcon = ({ className }: IconType) => {
   return (
     <div
       className={`${className} text-xs bg-white border-b-2 border-gray-300 p-1 rounded-lg z-20 hover:border-red-400`}
@@ -23,8 +41,44 @@ export const EscIcon = ({className}:IconType) => {
     </div>
   );
 };
+export const NoSymbolIcon = ({ className }: IconType) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={`${className} w-6 h-6`}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"
+      />
+    </svg>
+  );
+};
+export const BookOpenIcon = ({ className }: IconType) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={`${className} w-6 h-6`}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+      />
+    </svg>
+  );
+};
 
-export const MagnifyingGlassIcon = ({className}:IconType) => {
+export const MagnifyingGlassIcon = ({ className }: IconType) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +139,7 @@ export const OpenFormButton = ({
     </button>
   );
 };
-export const InfoIcon = ({className}:IconType) => {
+export const InfoIcon = ({ className }: IconType) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +157,7 @@ export const InfoIcon = ({className}:IconType) => {
     </svg>
   );
 };
-export const DownIcon = ({className}:IconType) => {
+export const DownIcon = ({ className }: IconType) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +189,7 @@ export const EscFormButton = () => {
   );
 };
 
-export const CloseIcon = ({className}:IconType) => {
+export const CloseIcon = ({ className }: IconType) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

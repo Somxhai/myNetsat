@@ -2,7 +2,6 @@ import { getAllCapabilityWeight } from "../../features/EssentialFeatures";
 import { ValTypeArgument } from "../../Types/ArgumentType";
 import { NetsatTableData } from "../template/Table";
 
-
 export const NetsatTable = ({ data }: ValTypeArgument) => {
   return (
     <main
@@ -62,9 +61,9 @@ export const CapabilityTable = ({ data }: ValTypeArgument) => {
           {getAllCapabilityWeight(data).map(([k, v]) => {
             const formatKey = `${data.syllabus_id}_${k}`;
             const minScore =
-                data.has_minimum_score && data.minimum_score != null
-                  ? data.minimum_score[k as keyof typeof data.minimum_score]
-                  : null;
+              data.has_minimum_score && data.minimum_score != null
+                ? data.minimum_score[k as keyof typeof data.minimum_score]
+                : null;
             return (
               <NetsatTableData
                 title={k as string}
