@@ -4,7 +4,7 @@
 @tailwind utilities;
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   box-sizing: border-box;
@@ -18,17 +18,20 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+html {
+  overflow-y: hidden;
+}
+body {
+  overflow-y: scroll;
+}
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px white inset !important;
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
 }
-input:-webkit-autofill {
-  -webkit-text-fill-color: #6c6d7a !important;
+input[data-autocompleted] {
+  background-color: transparent !important;
 }
-
 #dropdownMenu::-webkit-scrollbar-thumb {
   background-color: #6c6d7a;
   border-radius: 0.75rem;
@@ -36,8 +39,9 @@ input:-webkit-autofill {
 }
 @layer utilities {
   .blurScreen {
-    @apply blur-sm pointer-events-none;
+    @apply pointer-events-none blur-sm;
   }
+
   .scrollbar::-webkit-scrollbar {
     background-color: white;
     width: 0.5rem;
@@ -48,7 +52,11 @@ input:-webkit-autofill {
     width: 5rem;
   }
   @media only screen and (max-width: 425px) {
-    .scrollbar::-webkit-scrollbar-thumb {display:none;}
-    .scrollbar::-webkit-scrollbar {display: none;}
+    .scrollbar::-webkit-scrollbar-thumb {
+      display: none;
+    }
+    .scrollbar::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
