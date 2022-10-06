@@ -35,26 +35,34 @@ const CalculatePage = () => {
   const [engData, setEngData] = useRecoilState(engTestStore);
 
   useEffect(() => {
-    getApi("netsat").then((res) => {
-      setData(res.data);
-    });
-    getApi("netsat/engtest").then((res) => {
-
-      setEngData(res.data)
-    })
+    /* Fetching data from the API. */
+    async function fetchApi() {
+      getApi("netsat").then((res) => {
+        setData(res.data);
+      });
+      getApi("netsat/engtest").then((res) => {
+        setEngData(res.data);
+      });
+    }
+    fetchApi();
   }, []);
+
   useLayoutEffect(() => {
     if (initial.current) {
       initial.current = false;
       return;
     }
-    calculatePageRef.current.classList.contains("blurScreen")
-      ? calculatePageRef.current.classList.remove("blurScreen")
-      : calculatePageRef.current.classList.add("blurScreen");
+    if (calculatePageRef.current.classList.contains("blurScreen")) {
+      calculatePageRef.current.classList.remove("blurScreen");
+      document.body.style.overflowY = "scroll";
+    } else {
+      calculatePageRef.current.classList.add("blurScreen");
+      document.body.style.overflowY = "hidden";
+    }
   }, [blur]);
 
   return (
-    <main>
+    <main className="h-screen ">
       {data.length === 0 && Object.keys(engData).length === 0 ? (
         <LoadingPage />
       ) : (
@@ -70,12 +78,12 @@ const CalculatePage = () => {
           <div
             id="calculatePage"
             ref={calculatePageRef}
-            className="w-screen m-auto px-5 overflow-y-hidden"
+            className="w-screen m-auto px-5 h-screen"
           >
-            <div className="my-7 font-mitr relative bg-white px-6 py-3 shadow-sm ring-1 ring-gray-900/5 m-auto max-w-2xl rounded-lg ">
-              <p className="text-text_primary text-2xl text-center">
+            <div className="my-7 font-mitr relative bg-white px-6 py-3 shadow-sm ring-1 ring-gray-900/5 m-auto max-w-2xl rounded-lg">
+              <h1 className="text-text_primary text-2xl text-center">
                 คำนวณคะแนน Netsat
-              </p>
+              </h1>
               <section className="border-b-2 md:flex md:justify-around">
                 <NetsatForm />
                 <form ref={engineerFormRef}>
