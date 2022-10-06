@@ -8,13 +8,13 @@ export const capabilityID = atom({
 });
 
 export const dataStore = atom({
-  key: 'dataStore',
-  default: []
-})
+  key: "dataStore",
+  default: [],
+});
 export const engTestStore = atom({
-  key: 'engTestStore',
-  default: <EngTestStoreType>{}
-})
+  key: "engTestStore",
+  default: <EngTestStoreType>{},
+});
 
 export const capabilityFormState = atom({
   key: "capabilityForm",
@@ -22,9 +22,9 @@ export const capabilityFormState = atom({
 });
 
 export const engTestScore = atom({
-  key: 'engTestScore',
-  default: <EngTestType>{name: "TOEFL CB", score:0}
-})
+  key: "engTestScore",
+  default: <EngTestType>{ name: "TOEFL CB", score: 0 },
+});
 
 export const selectedDataState = atom({
   key: "selectedDataState",
