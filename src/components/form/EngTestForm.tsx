@@ -76,6 +76,7 @@ const EngTestForm = () => {
                   "TU-GET CB",
                   "KEPT",
                   "KKU-AELT",
+                  "Duolingo"
                 ].map((v) => {
                   return (
                     <DropdownButtonElement
