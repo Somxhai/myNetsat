@@ -19,6 +19,12 @@ export const hasCapability = (
   return false;
 };
 
+/**
+ * This function takes a string and an object as parameters and returns a number or NaN.
+ * @param {string} testName - string,
+ * @param {EngTestNestedType} facultyEngTest - EngTestNestedType = {
+ * @returns A function that takes two parameters and returns a boolean.
+ */
 export const getMinEngTestScore = (
   testName: string,
   facultyEngTest: EngTestNestedType

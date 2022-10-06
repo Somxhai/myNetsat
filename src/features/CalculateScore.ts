@@ -7,6 +7,12 @@ interface capabilityType {
   [key: string]: any;
 }
 
+/**
+ * It takes in a weight object and a score object, and returns the weighted sum of the score object
+ * @param {any} weight - {
+ * @param {netsatType} score - {
+ * @returns The sum of the weighted scores.
+ */
 const calNetsatScore = (weight: any, score: netsatType) => {
   let sum: number = 0;
   for (const key of Object.keys(weight)) {
@@ -19,6 +25,12 @@ const calNetsatScore = (weight: any, score: netsatType) => {
   return sum;
 };
 
+/**
+ * It takes two objects, one with weights and one with scores, and returns a number
+ * @param {capabilityType} weight - capabilityType = {
+ * @param {capabilityType} score - {
+ * @returns A number
+ */
 const calCapabilityScore = (
   weight: capabilityType,
   score: capabilityType
@@ -40,8 +52,7 @@ const calCapabilityScore = (
       }
     } else if (
       typeof capability == "number" &&
-      capability != 0 &&
-      !isNaN(score[key])
+      capability != 0
     ) {
       const cal = (capability / 100) * score[key];
       sum += cal;
