@@ -1,6 +1,5 @@
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
-import ReactTooltip from "react-tooltip";
 import {
   calCapabilityScore,
   calNetsatScore,
@@ -100,41 +99,45 @@ const ScoresView = ({ data }: ScoresViewType) => {
       );
       sumNetsat += sumCap;
     }
+
     if (data.has_minimum_score) {
       if (!checkMinScore({ ...netsatInputScore, ...capInputScore }, data)) {
         setScore(`${sumNetsat.toFixed(3)}`);
         setDetail(DetailStatus.MINIMUM_SCORE);
-        return;
       }
     }
 
     // checking the score
     if (isNaN(sumNetsat)) setScore("ใส่คะแนนให้ครบสิ 😠");
-    
-    else if (data.is_national) {
+    else if (data.min_sum != null && sumNetsat < data.min_sum) {
+      setScore(`${sumNetsat.toFixed(3)}/${data.min_sum}`);
+      setDetail(DetailStatus.MINIMUM_SUM);
+    } else if (data.is_national) {
+      // does the syllabus has selected the english test
       if (!minEngData().hasOwnProperty(engScore.name)) {
         setScore(`ไม่ใช้ผลการสอบ ${engScore.name}`);
         setDetail(DetailStatus.ENG_SCORE);
-        return;
-      } else if (
+      } 
+      /* these 2 faculties must pass the english test.
+      not like engineer
+      */
+      else if (
         (isBusinessAndAccounting(data) || isPharmarcy(data)) &&
         !checkMinEngTestScore(engScore.name, engScore.score, minEngData())
       ) {
         setScore(`ไม่ผ่านผลสอบ ${engScore.name}`);
         setDetail(DetailStatus.ENG_SCORE);
-        return;
-      } else if (
-        !checkMinEngTestScore(engScore.name, engScore.score, minEngData()) ||
+      } // just show warning on engineer
+      else if (
+        !checkMinEngTestScore(engScore.name, engScore.score, minEngData()) &&
         isEngineer(data)
       ) {
         setScore(sumNetsat.toFixed(3));
         setDetail(DetailStatus.ENG_SCORE);
-        return;
+      } else {
+        setScore(sumNetsat.toFixed(3));
+        setDetail(DetailStatus.PASS);
       }
-    } else if (data.min_sum != null && sumNetsat < data.min_sum) {
-      setScore(`${sumNetsat.toFixed(3)}/${data.min_sum}`);
-      setDetail(DetailStatus.MINIMUM_SUM);
-      return;
     } else {
       // no capability scores, minimum ...
       setScore(sumNetsat.toFixed(3));
@@ -145,7 +148,7 @@ const ScoresView = ({ data }: ScoresViewType) => {
   return (
     <main
       className={`mx-3 border-b-2 transition-all duration-100 ease-in ${
-        show && "pb-3 "
+        show && "pb-3"
       }`}
     >
       <section className="flex items-center w-full justify-between">
@@ -160,7 +163,7 @@ const ScoresView = ({ data }: ScoresViewType) => {
           </button>
           <div>
             <blockquote>
-              <p className="text-black text-sm text-ellipsis line-clamp-3">
+              <p className="text-black text-ellipsis line-clamp-3 text-lg">
                 {data.syllabus}
               </p>
               <p className="text-secondary text-xs">{data.faculty}</p>
