@@ -17,8 +17,8 @@ const SearchBar = () => {
     <main className="flex text-secondary pb-2">
       <MagnifyingGlassIcon className="mr-3" />
       <input
-        autoCorrect="false"
-        autoComplete="false"
+        autoCorrect="off"
+        autoComplete="off"
         autoFocus
         className="text-secondary bg-white w-full focus:outline-none"
         id="search_result"
