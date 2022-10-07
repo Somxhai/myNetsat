@@ -28,7 +28,7 @@ const PanelTemplate = ({ children, id }: PanelType) => {
     <div
       ref={elm}
       id={id}
-      className="hidden fixed md:text-md p-5 z-50 bg-white w-fit shadow-xl rounded-lg left-1/2 -translate-x-1/2 translate-y-1/2"
+      className="hidden fixed md:text-md p-5 z-50 bg-white w-fit shadow-2xl rounded-lg left-1/2 -translate-x-1/2"
     >
       {children}
     </div>

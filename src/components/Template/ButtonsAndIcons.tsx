@@ -12,6 +12,7 @@ import {
 } from "../../States/States";
 import { useEffect, useState } from "react";
 import { IconType, OpenFormType } from "../../Types/ButtonType";
+
 export const CheckIcon = ({ className }: IconType) => {
   return (
     <svg
