@@ -18,6 +18,7 @@ const SearchBar = () => {
       <MagnifyingGlassIcon className="mr-3" />
       <input
         autoCorrect="false"
+        autoComplete="false"
         autoFocus
         className="text-secondary bg-white w-full focus:outline-none"
         id="search_result"
