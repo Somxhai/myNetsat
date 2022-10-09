@@ -31,10 +31,10 @@ const SearchList = ({ data }: SearchListType) => {
       onClick={handleChange}
       className="text-left p-3 w-full hover:bg-gray-100 flex justify-between items-center bg-gray-50"
     >
-      <div>
-        <div className="text-black">{syllabus}</div>
-        <div className="text-xs text-text_secondary">{faculty}</div>
-      </div>
+      <blockquote>
+        <p className="text-black">{syllabus}</p>
+        <p className="text-xs text-text_secondary">{faculty}</p>
+      </blockquote>
       <input
         checked={check}
         type="checkbox"
