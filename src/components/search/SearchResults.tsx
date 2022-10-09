@@ -3,7 +3,6 @@ import { ValType } from "../../Types/DataType";
 import { useRecoilValue } from "recoil";
 import { dataStore, searchState } from "../../States/States";
 
-
 const SearchResults = () => {
   const search = useRecoilValue(searchState);
   const data = useRecoilValue(dataStore);
