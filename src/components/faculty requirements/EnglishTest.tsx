@@ -25,7 +25,7 @@ export const EnglishTest = ({ data }: ValTypeArgument) => {
   return (
     <main className="text-center mt-2">
       <section>
-        <p className="text-lg">คะแนนการทดสอบภาษาอังกฤษ </p>
+        <h1 className="text-lg">คะแนนการทดสอบภาษาอังกฤษ </h1>
         <p className="text-purple-600 text-center">{engScore.name}</p>
         {isNaN(minEngScore) ? (
           `หลักสูตรนี้ไม่ใช้ ${engScore.name}`
