@@ -11,7 +11,7 @@ const Footer = () => {
           <a
             title="เกณฑ์คะแนน มข"
             target="_blank"
-            href="https://admissions.kku.ac.th/quota65/?fbclid=IwAR1_7d5q1T-Tmfb2wwdLjdasGG7JlgbkOcCYZTb9RBiddJtu1X1UwonXpek"
+            href="https://admissions.kku.ac.th/kkuquota66/"
           >
             ข้อมูลอ้างอิง
           </a>
