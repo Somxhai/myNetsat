@@ -18,12 +18,12 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-html {
-  overflow-y: hidden;
+
+html, body {
+  height: 100%;
+  overflow-x:hidden;
 }
-body {
-  overflow-y: scroll;
-}
+
 
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
