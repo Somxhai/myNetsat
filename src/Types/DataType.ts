@@ -56,6 +56,7 @@ export interface Foreign {
   cn: number;
   jp: number;
   kr: number;
+  sp: number;
 }
 
 export interface MedicalVision {
