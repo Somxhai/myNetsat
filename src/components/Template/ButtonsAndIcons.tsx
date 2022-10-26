@@ -132,7 +132,7 @@ export const OpenFormButton = ({
       <div className="mt-3">
         <p className="text-text_primary">{title}</p>
         <div
-          className={`${bgColor} m-auto rounded-lg text-sm w-48 border-b-2 line-clamp-1 px-3 pt-2  select-none text-text_secondary hover:border-purple-500 max-w-xs`}
+          className={`${bgColor} m-auto rounded-lg text-sm w-48 border-b-2 line-clamp-1 px-3  select-none text-text_secondary hover:border-purple-500 max-w-xs`}
         >
           {placeholder}
         </div>
