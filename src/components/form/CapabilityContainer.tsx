@@ -6,7 +6,7 @@ export const LanguagesContainer = () => {
   return (
     <PanelTemplate id="languageContainer">
       <blockquote className="border-b-2 flex pb-2 justify-between">
-        <p className="text-text_primary">ด้านภาษาต่างประเทศ</p>
+        <h1 className="text-text_primary">ด้านภาษาต่างประเทศ</h1>
         <EscFormButton />
       </blockquote>
       <section className="p-5 text-left">
@@ -15,6 +15,7 @@ export const LanguagesContainer = () => {
         <SubjectInput id="cn" title="จีน" />
         <SubjectInput id="jp" title="ญี่ปุ่น" />
         <SubjectInput id="kr" title="เกาหลี" />
+        <SubjectInput id="sp" title="สเปน" />
       </section>
     </PanelTemplate>
   );
@@ -23,7 +24,7 @@ export const ArtContainer = () => {
   return (
     <PanelTemplate id="artContainer">
       <div className="border-b-2 flex pb-2 justify-between">
-        <p className="text-text_primary">ด้านศิลปศาสตร์</p>
+        <h1 className="text-text_primary">ด้านศิลปศาสตร์</h1>
         <EscFormButton />
       </div>
       <div className="p-5 text-left">
@@ -41,7 +42,7 @@ export const EduContainer = () => {
   return (
     <PanelTemplate id="eduContainer">
       <div className="border-b-2 flex pb-2 justify-between">
-        <p className="text-text_primary">ด้านศึกษาศาสตร์</p>
+        <h1 className="text-text_primary">ด้านศึกษาศาสตร์</h1>
         <EscFormButton />
       </div>
       <div className="p-5 text-left">
@@ -55,7 +56,7 @@ export const MedContainer = () => {
   return (
     <PanelTemplate id="medContainer">
       <div className="border-b-2 flex pb-2 justify-between">
-        <p className="text-text_primary">ด้านเวชนิทัศน์</p>
+        <h1 className="text-text_primary">ด้านเวชนิทัศน์</h1>
         <EscFormButton />
       </div>
       <div className="p-5 text-left">
@@ -69,7 +70,7 @@ export const ArchContainer = () => {
   return (
     <PanelTemplate id="archContainer">
       <div className="border-b-2 flex pb-2 justify-between">
-        <p className="text-text_primary">ด้านสถาปัตยกรรม</p>
+        <h1 className="text-text_primary">ด้านสถาปัตยกรรม</h1>
         <EscFormButton />
       </div>
       <div className="p-5 text-left">
