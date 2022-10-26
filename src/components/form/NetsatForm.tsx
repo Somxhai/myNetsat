@@ -34,11 +34,11 @@ const NetsatForm = () => {
       ref={form}
       className="text-sm pt-3 pb-9 m-auto md:m-0 text-center w-fit"
     >
-      <p className="text-xl text-text_primary mt-5">ความฉลาดรู้ทั่วไป</p>
+      <h1 className="text-xl text-text_primary mt-5">ความฉลาดรู้ทั่วไป</h1>
       <SubjectInput title="ภาษาไทย" id="thai" />
       <SubjectInput title="ภาษาอังกฤษ" id="eng" />
       <SubjectInput title="คณิตศาสตร์" id="math" />
-      <p className="text-xl text-text_primary mt-5">ความฉลาดรู้เฉพาะ</p>
+      <h1 className="text-xl text-text_primary mt-5">ความฉลาดรู้เฉพาะ</h1>
       <SubjectInput title="วิทยาศาสตร์และเทคโนโลยี" id="sci" />
       <SubjectInput title="เคมี" id="chem" />
       <SubjectInput title="ชีววิทยา" id="bio" />
@@ -51,13 +51,13 @@ const CapabilityForm = () => {
     <div
       className="text-sm pt-3 pb-9 m-auto text-center md:mt-5"
     >
-      <p className="text-xl text-text_primary">สมรรถนะเฉพาะด้าน</p>
+      <h1 className="text-xl text-text_primary">สมรรถนะเฉพาะด้าน</h1>
         <section className="flex flex-col">
           <OpenFormButton
-            ids={["fr", "gr", "cn", "jp", "kr"]}
+            ids={["fr", "gr", "cn", "jp", "kr", "sp"]}
             containerID="languageContainer"
             title="ภาษาต่างประเทศ"
-            placeholder="ฝรั่งเศส, เยอรมนี, จีน, ญี่ปุ่น, และเกาหลี"
+            placeholder="ฝรั่งเศส, เยอรมนี, จีน, ญี่ปุ่น, เกาหลี และสเปน"
           />
           <OpenFormButton
             ids={["drawing", "makeup", "drawcom", "vart", "music", "dance"]}
@@ -84,7 +84,7 @@ const CapabilityForm = () => {
             title="เวชนิทัศน์"
             placeholder="เทคโนโลยีสำหรับเวชนิทัศน์และศิลป์สำหรับเวชนิทัศน์"
           />
-          <EngTestForm />
+          {/* <EngTestForm /> */}
         </section>
     </div>
   );

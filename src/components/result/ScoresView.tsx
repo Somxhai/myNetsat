@@ -65,8 +65,8 @@ const ScoresView = ({ data }: ScoresViewType) => {
       return <InfoIcon className="text-yellow-500 w-5 h-5" />;
     else if (detail == DetailStatus.MINIMUM_SUM)
       return <NoSymbolIcon className="text-red-500 w-5 h-5" />;
-    else if (detail == DetailStatus.ENG_SCORE)
-      return <BookOpenIcon className="text-blue-500 w-5 h-5" />;
+    // else if (detail == DetailStatus.ENG_SCORE)
+    //   return <BookOpenIcon className="text-blue-500 w-5 h-5" />;
     else if (detail == DetailStatus.PASS)
       return <CheckIcon className="text-green-500 w-5 h-5" />;
     return null;
@@ -106,39 +106,40 @@ const ScoresView = ({ data }: ScoresViewType) => {
         setDetail(DetailStatus.MINIMUM_SCORE);
       }
     }
-
     // checking the score
     if (isNaN(sumNetsat)) setScore("ใส่คะแนนให้ครบสิ 😠");
     else if (data.min_sum != null && sumNetsat < data.min_sum) {
       setScore(`${sumNetsat.toFixed(3)}/${data.min_sum}`);
       setDetail(DetailStatus.MINIMUM_SUM);
-    } else if (data.is_national) {
-      // does the syllabus has selected the english test
-      if (!minEngData().hasOwnProperty(engScore.name)) {
-        setScore(`ไม่ใช้ผลการสอบ ${engScore.name}`);
-        setDetail(DetailStatus.ENG_SCORE);
-      } 
-      /* these 2 faculties must pass the english test.
-      not like engineer
-      */
-      else if (
-        (isBusinessAndAccounting(data) || isPharmarcy(data)) &&
-        !checkMinEngTestScore(engScore.name, engScore.score, minEngData())
-      ) {
-        setScore(`ไม่ผ่านผลสอบ ${engScore.name}`);
-        setDetail(DetailStatus.ENG_SCORE);
-      } // just show warning on engineer
-      else if (
-        !checkMinEngTestScore(engScore.name, engScore.score, minEngData()) &&
-        isEngineer(data)
-      ) {
-        setScore(sumNetsat.toFixed(3));
-        setDetail(DetailStatus.ENG_SCORE);
-      } else {
-        setScore(sumNetsat.toFixed(3));
-        setDetail(DetailStatus.PASS);
-      }
-    } else {
+    } 
+    // else if (data.is_national) {
+    //   // does the syllabus has selected the english test
+    //   if (!minEngData().hasOwnProperty(engScore.name)) {
+    //     setScore(`ไม่ใช้ผลการสอบ ${engScore.name}`);
+    //     setDetail(DetailStatus.ENG_SCORE);
+    //   } 
+    //   else if (
+    //     /* these 2 faculties must pass the english test.
+    //   not like engineer
+    //   */
+    //     (isBusinessAndAccounting(data) || isPharmarcy(data)) &&
+    //     !checkMinEngTestScore(engScore.name, engScore.score, minEngData())
+    //   ) {
+    //     setScore(`ไม่ผ่านผลสอบ ${engScore.name}`);
+    //     setDetail(DetailStatus.ENG_SCORE);
+    //   } // just show warning on engineer
+    //   else if (
+    //     !checkMinEngTestScore(engScore.name, engScore.score, minEngData()) &&
+    //     isEngineer(data)
+    //   ) {
+    //     setScore(sumNetsat.toFixed(3));
+    //     setDetail(DetailStatus.ENG_SCORE);
+    //   } else {
+    //     setScore(sumNetsat.toFixed(3));
+    //     setDetail(DetailStatus.PASS);
+    //   }
+    // } 
+    else {
       // no capability scores, minimum ...
       setScore(sumNetsat.toFixed(3));
       setDetail(DetailStatus.PASS);
@@ -161,71 +162,64 @@ const ScoresView = ({ data }: ScoresViewType) => {
           >
             <CloseIcon />
           </button>
-          <div>
-            <blockquote>
-              <p className="text-black text-ellipsis line-clamp-3 text-lg">
-                {data.syllabus}
-              </p>
-              <p className="text-secondary text-xs">{data.faculty}</p>
-            </blockquote>
+          <blockquote>
+            <p className="text-black text-ellipsis line-clamp-3 text-lg">
+              {data.syllabus}
+            </p>
+            <p className="text-secondary text-xs">{data.faculty}</p>
             <div className="flex items-center space-x-1 text-sm md:text-left md:text-base font-medium text-text_primary">
-              <p className="font-medium">{score}</p>
+              <p>{score}</p>
               <div title={getDetailTitle()} className="cursor-pointer">
                 {getDetailIcon()}
               </div>
             </div>
-          </div>
+          </blockquote>
         </div>
-        <div className=" flex text-text_secondary">
-          <button
-            className="ease-in duration-150 hover:scale-125 hover:text-black"
-            title="ดูข้อมูลเพิ่มเติม"
-            onClick={() => setShow(!show)}
-          >
-            <DownIcon />
-          </button>
-        </div>
+        <button
+          className="ease-in duration-150 hover:scale-125 hover:text-black text-text_secondary"
+          title="ดูข้อมูลเพิ่มเติม"
+          onClick={() => setShow(!show)}
+        >
+          <DownIcon className="md:w-7 md:h-7" />
+        </button>
       </section>
 
-      <section className="md:flex">
-        <main
-          className={`transition-all duration-[100] ease-in ${
-            show ? "opacity-100" : "opacity-0"
-          } text-text_primary h-fit`}
-          ref={detailRef}
+      <main
+        className={`transition-all duration-[100] ease-in ${
+          show ? "opacity-100" : "opacity-0"
+        } text-text_primary h-fit`}
+        ref={detailRef}
+      >
+        <div
+          className={`m-auto md:m-0 w-fit mb-3 transition-all ease-linear duration-[150] ${
+            show ? "h-full" : "hidden h-0"
+          }`}
         >
-          <div
-            className={`m-auto md:m-0 w-fit mb-3 transition-all ease-linear duration-[150] ${
-              show ? "h-full" : "hidden h-0"
-            }`}
-          >
-            <section className="block justify-between items-baseline ">
-              <div className="md:flex">
-                <NetsatTable data={data} />
-                {data.has_specific_capability && (
-                  <CapabilityTable data={data} />
-                )}
-              </div>
-              {data.is_national && (isEngineer(data) || isPharmarcy(data)) && (
-                <EnglishTest data={data} />
-              )}
-            </section>
-            <blockquote className="text-text_secondary">
-              {(isPharmarcy(data) || isBusinessAndAccounting(data)) && show && (
-                <p>
-                  อ่านเกณฑ์เพิ่มเติมที่{" "}
-                  <a
-                    href="https://admissions.kku.ac.th/quota65/?fbclid=IwAR1_7d5q1T-Tmfb2wwdLjdasGG7JlgbkOcCYZTb9RBiddJtu1X1UwonXpek"
-                    className="underline hover:text-black"
-                  >
-                    admission.kku.ac.th
-                  </a>
-                </p>
-              )}
-            </blockquote>
+          <section className="block justify-between items-baseline">
+            <div className="md:flex">
+              <NetsatTable data={data} />
+              {data.has_specific_capability && <CapabilityTable data={data} />}
+            </div>
+            {/* {data.is_national && (isEngineer(data) || isPharmarcy(data)) && (
+              <EnglishTest data={data} />
+            )} */}
+          </section>
+
+          <div>
+            {(isPharmarcy(data) || isBusinessAndAccounting(data)) && show && (
+              <p>
+                อ่านเกณฑ์เพิ่มเติมที่{" "}
+                <a
+                  href="https://admissions.kku.ac.th/quota65/?fbclid=IwAR1_7d5q1T-Tmfb2wwdLjdasGG7JlgbkOcCYZTb9RBiddJtu1X1UwonXpek"
+                  className="underline hover:text-black text-text_secondary"
+                >
+                  admission.kku.ac.th
+                </a>
+              </p>
+            )}
           </div>
-        </main>
-      </section>
+        </div>
+      </main>
     </main>
   );
 };
