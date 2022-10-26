@@ -45,9 +45,9 @@ const EngTestForm = () => {
           ref={engRef}
           value={score}
           maxLength={6}
-          className="bg-white text-sm px-2 text-text_secondary border-purple-500 focus:outline-none rounded-lg border-b-2 w-24"
+          className="bg-white text-sm px-3 text-text_secondary border-purple-500 focus:outline-none rounded-lg border-b-2 w-24"
         />
-        <div className="w-max">
+        <section className="w-max">
           <button
             onClick={(e) => {
               setDropdown(!dropdown);
@@ -92,7 +92,7 @@ const EngTestForm = () => {
               </section>
             )}
           </div>
-        </div>
+        </section>
       </section>
     </main>
   );
